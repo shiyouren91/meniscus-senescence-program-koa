@@ -24,5 +24,6 @@
 
 - already_updated: 1
 - checked: 2
-- manual_author_action: 2
-- updated: 13
+- manual_author_action: 1
+- ready: 1
+- updated: 14
