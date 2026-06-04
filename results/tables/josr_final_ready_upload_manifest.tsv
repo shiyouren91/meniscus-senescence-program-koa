@@ -1,0 +1,15 @@
+file_id	upload_category	path	status	manual_check
+F01	main_manuscript	01_manuscript_files/JOSR_Main_Manuscript_Ready.docx	primary_upload	Upload as the main manuscript file.
+F02	cover_letter	01_manuscript_files/JOSR_Cover_Letter_Ready.docx	primary_upload	Upload as cover letter.
+Figure_1_MSP_discovery_workflow	figure	02_figures/Figure_1_MSP_discovery_workflow.png	ready	Upload as separate figure if requested.
+Figure_2_HRA_projection	figure	02_figures/Figure_2_HRA_projection.png	ready	Upload as separate figure if requested.
+Figure_3_bulk_validation_subtyping	figure	02_figures/Figure_3_bulk_validation_subtyping.png	ready	Upload as separate figure if requested.
+Figure_4_candidate_paracrine_axes	figure	02_figures/Figure_4_candidate_paracrine_axes.png	ready	Upload as separate figure if requested.
+Figure_5_validation_roadmap	figure	02_figures/Figure_5_validation_roadmap.png	ready	Upload as separate figure if requested.
+Figure_6_bulk_msp_diagnostic_auc_summary	figure	02_figures/Figure_6_bulk_msp_diagnostic_auc_summary.png	ready	Upload as separate figure if requested.
+Supplementary_Figure_S1_guardrails_sensitivity	figure	02_figures/Supplementary_Figure_S1_guardrails_sensitivity.png	ready	Upload as separate figure if requested.
+F03	supplementary_table	03_supplementary_tables/JOSR_Supplementary_Tables_ST01_ST34.xlsx	ready	Upload as supplementary material.
+F04	data_code_availability	04_data_code_availability/Data_and_Code_Availability_URL_or_DOI.txt	ready	Paste repository URL into portal field if requested.
+optional_JOSR_Title_Page_and_Author_Statements.docx	optional_support	99_optional_support/JOSR_Title_Page_and_Author_Statements.docx	optional	Use only if the portal asks for this item separately.
+optional_JOSR_Declarations.docx	optional_support	99_optional_support/JOSR_Declarations.docx	optional	Use only if the portal asks for this item separately.
+optional_FINAL_SUBMITTER_CHECKLIST.md	optional_support	99_optional_support/FINAL_SUBMITTER_CHECKLIST.md	optional	Use only if the portal asks for this item separately.
