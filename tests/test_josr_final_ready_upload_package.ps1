@@ -99,6 +99,50 @@ function Normalize-Text {
     return (($Text -replace "[\u2010\u2011\u2012\u2013\u2014\u2212]", "-") -replace "[^A-Za-z0-9]+", " ").ToLowerInvariant().Trim()
 }
 
+function Get-BodyBeforeFigureLegends {
+    param([string]$Text, [string]$Label)
+    $idx = $Text.IndexOf("Figure Legends")
+    if ($idx -lt 0) {
+        throw "$Label missing Figure Legends marker for body-callout verification"
+    }
+    return $Text.Substring(0, $idx)
+}
+
+function Get-CitedSupplementaryTableIds {
+    param([string]$Text)
+    $ids = New-Object 'System.Collections.Generic.HashSet[int]'
+    foreach ($match in [regex]::Matches($Text, "ST(?<start>\d{2})(?:\s*-\s*ST?(?<end>\d{2}))?")) {
+        $start = [int]$match.Groups["start"].Value
+        $end = $start
+        if ($match.Groups["end"].Success) {
+            $end = [int]$match.Groups["end"].Value
+        }
+        for ($i = $start; $i -le $end; $i++) {
+            [void]$ids.Add($i)
+        }
+    }
+    return $ids
+}
+
+function Assert-BodyCalloutsComplete {
+    param([string]$Text, [string]$Label)
+    $body = Get-BodyBeforeFigureLegends -Text $Text -Label $Label
+    foreach ($fig in 1..6) {
+        if ($body -notmatch "Figure\s+$fig") {
+            throw "$Label missing body callout for Figure $fig"
+        }
+    }
+    if ($body -notmatch "Supplementary Figure\s+S1") {
+        throw "$Label missing body callout for Supplementary Figure S1"
+    }
+    $stIds = Get-CitedSupplementaryTableIds -Text $body
+    foreach ($st in 1..34) {
+        if (-not $stIds.Contains($st)) {
+            throw "$Label missing body callout for ST$($st.ToString('00'))"
+        }
+    }
+}
+
 $FinalDir = Join-Path $SubmissionDir "final_ready_upload"
 $Main = Join-Path $FinalDir "01_manuscript_files\JOSR_Main_Manuscript_Ready.docx"
 $Cover = Join-Path $FinalDir "01_manuscript_files\JOSR_Cover_Letter_Ready.docx"
@@ -117,6 +161,7 @@ $mainText = Get-DocxText -Path $Main
 $coverText = Get-DocxText -Path $Cover
 $oldMainText = Get-DocxText -Path $OldManuscript
 $oldCoverText = Get-DocxText -Path $OldCover
+Assert-BodyCalloutsComplete -Text $mainText -Label "Final ready main manuscript"
 
 foreach ($needle in @(
     "Shiyou Ren",

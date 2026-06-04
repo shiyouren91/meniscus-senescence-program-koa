@@ -115,6 +115,50 @@ function Get-DocxEntry {
     }
 }
 
+function Get-BodyBeforeFigureLegends {
+    param([string]$Text, [string]$Label)
+    $idx = $Text.IndexOf("Figure Legends")
+    if ($idx -lt 0) {
+        throw "$Label missing Figure Legends marker for body-callout verification"
+    }
+    return $Text.Substring(0, $idx)
+}
+
+function Get-CitedSupplementaryTableIds {
+    param([string]$Text)
+    $ids = New-Object 'System.Collections.Generic.HashSet[int]'
+    foreach ($match in [regex]::Matches($Text, "ST(?<start>\d{2})(?:\s*-\s*ST?(?<end>\d{2}))?")) {
+        $start = [int]$match.Groups["start"].Value
+        $end = $start
+        if ($match.Groups["end"].Success) {
+            $end = [int]$match.Groups["end"].Value
+        }
+        for ($i = $start; $i -le $end; $i++) {
+            [void]$ids.Add($i)
+        }
+    }
+    return $ids
+}
+
+function Assert-BodyCalloutsComplete {
+    param([string]$Text, [string]$Label)
+    $body = Get-BodyBeforeFigureLegends -Text $Text -Label $Label
+    foreach ($fig in 1..6) {
+        if ($body -notmatch "Figure\s+$fig") {
+            throw "$Label missing body callout for Figure $fig"
+        }
+    }
+    if ($body -notmatch "Supplementary Figure\s+S1") {
+        throw "$Label missing body callout for Supplementary Figure S1"
+    }
+    $stIds = Get-CitedSupplementaryTableIds -Text $body
+    foreach ($st in 1..34) {
+        if (-not $stIds.Contains($st)) {
+            throw "$Label missing body callout for ST$($st.ToString('00'))"
+        }
+    }
+}
+
 $Manuscript = Join-Path $ProjectRoot "docs\manuscript\37_josr_repackaged_manuscript_draft.md"
 $Cover = Join-Path $ProjectRoot "docs\manuscript\38_josr_cover_letter_draft.md"
 $TitlePage = Join-Path $ProjectRoot "docs\manuscript\39_josr_title_page_and_author_statements.md"
@@ -134,6 +178,7 @@ $manuscriptText = Get-Content -LiteralPath $Manuscript -Raw
 $coverText = Get-Content -LiteralPath $Cover -Raw
 $titleText = Get-Content -LiteralPath $TitlePage -Raw
 $declarationText = Get-Content -LiteralPath $Declarations -Raw
+Assert-BodyCalloutsComplete -Text $manuscriptText -Label "JOSR markdown manuscript"
 
 $newTitle = "A program-level meniscus senescence analysis identifies fibrocartilage-matrix stratification signals and candidate paracrine axes in knee osteoarthritis: an integrative transcriptomic study"
 $previousJosrTitle = "A program-level meniscus senescence framework prioritizes candidate paracrine target axes in knee osteoarthritis: an integrative single-cell and bulk transcriptomic analysis"
@@ -303,6 +348,7 @@ $manuscriptDocxPath = Join-Path $SubmissionDir "JOSR_Anonymized_Manuscript.docx"
 $coverDocxPath = Join-Path $SubmissionDir "JOSR_Cover_Letter.docx"
 $manuscriptDocxText = Get-DocxText -Path $manuscriptDocxPath
 $coverDocxText = Get-DocxText -Path $coverDocxPath
+Assert-BodyCalloutsComplete -Text $manuscriptDocxText -Label "JOSR manuscript DOCX"
 if ($manuscriptDocxText -notmatch [regex]::Escape($newTitle)) {
     throw "JOSR manuscript DOCX missing new title"
 }

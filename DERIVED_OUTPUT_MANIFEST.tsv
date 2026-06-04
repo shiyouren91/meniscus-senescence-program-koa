@@ -170,6 +170,7 @@ results/tables/hra001986_chondrocyte_status_anatomy_celltype.tsv	derived_table	1
 results/tables/hra001986_msp_projection_gene_coverage.tsv	derived_table	4827	3fd11249d9442ef586cc3604daf2f16ab147a2d6516d62d8c347f97486942a82	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/hra001986_msp_projection_group_summary.tsv	derived_table	254244	c4eb9ed606892430b53595500dd39fd04ef82cfec3e808f7a605a149dc4d00f1	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/hra001986_msp_projection_group_tests.tsv	derived_table	23092	4f736dcde07c9725fae2d88ba24eb87f162072050e6325774f0a3c6b13aa78b7	yes	Raw data and large processed single-cell objects are excluded.
+results/tables/josr_final_ready_upload_manifest.tsv	derived_table	2050	c18d5fac20cb53271e010bce26410d0f30e6d70fbb2e2e65835f49cf8a97438d	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_abstract_component_index.tsv	derived_table	1586	cc3c130c56905f03d2a3c54ec04babac2b25aaeb1a2bc5f80b74def30baccdde	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_discussion_claim_risk_register.tsv	derived_table	2555	9f61b46c4708cd1ed08334ccb6cc50358c4a281c54aaa9dbeb930142a235b4d9	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_discussion_section_index.tsv	derived_table	2925	74e4c013ba0b68119295d61b3a685bccc9dd05dfc722c97bef9f6d681328f0fc	yes	Raw data and large processed single-cell objects are excluded.
@@ -182,7 +183,7 @@ results/tables/manuscript_graphical_abstract_text_plan.tsv	derived_table	1831	1a
 results/tables/manuscript_highlight_index.tsv	derived_table	712	cb7b2f86af801b8beab8817ae849adda7d5d1e398f98dee3031888e9bdbc481e	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_integrated_section_index.tsv	derived_table	1900	553f21e2cf6bf44308fb7e000bc6aa257c6220835432bb67c4b2c4e2e1d48bbf	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_integrated_source_map.tsv	derived_table	1020	81be26db3e460334f347dda43710bf7b82cf2b72d2c5e6f9e4ebf1d7989742d2	yes	Raw data and large processed single-cell objects are excluded.
-results/tables/manuscript_josr_repackaging_audit.tsv	derived_table	1590	b4144d636bcd832abda82e5b58a69e4e516df6c097c3a0beb7005a322c15cc67	yes	Raw data and large processed single-cell objects are excluded.
+results/tables/manuscript_josr_repackaging_audit.tsv	derived_table	5225	064e6ebdb195883bacd467e5557cd5951cd59d54e85a2cc39051f956d2ddf7aa	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_jot_assembled_file_manifest.tsv	derived_table	3647	84f88d78debd810b85f513034235487dcff76bd4451fd094b670d4997043270d	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_jot_author_confirmation_items.tsv	derived_table	3832	7179f7936da77aec2458a9bfaf976f672a949c1f38a73a019808f2509b52a897	yes	Raw data and large processed single-cell objects are excluded.
 results/tables/manuscript_jot_author_metadata_confirmation_lock.tsv	derived_table	2911	e5007053728dc2bf5b581cba743fc8e482ccb8ebb04938d18b508b474d2c8e1b	yes	Raw data and large processed single-cell objects are excluded.
@@ -243,4 +244,4 @@ submission/josr/figures/Figure_4_candidate_paracrine_axes.png	figure	285046	56ef
 submission/josr/figures/Figure_5_validation_roadmap.png	figure	322892	34590ce06ca3646cc326cffdeeefcb4ead22f74dad4ae5f75833e9bf01d3421c	yes	Raw data and large processed single-cell objects are excluded.
 submission/josr/figures/Figure_6_bulk_msp_diagnostic_auc_summary.png	figure	157626	69fb9c674b4b72f6157ceb3f009e5f6bdd4deac000701581f308e0f9b51b1b05	yes	Raw data and large processed single-cell objects are excluded.
 submission/josr/figures/Supplementary_Figure_S1_guardrails_sensitivity.png	figure	248173	f8bd23ba0b552273c65932e253755319cdc8fd9681e071c4eac577484d629670	yes	Raw data and large processed single-cell objects are excluded.
-submission/josr/JOSR_Supplementary_Tables_ST01_ST34.xlsx	supplementary_workbook	1025047	617a2610d203d6d1b32ac7ad1a29d3ab48a1c9e75acd702f69e726bb1e17fa60	yes	Raw data and large processed single-cell objects are excluded.
+submission/josr/JOSR_Supplementary_Tables_ST01_ST34.xlsx	supplementary_workbook	1025045	9e8591776d1fe841c325d3322535633a9b0d24012ff6ea04b4890f950112b6be	yes	Raw data and large processed single-cell objects are excluded.

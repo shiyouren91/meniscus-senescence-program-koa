@@ -14,7 +14,7 @@ foreach ($path in @($PythonExe, $ScriptPath)) {
     }
 }
 
-foreach ($path in @($UploadDir, $ManifestOut, $ChecklistOut, $NotesOut)) {
+foreach ($path in @($ManifestOut, $ChecklistOut, $NotesOut)) {
     if (Test-Path -LiteralPath $path) {
         Remove-Item -LiteralPath $path -Recurse -Force
     }

@@ -94,6 +94,17 @@ def copy_tree(source: Path, dest: Path, patterns: tuple[str, ...] | None = None)
     return copied
 
 
+def reset_upload_dir(upload_dir: Path) -> None:
+    upload_dir.mkdir(parents=True, exist_ok=True)
+    for child in upload_dir.iterdir():
+        if child.name == ".git":
+            continue
+        if child.is_dir():
+            shutil.rmtree(child)
+        else:
+            child.unlink()
+
+
 def build_readme() -> str:
     return f"""# Meniscus Senescence Program Analysis in Knee Osteoarthritis
 
@@ -344,9 +355,7 @@ def main() -> int:
 
     root = args.project_root.resolve()
     upload_dir = args.upload_dir.resolve()
-    if upload_dir.exists():
-        shutil.rmtree(upload_dir)
-    upload_dir.mkdir(parents=True)
+    reset_upload_dir(upload_dir)
 
     copied: list[Path] = []
     for folder in ["scripts", "tests", "docs/workflow", "metadata", "config", "results/tables", "results/figures"]:

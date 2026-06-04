@@ -10,11 +10,81 @@ import shutil
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
+import xml.etree.ElementTree as ET
 from xml.sax.saxutils import escape
 
 
 W_NS = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 R_NS = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+
+
+DOCX_NAMESPACES = {
+    "w": W_NS,
+    "r": R_NS,
+    "wp": "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+    "a": "http://schemas.openxmlformats.org/drawingml/2006/main",
+    "pic": "http://schemas.openxmlformats.org/drawingml/2006/picture",
+    "mc": "http://schemas.openxmlformats.org/markup-compatibility/2006",
+    "w14": "http://schemas.microsoft.com/office/word/2010/wordml",
+    "w15": "http://schemas.microsoft.com/office/word/2012/wordml",
+    "w16cid": "http://schemas.microsoft.com/office/word/2016/wordml/cid",
+    "w16se": "http://schemas.microsoft.com/office/word/2015/wordml/symex",
+}
+
+for prefix, uri in DOCX_NAMESPACES.items():
+    ET.register_namespace(prefix, uri)
+
+
+MAIN_MANUSCRIPT_CALLOUT_REPLACEMENTS = [
+    (
+        "The same analysis also retained non-MSP fibrocartilage matrix and fibrotic remodeling programs as context axes, helping separate meniscus structural remodeling from the specific senescence/paracrine interpretation.",
+        "The same analysis also retained non-MSP fibrocartilage matrix and fibrotic remodeling programs as context axes, helping separate meniscus structural remodeling from the specific senescence/paracrine interpretation (Figure 1; ST01-ST05).",
+    ),
+    (
+        "HRA projection supported anatomical and cell-state context for the MSP-like axes, including inner/outer and normal/abnormal comparisons as well as author-defined chondrocyte and progenitor-like cell states.",
+        "HRA projection supported anatomical and cell-state context for the MSP-like axes, including inner/outer and normal/abnormal comparisons as well as author-defined chondrocyte and progenitor-like cell states (Figure 2; ST06-ST08).",
+    ),
+    (
+        "This finding is consistent with the random-effects meta-analysis, where the same axis was the only strongly supported direction-stable bulk signal.",
+        "This finding is consistent with the random-effects meta-analysis, where the same axis was the only strongly supported direction-stable bulk signal (Figure 3A; ST10-ST11).",
+    ),
+    (
+        "These subtype labels should be treated as relative molecular states, not as a clinical classifier.",
+        "These subtype labels should be treated as relative molecular states, not as a clinical classifier (Figure 3B; ST14-ST15).",
+    ),
+    (
+        "Together, these results point to follow-up hypotheses linking MSP-program-high meniscal fibrochondrocytes with immune/myeloid or vascular receiver contexts and remodeling-associated target genes.",
+        "Together, these results point to follow-up hypotheses linking MSP-program-high meniscal fibrochondrocytes with immune/myeloid or vascular receiver contexts and remodeling-associated target genes (Figure 4; ST18-ST23).",
+    ),
+    (
+        "A secondary MSP-interface matrix/fibrotic composite showed a similar pooled AUC (0.813, 95% CI 0.725-0.888), but leave-one-cohort-out performance was less stable (0.333-0.967), so it was retained as secondary evidence.",
+        "A secondary MSP-interface matrix/fibrotic composite showed a similar pooled AUC (0.813, 95% CI 0.725-0.888), but leave-one-cohort-out performance was less stable (0.333-0.967), so it was retained as secondary evidence (Figure 6; ST30-ST33).",
+    ),
+    (
+        "The fibrocartilage-matrix result should therefore be used to guide stratification hypotheses and validation-study design, not to support immediate clinical diagnosis.",
+        "The fibrocartilage-matrix result should therefore be used to guide stratification hypotheses and validation-study design, not to support immediate clinical diagnosis (Supplementary Figure S1; ST34).",
+    ),
+    (
+        "Because cohort, platform, tissue, and comparator definitions differed (including OA, RA, and normal comparators across cartilage, synovium, and meniscus), tissue-stratified evidence grades were treated as the primary bulk readout and the pooled all-tissue estimate as a sensitivity summary; bulk validation was therefore interpreted as context-dependent support rather than a universal OA-up MSP signature.",
+        "Because cohort, platform, tissue, and comparator definitions differed (including OA, RA, and normal comparators across cartilage, synovium, and meniscus), tissue-stratified evidence grades were treated as the primary bulk readout and the pooled all-tissue estimate as a sensitivity summary; bulk validation was therefore interpreted as context-dependent support rather than a universal OA-up MSP signature (per-cohort group tests in ST09; covariate-adjusted and robustness checks in ST12-ST13).",
+    ),
+    (
+        "Reference-based proxy and NNLS deconvolution estimates were used as supportive sensitivity checks, not as definitive cell-fraction estimates.",
+        "Reference-based proxy and NNLS deconvolution estimates were used as supportive sensitivity checks, not as definitive cell-fraction estimates (ST16-ST17).",
+    ),
+    (
+        "The primary diagnostic analysis included GSE114007, GSE143514, GSE169077, GSE185064, GSE55235, and GSE55457.",
+        "The primary diagnostic analysis included GSE114007, GSE143514, GSE169077, GSE185064, GSE55235, and GSE55457 (cohort inclusion manifest in ST29).",
+    ),
+    (
+        "Phase-1 experimental priority is assigned to MIF-CD74, ANGPTL4-integrin, and VEGF, with axis-specific blockade or inhibition strategies.",
+        "Phase-1 experimental priority is assigned to MIF-CD74, ANGPTL4-integrin, and VEGF, with axis-specific blockade or inhibition strategies (validation axis plan and assay matrix in ST24-ST25).",
+    ),
+    (
+        "Reserve exploratory axes were penalized to avoid promoting generic matrix-overlap signals to primary mechanisms.",
+        "Reserve exploratory axes were penalized to avoid promoting generic matrix-overlap signals to primary mechanisms (figure-source and axis-summary tables in ST26-ST28).",
+    ),
+]
 
 
 def read_text(path: Path) -> str:
@@ -148,16 +218,43 @@ def clean_settings_xml(xml: str) -> str:
     return xml
 
 
-def clean_document_xml(xml: str, add_page_footer: bool) -> str:
+def apply_paragraph_text_replacements(xml: str, replacements: list[tuple[str, str]]) -> str:
+    if not replacements:
+        return xml
+    root = ET.fromstring(xml.encode("utf-8"))
+    text_tag = f"{{{W_NS}}}t"
+    paragraph_tag = f"{{{W_NS}}}p"
+    for paragraph in root.iter(paragraph_tag):
+        text_nodes = [node for node in paragraph.iter(text_tag)]
+        if not text_nodes:
+            continue
+        paragraph_text = "".join(node.text or "" for node in text_nodes)
+        updated = paragraph_text
+        changed = False
+        for old, new in replacements:
+            if new in updated:
+                continue
+            if old in updated:
+                updated = updated.replace(old, new, 1)
+                changed = True
+        if changed:
+            text_nodes[0].text = updated
+            for node in text_nodes[1:]:
+                node.text = ""
+    return ET.tostring(root, encoding="utf-8", xml_declaration=True).decode("utf-8")
+
+
+def clean_document_xml(xml: str, add_page_footer: bool, text_replacements: list[tuple[str, str]] | None = None) -> str:
     xml = re.sub(r"<w:commentRangeStart\b[^>]*/>", "", xml)
     xml = re.sub(r"<w:commentRangeEnd\b[^>]*/>", "", xml)
     xml = re.sub(r"<w:commentReference\b[^>]*/>", "", xml)
+    xml = apply_paragraph_text_replacements(xml, text_replacements or [])
     if add_page_footer:
         xml = add_footer_to_document_xml(xml)
     return xml
 
 
-def clean_docx(src: Path, dst: Path, title: str, add_page_footer: bool) -> None:
+def clean_docx(src: Path, dst: Path, title: str, add_page_footer: bool, text_replacements: list[tuple[str, str]] | None = None) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
     skip_names = {
         "word/comments.xml",
@@ -185,7 +282,7 @@ def clean_docx(src: Path, dst: Path, title: str, add_page_footer: bool) -> None:
                     xml = add_footer_relationship(xml)
                 data = xml.encode("utf-8")
             elif name == "word/document.xml":
-                data = clean_document_xml(data.decode("utf-8"), add_page_footer).encode("utf-8")
+                data = clean_document_xml(data.decode("utf-8"), add_page_footer, text_replacements).encode("utf-8")
             elif name == "word/settings.xml":
                 data = clean_settings_xml(data.decode("utf-8")).encode("utf-8")
             elif name == "docProps/core.xml":
@@ -300,7 +397,13 @@ def build_package(root: Path, formatted_manuscript: Path, formatted_cover: Path,
     main_out = final_dir / "01_manuscript_files" / "JOSR_Main_Manuscript_Ready.docx"
     cover_out = final_dir / "01_manuscript_files" / "JOSR_Cover_Letter_Ready.docx"
     title = "A program-level meniscus senescence analysis identifies fibrocartilage-matrix stratification signals and candidate paracrine axes in knee osteoarthritis: an integrative transcriptomic study"
-    clean_docx(formatted_manuscript, main_out, "JOSR Main Manuscript", add_page_footer=True)
+    clean_docx(
+        formatted_manuscript,
+        main_out,
+        "JOSR Main Manuscript",
+        add_page_footer=True,
+        text_replacements=MAIN_MANUSCRIPT_CALLOUT_REPLACEMENTS,
+    )
     clean_docx(formatted_cover, cover_out, "JOSR Cover Letter", add_page_footer=False)
     shutil.copy2(main_out, submission / "JOSR_Main_Manuscript_Ready.docx")
     shutil.copy2(cover_out, submission / "JOSR_Cover_Letter_Ready.docx")

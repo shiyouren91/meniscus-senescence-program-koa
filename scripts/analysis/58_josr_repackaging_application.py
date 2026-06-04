@@ -208,6 +208,7 @@ def repackage_manuscript(text: str, rows: list[dict[str, str]]) -> str:
     text = apply_josr_main_structure(text, rows)
     text = remove_stale_submission_boilerplate(text, rows)
     text = normalize_figure_legend_order(text, rows)
+    text = add_body_callouts(text, rows)
     return text
 
 
@@ -471,6 +472,85 @@ def normalize_figure_legend_order(text: str, rows: list[dict[str, str]]) -> str:
     index_new = "| Figure 4 | A-D | results/tables/msp_mechanism_axis_evidence_dossier.tsv;results/tables/msp_comm_tool_pair_edges.tsv;results/tables/msp_axis_target_concordance_for_nichenet.tsv | MIF-CD74, ANGPTL4-integrin, and VEGF are leading paracrine axes for follow-up, not validated mechanisms. |\n| Figure 5 | A | results/tables/msp_lr_validation_assay_matrix.tsv | Validation plan is proposed, not completed wet-lab evidence. |\n| Figure 6 | A-C | results/tables/bulk_msp_diagnostic_per_cohort_auc.tsv;results/tables/bulk_msp_diagnostic_pooled_auc.tsv;results/tables/bulk_msp_diagnostic_loco_auc.tsv | Preliminary stratification signal only; not a clinical diagnostic classifier. |"
     text = text.replace(index_old, index_new, 1)
     rows.append({"item": "R10_figure_legend_order", "status": "updated", "detail": "Sorted figure legends and source index in numerical order."})
+    return text
+
+
+def add_body_callouts(text: str, rows: list[dict[str, str]]) -> str:
+    replacements = [
+        (
+            "C1_discovery_program_tables",
+            "The same analysis also retained non-MSP fibrocartilage matrix and fibrotic remodeling programs as context axes, helping separate meniscus structural remodeling from the specific senescence/paracrine interpretation.",
+            "The same analysis also retained non-MSP fibrocartilage matrix and fibrotic remodeling programs as context axes, helping separate meniscus structural remodeling from the specific senescence/paracrine interpretation (Figure 1; ST01-ST05).",
+        ),
+        (
+            "C2_hra_projection_tables",
+            "HRA projection supported anatomical and cell-state context for the MSP-like axes, including inner/outer and normal/abnormal comparisons as well as author-defined chondrocyte and progenitor-like cell states.",
+            "HRA projection supported anatomical and cell-state context for the MSP-like axes, including inner/outer and normal/abnormal comparisons as well as author-defined chondrocyte and progenitor-like cell states (Figure 2; ST06-ST08).",
+        ),
+        (
+            "C3_bulk_meta_figure_tables",
+            "This finding is consistent with the random-effects meta-analysis, where the same axis was the only strongly supported direction-stable bulk signal.",
+            "This finding is consistent with the random-effects meta-analysis, where the same axis was the only strongly supported direction-stable bulk signal (Figure 3A; ST10-ST11).",
+        ),
+        (
+            "C4_subtype_figure_tables",
+            "These subtype labels should be treated as relative molecular states, not as a clinical classifier.",
+            "These subtype labels should be treated as relative molecular states, not as a clinical classifier (Figure 3B; ST14-ST15).",
+        ),
+        (
+            "C5_mechanism_figure_tables",
+            "Together, these results point to follow-up hypotheses linking MSP-program-high meniscal fibrochondrocytes with immune/myeloid or vascular receiver contexts and remodeling-associated target genes.",
+            "Together, these results point to follow-up hypotheses linking MSP-program-high meniscal fibrochondrocytes with immune/myeloid or vascular receiver contexts and remodeling-associated target genes (Figure 4; ST18-ST23).",
+        ),
+        (
+            "C6_diagnostic_figure_tables",
+            "A secondary MSP-interface matrix/fibrotic composite showed a similar pooled AUC (0.813, 95% CI 0.725-0.888), but leave-one-cohort-out performance was less stable (0.333-0.967), so it was retained as secondary evidence.",
+            "A secondary MSP-interface matrix/fibrotic composite showed a similar pooled AUC (0.813, 95% CI 0.725-0.888), but leave-one-cohort-out performance was less stable (0.333-0.967), so it was retained as secondary evidence (Figure 6; ST30-ST33).",
+        ),
+        (
+            "C7_limitations_supplementary_figure",
+            "The fibrocartilage-matrix result should therefore be used to guide stratification hypotheses and validation-study design, not to support immediate clinical diagnosis.",
+            "The fibrocartilage-matrix result should therefore be used to guide stratification hypotheses and validation-study design, not to support immediate clinical diagnosis (Supplementary Figure S1; ST34).",
+        ),
+        (
+            "C8_bulk_methods_tables",
+            "Because cohort, platform, tissue, and comparator definitions differed (including OA, RA, and normal comparators across cartilage, synovium, and meniscus), tissue-stratified evidence grades were treated as the primary bulk readout and the pooled all-tissue estimate as a sensitivity summary; bulk validation was therefore interpreted as context-dependent support rather than a universal OA-up MSP signature.",
+            "Because cohort, platform, tissue, and comparator definitions differed (including OA, RA, and normal comparators across cartilage, synovium, and meniscus), tissue-stratified evidence grades were treated as the primary bulk readout and the pooled all-tissue estimate as a sensitivity summary; bulk validation was therefore interpreted as context-dependent support rather than a universal OA-up MSP signature (per-cohort group tests in ST09; covariate-adjusted and robustness checks in ST12-ST13).",
+        ),
+        (
+            "C9_subtype_methods_tables",
+            "Reference-based proxy and NNLS deconvolution estimates were used as supportive sensitivity checks, not as definitive cell-fraction estimates.",
+            "Reference-based proxy and NNLS deconvolution estimates were used as supportive sensitivity checks, not as definitive cell-fraction estimates (ST16-ST17).",
+        ),
+        (
+            "C10_diagnostic_manifest_table",
+            "The primary diagnostic analysis included GSE114007, GSE143514, GSE169077, GSE185064, GSE55235, and GSE55457.",
+            "The primary diagnostic analysis included GSE114007, GSE143514, GSE169077, GSE185064, GSE55235, and GSE55457 (cohort inclusion manifest in ST29).",
+        ),
+        (
+            "C11_validation_roadmap_tables",
+            "Phase-1 experimental priority is assigned to MIF-CD74, ANGPTL4-integrin, and VEGF, with axis-specific blockade or inhibition strategies.",
+            "Phase-1 experimental priority is assigned to MIF-CD74, ANGPTL4-integrin, and VEGF, with axis-specific blockade or inhibition strategies (validation axis plan and assay matrix in ST24-ST25).",
+        ),
+        (
+            "C12_figure_source_axis_tables",
+            "Reserve exploratory axes were penalized to avoid promoting generic matrix-overlap signals to primary mechanisms.",
+            "Reserve exploratory axes were penalized to avoid promoting generic matrix-overlap signals to primary mechanisms (figure-source and axis-summary tables in ST26-ST28).",
+        ),
+    ]
+    changed = 0
+    for item, old, new in replacements:
+        if new in text:
+            rows.append({"item": item, "status": "already_updated", "detail": new})
+            continue
+        count = text.count(old)
+        if count != 1:
+            rows.append({"item": item, "status": "not_found" if count == 0 else "ambiguous", "detail": f"matches={count}"})
+            continue
+        text = text.replace(old, new, 1)
+        changed += 1
+        rows.append({"item": item, "status": "updated", "detail": new})
+    rows.append({"item": "R14_body_figure_table_callouts", "status": "updated", "detail": f"Applied {changed} body figure/supplementary-table callouts."})
     return text
 
 
