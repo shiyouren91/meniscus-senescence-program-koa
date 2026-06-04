@@ -1,0 +1,20 @@
+parameter	value
+balanced_h5ad	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\data\processed\single_cell\GSE220243\cnmf\gse220243_fibrochondrocyte_cnmf_balanced_counts.h5ad
+selected_genes_input	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\results\tables\gse220243_fibrochondrocyte_cnmf_selected_genes.tsv
+discovery_h5ad	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\data\processed\single_cell\GSE220243\cnmf\gse220243_fibrochondrocyte_cnmf_balanced_discovery_counts.h5ad
+output_dir	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\results\cnmf\gse220243_fibrochondrocyte_balanced_discovery
+run_name	gse220243_fibro_balanced_discovery
+components	5,6,7,8,9,10,12,14,16,18,20,22,24,26,28,30
+n_iter	100
+expected_nmf_runs	1600
+max_cells_per_sample	0
+selected_cells	54882
+selected_genes	3038
+dropped_zero_count_genes	0
+dropped_zero_count_gene_names	
+seed	20260529
+max_nmf_iter	1000
+density_threshold	0.5
+beta_loss	frobenius
+genes_file	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\results\cnmf\gse220243_fibrochondrocyte_balanced_discovery\gse220243_fibro_balanced_discovery_genes.txt
+sampling_summary	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\results\cnmf\gse220243_fibrochondrocyte_balanced_discovery\gse220243_fibro_balanced_discovery_sampling_summary.tsv

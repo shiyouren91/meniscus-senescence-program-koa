@@ -1,0 +1,17 @@
+section_id	jot_requirement	prepared_output	status	notes
+JOT01	Title page	docs/manuscript/20_jot_title_page_and_author_statements.md	prepared	Includes authors, affiliations, correspondence, funding, contribution, COI placeholders, ethics statement, AI declaration.
+JOT02	Cover letter	docs/manuscript/21_jot_cover_letter_draft.md	prepared	Includes originality, no concurrent submission, translational fit, candidate/not causal guardrail.
+JOT03	Abstract	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Structured and kept under 500 words together with translational potential statement.
+JOT04	The Translational Potential of this Article	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Included at the end of the abstract section.
+JOT05	Keywords	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Six keywords supplied, alphabetically ordered.
+JOT06	Introduction	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Imported from integrated manuscript.
+JOT07	Materials and Methods	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Renamed from Methods to match JOT-style biomedical wording.
+JOT08	Results	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Imported from integrated manuscript.
+JOT09	Discussion	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Imported with caution language.
+JOT10	Author Contribution	docs/manuscript/20_jot_title_page_and_author_statements.md	prepared	Uses author-supplied contribution statement.
+JOT11	Funding/Support Statement	docs/manuscript/20_jot_title_page_and_author_statements.md	prepared	Uses author-supplied grant.
+JOT12	Conflicts of Interest	docs/manuscript/20_jot_title_page_and_author_statements.md	needs_user_input	Default placeholder asks authors to confirm no competing interests.
+JOT13	Ethical Statement	docs/manuscript/20_jot_title_page_and_author_statements.md	needs_user_input	Public-data statement drafted; authors should confirm source-study ethics wording if required.
+JOT14	Data and Materials Availability	docs/manuscript/22_jot_anonymized_manuscript_draft.md	defer_until_final_submission	Code repository or archive DOI can be inserted at the end.
+JOT15	Figure Legends	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Imported from manuscript draft.
+JOT16	Supplementary Material	docs/manuscript/22_jot_anonymized_manuscript_draft.md	prepared	Imported from manuscript draft; needs journal formatting later.

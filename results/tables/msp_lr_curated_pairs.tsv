@@ -1,0 +1,36 @@
+ligand	receptor	pathway	paracrine_rationale	source
+MIF	CD74	MIF_CD74	MSP/SASP macrophage-fibroblast signaling candidate	curated_MSP_expert
+MIF	CXCR4	MIF_CXCR4	chemokine-like inflammatory paracrine signaling	curated_MSP_expert
+MIF	CXCR2	MIF_CXCR2	chemokine-like inflammatory paracrine signaling	curated_MSP_expert
+VEGFA	KDR	VEGF	angiogenic and endothelial activation candidate	curated_MSP_expert
+VEGFA	FLT1	VEGF	angiogenic and vascular remodeling candidate	curated_MSP_expert
+ANGPTL4	ITGB1	ANGPTL4_integrin	interface angiogenic-matrix signaling candidate	curated_MSP_expert
+ANGPTL4	ITGAV	ANGPTL4_integrin	interface angiogenic-matrix signaling candidate	curated_MSP_expert
+SPP1	CD44	SPP1_CD44	matrix-immune and fibroblast activation candidate	curated_MSP_expert
+SPP1	ITGAV	SPP1_integrin	matrix-integrin communication candidate	curated_MSP_expert
+SPP1	ITGB1	SPP1_integrin	matrix-integrin communication candidate	curated_MSP_expert
+CXCL12	CXCR4	CXCL12_CXCR4	progenitor/interface chemokine axis	curated_interface
+CXCL12	ACKR3	CXCL12_ACKR3	progenitor/interface chemokine axis	curated_interface
+BMP2	BMPR1A	BMP	fibrocartilage differentiation and remodeling candidate	curated_MSP_program
+BMP2	BMPR2	BMP	fibrocartilage differentiation and remodeling candidate	curated_MSP_program
+INHBA	ACVR1B	activin	SASP/TGF-beta-family remodeling candidate	curated_MSP_program
+INHBA	ACVR2A	activin	SASP/TGF-beta-family remodeling candidate	curated_MSP_program
+INHBA	ACVR2B	activin	SASP/TGF-beta-family remodeling candidate	curated_MSP_program
+IL11	IL11RA	IL11	fibroblast activation and matrix remodeling candidate	curated_MSP_program
+IL11	IL6ST	IL11	fibroblast activation and matrix remodeling candidate	curated_MSP_program
+FGF2	FGFR1	FGF	repair/proliferation and stromal activation candidate	curated_MSP_program
+FGF2	FGFR2	FGF	repair/proliferation and stromal activation candidate	curated_MSP_program
+FGF1	FGFR1	FGF	repair/proliferation and stromal activation candidate	curated_MSP_program
+LIF	LIFR	LIF	IL6-family inflammatory remodeling candidate	curated_SASP
+LIF	IL6ST	LIF	IL6-family inflammatory remodeling candidate	curated_SASP
+IL6	IL6R	IL6	canonical SASP inflammatory signaling	curated_SASP
+IL6	IL6ST	IL6	canonical SASP inflammatory signaling	curated_SASP
+CCL2	CCR2	CCL2_CCR2	monocyte/macrophage recruitment candidate	curated_SASP
+CXCL8	CXCR1	CXCL8	neutrophil/angiogenic inflammatory candidate	curated_SASP
+CXCL8	CXCR2	CXCL8	neutrophil/angiogenic inflammatory candidate	curated_SASP
+POSTN	ITGAV	POSTN_integrin	fibrotic matrix-integrin communication candidate	curated_matrix
+POSTN	ITGB3	POSTN_integrin	fibrotic matrix-integrin communication candidate	curated_matrix
+CCN2	ITGAV	CCN2_integrin	matrix remodeling communication candidate	curated_matrix
+CCN2	ITGB1	CCN2_integrin	matrix remodeling communication candidate	curated_matrix
+CCN1	ITGAV	CCN1_integrin	matrix inflammatory communication candidate	curated_matrix
+TNFSF12	TNFRSF12A	TWEAK_FN14	FN14 receptor appears in MSP program; ligand availability needs validation	curated_context

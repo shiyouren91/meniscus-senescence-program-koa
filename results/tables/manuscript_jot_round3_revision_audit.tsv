@@ -1,0 +1,8 @@
+item	status	detail
+22_jot_anonymized_manuscript_draft.md_round4_guardrail	superseded_by_round4	round4 reference order detected; round3 text replacements skipped
+15_msp_integrated_manuscript_draft.md_round4_guardrail	superseded_by_round4	round4 reference order detected; round3 text replacements skipped
+09_msp_full_methods_draft.md_A3_limitations_deduplicate	already_updated	delete-only text is already absent
+09_msp_full_methods_draft.md_A4a_declarative_statistical_caution	already_updated	Candidate and not-causal language is therefore used throughout the Results and figure legends.
+11_msp_discussion_draft.md_round4_guardrail	superseded_by_round4	round4 program-level comparator detected; round3 text replacements skipped
+C1_repository_url_or_doi	manual_author_action	Repository URL/DOI placeholder intentionally retained.
+C2_declaration_brackets	manual_author_action	Bracketed title-page/declaration confirmation notes intentionally retained.

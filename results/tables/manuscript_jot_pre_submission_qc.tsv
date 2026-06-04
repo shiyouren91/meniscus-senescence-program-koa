@@ -1,0 +1,38 @@
+qc_id	domain	item	status	severity	evidence	action_needed
+QC01	file_integrity	UF01_title_page_exists	pass	ok	submission/jot/JOT_Title_Page_and_Author_Statements.docx	No automated action needed.
+QC02	file_integrity	UF02_manuscript_exists	pass	ok	submission/jot/JOT_Anonymized_Manuscript.docx	No automated action needed.
+QC03	file_integrity	UF03_cover_letter_exists	pass	ok	submission/jot/JOT_Cover_Letter.docx	No automated action needed.
+QC04	file_integrity	UF04_declarations_exists	pass	ok	submission/jot/JOT_Declarations.docx	No automated action needed.
+QC05	file_integrity	UF05_main_figure_exists	pass	ok	results/figures/manuscript/figure1_workflow_and_msp_discovery_draft.png	No automated action needed.
+QC06	file_integrity	UF06_main_figure_exists	pass	ok	results/figures/manuscript/figure2_hra_projection_draft.png	No automated action needed.
+QC07	file_integrity	UF07_main_figure_exists	pass	ok	results/figures/manuscript/figure3_bulk_validation_subtyping_draft.png	No automated action needed.
+QC08	file_integrity	UF08_main_figure_exists	pass	ok	results/figures/manuscript/figure4_mechanism_network_draft.png;results/figures/manuscript/figure4_axis_summary_draft.png	No automated action needed.
+QC09	file_integrity	UF09_main_figure_exists	pass	ok	results/figures/manuscript/figure5_validation_roadmap_draft.png	No automated action needed.
+QC10	file_integrity	UF10_supplementary_figure_exists	pass	ok	results/figures/manuscript/supplementary_figure_s1_guardrails_sensitivity_draft.png	No automated action needed.
+QC11	file_integrity	UF11_supplementary_table_exists	pass	ok	submission/jot/JOT_Supplementary_Tables_ST01_ST28.xlsx	No automated action needed.
+QC12	repository	code_repository_deferred	deferred	blocking_before_submission	Data/code URL or DOI is deferred in assembled manifest.	Create final repository/archive and insert URL or DOI before submission.
+QC13	file_integrity	title_page_docx_readable	pass	ok	submission/jot/JOT_Title_Page_and_Author_Statements.docx text_length=2794	Open the DOCX manually in Word/WPS before upload.
+QC14	declarations	title_page_author_visible_file	manual_check	manual_before_submission	Author-visible file should contain or may contain author/declaration information.	Confirm author wording, affiliations, and declarations before upload.
+QC15	file_integrity	manuscript_docx_readable	pass	ok	submission/jot/JOT_Anonymized_Manuscript.docx text_length=39980	Open the DOCX manually in Word/WPS before upload.
+QC16	anonymization	anonymized_manuscript_metadata_scan	pass	ok	No supplied author identifiers found in core metadata.	Manually inspect document properties and hidden metadata before upload.
+QC17	file_integrity	cover_letter_docx_readable	pass	ok	submission/jot/JOT_Cover_Letter.docx text_length=2463	Open the DOCX manually in Word/WPS before upload.
+QC18	file_integrity	cover_letter_author_visible_file	manual_check	manual_before_submission	Author-visible file should contain or may contain author/declaration information.	Confirm author wording, affiliations, and declarations before upload.
+QC19	file_integrity	declarations_docx_readable	pass	ok	submission/jot/JOT_Declarations.docx text_length=1858	Open the DOCX manually in Word/WPS before upload.
+QC20	declarations	declarations_author_visible_file	manual_check	manual_before_submission	Author-visible file should contain or may contain author/declaration information.	Confirm author wording, affiliations, and declarations before upload.
+QC21	anonymization	anonymized_manuscript_identifier_scan	pass	ok	No supplied author names, email, institution names, or local drive paths detected.	Still inspect document properties manually because automated text scans cannot see all hidden metadata.
+QC22	claims	candidate_not_causal_language	pass	ok	candidate=True; not causal=True	Preserve candidate and not causal language during final edits.
+QC23	claims	MIF_CD74_candidate_axis_label	pass	ok	MIF_CD74 present in assembled DOCX text scan.	Keep MIF_CD74 framed as a candidate axis, not a validated mechanism.
+QC24	claims	ANGPTL4_integrin_candidate_axis_label	pass	ok	ANGPTL4_integrin present in assembled DOCX text scan.	Keep ANGPTL4_integrin framed as a candidate axis, not a validated mechanism.
+QC25	claims	VEGF_candidate_axis_label	pass	ok	VEGF present in assembled DOCX text scan.	Keep VEGF framed as a candidate axis, not a validated mechanism.
+QC26	figures	Figure 1_source_available	manual_check	manual_before_submission	results/figures/manuscript/figure1_workflow_and_msp_discovery_draft.png	Export final journal-resolution TIFF/PDF/PNG, verify labels, and confirm panel lettering before upload.
+QC27	figures	Figure 2_source_available	manual_check	manual_before_submission	results/figures/manuscript/figure2_hra_projection_draft.png	Export final journal-resolution TIFF/PDF/PNG, verify labels, and confirm panel lettering before upload.
+QC28	figures	Figure 3_source_available	manual_check	manual_before_submission	results/figures/manuscript/figure3_bulk_validation_subtyping_draft.png	Export final journal-resolution TIFF/PDF/PNG, verify labels, and confirm panel lettering before upload.
+QC29	figures	Figure 4_source_available	manual_check	manual_before_submission	results/figures/manuscript/figure4_mechanism_network_draft.png;results/figures/manuscript/figure4_axis_summary_draft.png	Export final journal-resolution TIFF/PDF/PNG, verify labels, and confirm panel lettering before upload.
+QC30	figures	Figure 5_source_available	manual_check	manual_before_submission	results/figures/manuscript/figure5_validation_roadmap_draft.png	Export final journal-resolution TIFF/PDF/PNG, verify labels, and confirm panel lettering before upload.
+QC31	figures	Supplementary Figure S1_source_available	manual_check	manual_before_submission	results/figures/manuscript/supplementary_figure_s1_guardrails_sensitivity_draft.png	Export final journal-resolution TIFF/PDF/PNG, verify labels, and confirm panel lettering before upload.
+QC32	supplementary_tables	supplementary_xlsx_sheet_set	manual_check	manual_before_submission	sheet_count=30; missing=none	Review worksheet labels, table captions, and any journal-specific supplementary formatting.
+QC33	declarations	funding_present	manual_check	manual_before_submission	Funding present=True	Complete author confirmation and revise to match final journal policy before upload.
+QC34	declarations	author_contributions_present	manual_check	manual_before_submission	Author Contributions present=True	Complete author confirmation and revise to match final journal policy before upload.
+QC35	declarations	conflicts_of_interest_present	manual_check	manual_before_submission	Conflicts of Interest present=True	Complete author confirmation and revise to match final journal policy before upload.
+QC36	declarations	ethical_statement_present	manual_check	manual_before_submission	Ethical Statement present=True	Complete author confirmation and revise to match final journal policy before upload.
+QC37	declarations	declaration_of_generative_ai_present	manual_check	manual_before_submission	Declaration of Generative AI present=True	Complete author confirmation and revise to match final journal policy before upload.

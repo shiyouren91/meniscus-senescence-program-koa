@@ -1,0 +1,15 @@
+item_id	checklist_domain	item	status	evidence_source	action_needed
+RC01	front_matter	Working title, short title, structured abstract, keywords, and highlights are drafted.	ready_draft	docs/manuscript/13_msp_title_abstract_highlights.md	Select final title according to target journal style.
+RC02	main_text	Results, Methods, and Discussion are assembled into one manuscript file.	ready_draft	docs/manuscript/15_msp_integrated_manuscript_draft.md	Manual language polish and journal-specific formatting.
+RC03	figures	Figure 1-5 legends and source maps are included.	ready_draft	docs/manuscript/08_msp_unified_figure_legends.md	Manual visual polishing and panel lettering.
+RC04	supplementary	Supplementary table themes are mapped to source outputs.	ready_draft	docs/manuscript/05_msp_manuscript_master_index.md	Convert source tables into journal supplementary file format.
+RC05	claims	Mechanism-axis wording is restricted to candidate and not causal language.	ready_draft	results/tables/manuscript_discussion_claim_risk_register.tsv	Preserve this language during later editing.
+RC06	validation	Formal CellChat/LIANA/NicheNet consensus remains planned validation.	planned_validation_not_completed	results/tables/manuscript_methods_reporting_checklist.tsv	Do not report as completed unless the analysis is added later.
+RC07	validation	Synovial-fluid protein validation remains proposed validation.	planned_validation_not_completed	results/tables/manuscript_methods_reporting_checklist.tsv	Report as a future validation need.
+RC08	validation	Conditioned-medium perturbation remains proposed validation.	planned_validation_not_completed	results/tables/manuscript_methods_reporting_checklist.tsv	Report as a future validation need.
+RC09	unperformed_modules	Mendelian randomization was not performed in the current analysis.	planned_validation_not_completed	results/tables/manuscript_methods_reporting_checklist.tsv	Keep causal-inference claims out of the manuscript.
+RC10	submission_statements	Data availability statement is drafted from public accessions and local outputs.	needs_manual_polish	docs/manuscript/15_msp_integrated_manuscript_draft.md	Add final repository link or code archive DOI when available.
+RC11	submission_statements	Author contributions, conflicts of interest, funding, and acknowledgements need author input.	needs_manual_polish	docs/manuscript/16_msp_submission_readiness_checklist.md	User must provide author and funding information.
+RC12	journal_format	Word count, reference style, graphical abstract dimensions, and supplementary naming remain journal-specific.	needs_manual_polish	docs/manuscript/16_msp_submission_readiness_checklist.md	Finalize after target journal is selected.
+RC13	methods_reporting	Methods reporting checklist rows available: 17.	ready_draft	results/tables/manuscript_methods_reporting_checklist.tsv	Use checklist during final Methods editing.
+RC14	reviewer_risk	Reviewer-risk register rows available: 9.	ready_draft	results/tables/manuscript_discussion_claim_risk_register.tsv	Use guardrails during response-letter preparation.

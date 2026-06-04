@@ -1,0 +1,7 @@
+check_id	release_gate	status	evidence	action_needed
+R01	scripts_and_tests_present	ready	categories=config,derived_table,figure,metadata,repository_doc,script,supplementary_workbook,test,workflow_doc	None if final tests pass.
+R02	raw_data_excluded	ready	forbidden_files=0	Remove forbidden files before upload if count is nonzero.
+R03	supplementary_workbook_present	ready	JOSR ST01-ST34 workbook expected.	Confirm workbook readability before archive DOI release.
+R04	repository_size	ready	total_bytes=65452426	If size exceeds repository limits, move large files to release assets or archive.
+R05	license_selection	manual_check	LICENSE_TO_BE_SELECTED.txt included.	Corresponding author should select final license.
+R06	data_availability_url	manual_check	DATA_AND_CODE_AVAILABILITY.md includes URL placeholder.	Update after GitHub URL is created.

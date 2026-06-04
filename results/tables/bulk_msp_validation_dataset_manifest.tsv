@@ -1,0 +1,10 @@
+dataset_id	tissue	matrix_status	platform_status	n_samples	n_genes_after_mapping	usable_for_scoring
+GSE114007	cartilage	supplement_matrix_found	supplement_normalized_counts	38	23710	True
+GSE143514	cartilage	supplement_matrix_found	supplement_mrna_counts	8	53744	True
+GSE169077	cartilage	series_matrix_found	soft_platform_found	11	13236	True
+GSE185064	meniscus	supplement_matrix_found	supplement_fpkm	8	50229	True
+GSE191157	meniscus	series_matrix_found	soft_platform_found	8	44824	True
+GSE55235	synovium	series_matrix_found	soft_platform_found	30	13236	True
+GSE55457	synovium	series_matrix_found	soft_platform_found	33	13236	True
+GSE98918	meniscus	series_matrix_found	soft_platform_found	24	34729	True
+GSE89408	synovium	count_matrix_found	gene_level_count_matrix	218	24891	True

@@ -1,0 +1,26 @@
+# Raw or restricted data
+data/
+raw/
+raw_large/
+*.h5ad
+*.h5
+*.fastq
+*.fq
+*.bam
+*.sam
+*.rds
+*.rda
+
+# Local runtime
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+logs/
+tmp/
+
+# Archives generated outside the repository
+*.zip
+*.7z
+*.rar

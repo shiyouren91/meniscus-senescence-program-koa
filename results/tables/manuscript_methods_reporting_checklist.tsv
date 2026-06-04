@@ -1,0 +1,18 @@
+item_id	reporting_item	status	manuscript_location	evidence_source	note
+RC01	Public dataset accession and storage inventory	completed	Methods: Data sources	metadata/datasets/dataset_manifest.tsv	Datasets and storage tiers are inventoried.
+RC02	GSE220243 single-cell QC and sample retention	completed	Methods: Single-cell preprocessing	results/tables/gse220243_meniscus_sample_qc_filter_retention.tsv	Cell-level QC and per-sample retention are available.
+RC03	Fibrochondrocyte compartment definition	completed	Methods: Fibrochondrocyte subsetting	results/tables/gse220243_fibrochondrocyte_compartment_summary.tsv	Draft computational annotations support subsetting.
+RC04	sample-aware cNMF MSP-like discovery	completed	Methods: cNMF MSP discovery	results/tables/gse220243_fibrochondrocyte_cnmf_balanced_discovery_config.tsv	Balanced discovery and cross-K interpretation were performed.
+RC05	HRA001986 processed h5ad projection	completed	Methods: HRA projection	metadata/datasets/hra001986_processed_h5ad_manifest.tsv	Author-processed h5ad data were used for context validation.
+RC06	bulk validation dataset manifest	completed	Methods: Bulk validation	results/tables/bulk_msp_validation_dataset_manifest.tsv	Nine bulk cohorts were scored where gene coverage allowed.
+RC07	random-effects meta-analysis and heterogeneity	completed	Methods: Bulk validation	results/tables/bulk_msp_meta_axis_summary.tsv	Heterogeneity is explicitly reported.
+RC08	bulk subtype construction and interpretation	completed	Methods: Bulk subtyping	results/tables/bulk_msp_subtyping_subtype_profiles.tsv	Subtype labels are relative molecular states.
+RC09	candidate ligand-receptor prioritization	completed	Methods: Mechanism prioritization	results/tables/msp_paracrine_lr_candidate_priority.tsv	Curated LR prioritization was performed.
+RC10	pre-NicheNet receiver target concordance	completed	Methods: Receiver target derivation	results/tables/msp_axis_target_concordance_for_nichenet.tsv	Target overlap is not ligand activity inference.
+RC11	formal CellChat/LIANA/NicheNet consensus	planned_validation	Methods: Validation roadmap	results/tables/msp_comm_tool_pair_edges.tsv	Inputs are prepared, but formal consensus is not used as completed causal evidence.
+RC12	synovial-fluid or tissue protein validation	planned_validation	Methods: Validation roadmap	results/tables/msp_lr_validation_assay_matrix.tsv	Protein validation is a proposed next layer.
+RC13	conditioned-medium perturbation assays	planned_validation	Methods: Validation roadmap	results/tables/msp_lr_validation_assay_matrix.tsv	Functional perturbation is proposed, not completed.
+RC14	Hotspot independent co-expression validation	not_performed_current_analysis	Reporting checklist	docs/methods/msp_definition.md	Mention only as not performed in the current analysis.
+RC15	RNA velocity directionality analysis	not_performed_current_analysis	Reporting checklist	docs/workflow/01_analysis_workflow.md	No spliced/unspliced velocity result is reported.
+RC16	Mendelian randomization causal inference	not_performed_current_analysis	Reporting checklist	docs/workflow/01_analysis_workflow.md	No MR result is reported in the current manuscript draft.
+RC17	candidate/not causal language guardrail	completed	Methods: Statistical caution	docs/manuscript/03_msp_mechanism_claim_guardrails.md	Mechanism axes remain candidate and not causal.

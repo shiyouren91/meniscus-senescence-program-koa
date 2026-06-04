@@ -1,0 +1,4 @@
+draft_annotation	n_cells	n_samples	OA	normal	fraction_of_subset
+fibrochondrocyte_core	52133	14	22789	29344	0.586739746995003
+outer_fibrous_like	22420	14	12855	9565	0.2523297168324855
+inflammatory_like	14299	13	41	14258	0.1609305361725116

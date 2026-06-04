@@ -1,0 +1,15 @@
+item_id	domain	item	status	action_needed	source_or_output
+JC01	journal_fit	Target journal set to Journal of Orthopaedic Translation.	prepared	Use JOT-specific cover letter and translational relevance framing.	docs/manuscript/19_jot_submission_package.md
+JC02	title_page	Title page with authors and affiliations prepared.	prepared	Confirm spelling, degrees, and affiliation numbering before submission.	docs/manuscript/20_jot_title_page_and_author_statements.md
+JC03	correspondence	Corresponding author email included.	prepared	Add phone number if the submission system requires it.	docs/manuscript/20_jot_title_page_and_author_statements.md
+JC04	abstract	Abstract plus translational potential statement kept within JOT limit.	prepared	Recount after final edits.	docs/manuscript/22_jot_anonymized_manuscript_draft.md
+JC05	keywords	Six keywords prepared.	prepared	Adjust if the submission system enforces MeSH-only terms.	docs/manuscript/22_jot_anonymized_manuscript_draft.md
+JC06	cover_letter	Cover letter drafted for JOT.	prepared	Corresponding author should review and sign.	docs/manuscript/21_jot_cover_letter_draft.md
+JC07	double_anonymized_review	An anonymized manuscript draft prepared.	prepared	Check uploaded files do not contain author metadata.	docs/manuscript/22_jot_anonymized_manuscript_draft.md
+JC08	funding	Funding statement inserted from author information.	prepared	Confirm grant name and number formatting.	docs/manuscript/20_jot_title_page_and_author_statements.md
+JC09	author_contribution	Author contribution statement inserted.	prepared	Convert to CRediT taxonomy only if requested.	docs/manuscript/20_jot_title_page_and_author_statements.md
+JC10	conflict_of_interest	COI placeholder prepared.	needs_user_input	Authors must confirm whether there are competing interests.	docs/manuscript/20_jot_title_page_and_author_statements.md
+JC11	ethics	Public-data ethical statement drafted.	needs_user_input	Confirm whether JOT requests explicit source-study ethics statements.	docs/manuscript/20_jot_title_page_and_author_statements.md
+JC12	data_code	Data/code availability drafted but repository deferred.	defer_until_final_submission	Insert code repository URL or DOI after final cleaning.	docs/manuscript/22_jot_anonymized_manuscript_draft.md
+JC13	figures	Figure legends available.	prepared	Final figure polishing remains required.	docs/manuscript/22_jot_anonymized_manuscript_draft.md
+JC14	claims	Candidate and not causal language preserved.	prepared	Keep this language in final title, abstract, cover letter, and graphical abstract.	results/tables/manuscript_discussion_claim_risk_register.tsv

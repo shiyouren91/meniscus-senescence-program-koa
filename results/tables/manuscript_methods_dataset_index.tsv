@@ -1,0 +1,12 @@
+dataset_id	tissue	data_type	n_samples	matrix_status	analysis_role	storage_location
+GSE220243	human meniscus	single-cell RNA-seq 10x matrix	14	raw 10x MTX loaded and filtered	primary single-cell discovery and cNMF MSP-like program analysis	G:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑扩展资料\raw_large\single_cell\GSE220243\extracted\GSM6797160_MenNorm1AVAS_matrix.mtx.gz
+HRA001986	human meniscus	author-processed h5ad single-cell reference	3	processed normalized h5ad objects	external HRA projection and cell-state context validation	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\data\raw\HRA001986\meniscal_chondrocyte.h5ad
+GSE114007	cartilage	supplement_normalized_counts	38	supplement_matrix_found	bulk cartilage projection validation	F:/.../data/raw
+GSE143514	cartilage	supplement_mrna_counts	8	supplement_matrix_found	bulk cartilage projection validation	F:/.../data/raw
+GSE169077	cartilage	soft_platform_found	11	series_matrix_found	bulk cartilage projection validation	F:/.../data/raw
+GSE185064	meniscus	supplement_fpkm	8	supplement_matrix_found	bulk meniscus validation	F:/.../data/raw
+GSE191157	meniscus	soft_platform_found	8	series_matrix_found	bulk meniscus validation	F:/.../data/raw
+GSE55235	synovium	soft_platform_found	30	series_matrix_found	bulk synovium projection validation	F:/.../data/raw
+GSE55457	synovium	soft_platform_found	33	series_matrix_found	bulk synovium projection validation	F:/.../data/raw
+GSE89408	synovium	gene_level_count_matrix	218	count_matrix_found	bulk synovium projection validation	G:/.../raw_large
+GSE98918	meniscus	soft_platform_found	24	series_matrix_found	bulk meniscus validation	F:/.../data/raw

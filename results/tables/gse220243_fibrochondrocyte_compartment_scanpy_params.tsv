@@ -1,0 +1,15 @@
+parameter	value
+raw_input_h5ad	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\data\processed\single_cell\GSE220243\filtered\gse220243_meniscus_qc_filtered_raw_counts.h5ad
+marker_input_h5ad	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\data\processed\single_cell\GSE220243\analysis\gse220243_meniscus_initial_marker_scored.h5ad
+included_draft_annotations	fibrochondrocyte_core,outer_fibrous_like,inflammatory_like
+n_cells	88852
+n_genes	38224
+n_top_genes	3000
+highly_variable_genes	3000
+target_sum	10000
+log1p	true
+n_pcs	50
+neighbors_n_pcs	40
+n_neighbors	15
+fibro_leiden_resolution	0.8
+random_seed	20260529

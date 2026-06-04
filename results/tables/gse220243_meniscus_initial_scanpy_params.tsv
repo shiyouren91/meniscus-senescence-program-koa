@@ -1,0 +1,15 @@
+parameter	value
+input_h5ad	F:\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\data\processed\single_cell\GSE220243\filtered\gse220243_meniscus_qc_filtered_raw_counts.h5ad
+n_cells	101042
+n_genes	38224
+n_top_genes	3000
+highly_variable_genes	3000
+hvg_flavor	seurat
+hvg_batch_key	sample_label
+target_sum	10000
+log1p	true
+n_pcs	50
+neighbors_n_pcs	40
+n_neighbors	15
+leiden_resolution	0.6
+random_seed	20260529

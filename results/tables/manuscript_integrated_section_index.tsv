@@ -1,0 +1,12 @@
+section_id	manuscript_section	source_file	assembly_status	evidence_guardrail	manuscript_role
+IM01	Title Page	docs/manuscript/13_msp_title_abstract_highlights.md	ready_draft	Working title uses candidate-axis caution.	submission_front_matter
+IM02	Abstract	results/tables/manuscript_abstract_component_index.tsv	ready_draft	Structured abstract avoids causal and clinical-deployment claims.	submission_front_matter
+IM03	Keywords	docs/manuscript/13_msp_title_abstract_highlights.md	ready_draft	Keywords emphasize method and biology, not clinical deployment.	indexing
+IM04	Introduction	docs/manuscript/14_msp_manuscript_skeleton.md	needs_manual_polish	Introduction states rationale without overclaiming prior causal evidence.	narrative_setup
+IM05	Results	docs/manuscript/07_msp_full_results_draft.md	ready_draft	Results retain candidate and heterogeneity language.	main_findings
+IM06	Discussion	docs/manuscript/11_msp_discussion_draft.md	ready_draft	Discussion explicitly states not causal and not a validated mechanism.	interpretation
+IM07	Methods	docs/manuscript/09_msp_full_methods_draft.md	ready_draft	Methods distinguish completed analysis from planned validation.	reproducibility
+IM08	Figure Legends	docs/manuscript/08_msp_unified_figure_legends.md	ready_draft	Legends preserve candidate-axis wording.	figure_support
+IM09	Supplementary Material	docs/manuscript/05_msp_manuscript_master_index.md	needs_manual_polish	Supplementary table naming still needs journal formatting.	supplementary_mapping
+IM10	Data and Code Availability	docs/manuscript/09_msp_full_methods_draft.md	needs_manual_polish	Local scripts are ready, but repository/DOI language remains manual.	submission_statement
+IM11	Ethics and Author Notes	docs/manuscript/16_msp_submission_readiness_checklist.md	needs_manual_polish	Author contributions, conflicts, funding, and ethics text require user input.	submission_statement

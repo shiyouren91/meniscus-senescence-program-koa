@@ -1,0 +1,12 @@
+{
+  "project_name": "meniscus_specific_senescence_program",
+  "primary_root": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑",
+  "extended_root": "G:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑扩展资料",
+  "raw_data_dir": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\data\\raw",
+  "large_raw_data_dir": "G:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑扩展资料\\raw_large",
+  "processed_data_dir": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\data\\processed",
+  "results_dir": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\results",
+  "logs_dir": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\logs",
+  "system_drive_policy": "Do not store raw data or large outputs on C:."
+}
+

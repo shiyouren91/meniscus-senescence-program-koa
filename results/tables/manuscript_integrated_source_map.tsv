@@ -1,0 +1,9 @@
+source_id	source_file	integrated_section	source_role	reuse_mode
+SM01	docs/manuscript/13_msp_title_abstract_highlights.md	Title Page; Abstract; Keywords	front matter and summary language	direct_reuse_with_minor_assembly
+SM02	results/tables/manuscript_abstract_component_index.tsv	Abstract	structured abstract components	direct_reuse
+SM03	docs/manuscript/07_msp_full_results_draft.md	Results	full Results narrative	demoted_headings
+SM04	docs/manuscript/11_msp_discussion_draft.md	Discussion	full Discussion narrative	demoted_headings
+SM05	docs/manuscript/09_msp_full_methods_draft.md	Methods	full Methods narrative	demoted_headings
+SM06	docs/manuscript/08_msp_unified_figure_legends.md	Figure Legends	figure legends	demoted_headings
+SM07	docs/manuscript/05_msp_manuscript_master_index.md	Supplementary Material	claim, figure, and supplementary table map	summarized
+SM08	results/tables/manuscript_discussion_claim_risk_register.tsv	Submission checklist; Ethics and Author Notes	reviewer-risk guardrails	summarized

@@ -1,0 +1,13 @@
+check_id	domain	status	owner	evidence	submit_gate
+F01	title_harmonization	ready	analyst	A meniscus-specific senescence program links fibrochondrocyte state disruption to candidate synovium-cartilage inflammatory remodeling in knee osteoarthritis	Use harmonized title throughout submission.
+F02	handoff_zip	ready	analyst	submission/jot/JOT_upload_handoff_package.zip	Use handoff folder or ZIP as upload source.
+F03	metadata_clean_docx	manual_user_check	submitter	metadata-clean DOCX files are in upload_handoff/01_manuscript_files.	Open DOCX properties and confirm no hidden identifiers before click Submit.
+F04	author_confirmation	manual_user_check	corresponding_author	confirmation items: 12	Corresponding author approves title page, COI, ethics, AI declaration, funding, and author contributions.
+F05	figure_visual_check	manual_user_check	submitter	figure rows: 6	Confirm figure text readability and accepted portal format.
+F06	supplementary_workbook	manual_user_check	submitter	ST01-ST28 workbook included.	Open workbook and confirm sheets/readability.
+F07	repository_url_or_doi	user_to_fill	user	Repository URL/DOI placeholder intentionally left for user.	User inserts repository URL or DOI before final click Submit.
+F08	data_code_availability	user_to_fill	user	upload_handoff/04_data_code_availability/Data_and_Code_Availability_URL_or_DOI.txt	Replace placeholder or paste final text into the portal field.
+F09	internal_checks	ready	submitter	99_internal_checks present for internal use.	Do not upload internal checks unless requested by the journal.
+F10	claim_guardrail	ready	all_authors	candidate / not causal language retained.	Do not change candidate axes into validated causal mechanisms.
+F11	license_choice	manual_user_check	corresponding_author	repository staging release checklist still has license deferred.	License choice can be finalized with repository URL/DOI by user.
+F12	repository_release_checklist	user_to_fill	user	license_selected; repository_url_or_doi	User resolves repository release gates outside this workflow.

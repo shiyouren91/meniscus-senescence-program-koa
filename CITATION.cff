@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this analysis package, please cite the associated manuscript."
+title: "Meniscus senescence program analysis in knee osteoarthritis"
+authors:
+  - family-names: "Ren"
+    given-names: "Shiyou"
+  - family-names: "Li"
+    given-names: "Dan"
+  - family-names: "Ding"
+    given-names: "Ya"
+  - family-names: "Cui"
+    given-names: "Xilong"
+  - family-names: "Yu"
+    given-names: "Haiyang"
+type: software
+version: "pre-submission-release"
+date-released: "2026-06-04"
+repository-code: "to be updated after upload"
+license: "NOASSERTION"

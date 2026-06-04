@@ -1,0 +1,17 @@
+k	n_iter	random_seed	input_mode	notes
+5	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+6	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+7	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+8	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+9	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+10	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+12	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+14	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+16	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+18	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+20	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+22	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+24	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+26	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+28	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.
+30	100	20260529	full_and_balanced_sensitivity	Initial broad K grid; narrow after stability/error review.

@@ -1,0 +1,10 @@
+anndata
+matplotlib
+numpy
+openpyxl
+pandas
+scanpy
+scikit-learn
+scipy
+seaborn
+statsmodels

@@ -1,0 +1,48 @@
+receptor	reference_name	top_state	top_state_mean_expression	detected_states	n_detected_states	context_support
+ACKR3	GSE220243_broad	inflammatory_like	1.2933690547943115	fibrochondrocyte_core;inflammatory_like;outer_fibrous_like	3	1.2800219393742842
+ACKR3	HRA001986_chondrocyte	Ch.3(PRG4)	0.7462174487141667	Ch.1(CHAD);Ch.3(PRG4);PCL.2	3	1.0074519907362207
+ACVR1B	GSE220243_broad	endothelial	0.06468488276004791	endothelial;inflammatory_like;mural_smooth_muscle	3	0.512678870646515
+ACVR1B	HRA001986_chondrocyte	Ch.4(CFD)	0.017401703586466883	Ch.4(CFD);PCL.1;PCL.2	3	0.46725202785614484
+ACVR2A	GSE220243_broad	immune_myeloid	0.072990283370018	endothelial;immune_myeloid;outer_fibrous_like	3	0.5204494080344169
+ACVR2A	HRA001986_chondrocyte	Ch.4(CFD)	0.05331895755027697	Ch.3(PRG4);Ch.4(CFD);PCL.1	3	0.5019460909422709
+ACVR2B	GSE220243_broad	mural_smooth_muscle	0.047815628349781036	endothelial;immune_myeloid;mural_smooth_muscle	3	0.4967076432746991
+ACVR2B	HRA001986_chondrocyte	PCL.1	0.016332391897837324	PCL.1;PCL.2	2	0.31620045303174493
+BMPR1A	GSE220243_broad	outer_fibrous_like	0.1472947746515274	fibrochondrocyte_core;mural_smooth_muscle;outer_fibrous_like	3	0.5874068013381942
+BMPR1A	HRA001986_chondrocyte	Ch.3(PRG4)	0.10441058068415097	Ch.2(FNDC1);Ch.3(PRG4);Ch.4(CFD)	3	0.549311781509816
+BMPR2	GSE220243_broad	endothelial	0.7498245239257812	endothelial;immune_myeloid;outer_fibrous_like	3	1.0095155108654346
+BMPR2	HRA001986_chondrocyte	Ch.2(FNDC1)	0.20656226956617738	Ch.2(FNDC1);Ch.3(PRG4);Ch.5(cycling)	3	0.637775216492657
+CCR2	GSE220243_broad	t_nk	0.03340752795338631	immune_myeloid;t_nk	2	0.3328616214906174
+CCR2	HRA001986_chondrocyte	Ch.5(cycling)	0.003240929278608871		0	0.0032356887869701896
+CD44	GSE220243_broad	immune_myeloid	1.5283141136169434	immune_myeloid;mural_smooth_muscle;t_nk	3	1.3775527223699169
+CD44	HRA001986_chondrocyte	Ch.5(cycling)	1.9659857189614467	Ch.2(FNDC1);Ch.5(cycling);PCL.1	3	1.5372094287889249
+CD74	GSE220243_broad	immune_myeloid	3.7049624919891357	endothelial;immune_myeloid;t_nk	3	1.998617801058518
+CD74	HRA001986_chondrocyte	Ch.5(cycling)	0.3100324716061763	Ch.4(CFD);Ch.5(cycling);PCL.1	3	0.7200519243914862
+CXCR1	GSE220243_broad	outer_fibrous_like	0.00011993127554887906		0	0.00011992408436841088
+CXCR2	GSE220243_broad	immune_myeloid	0.003409867873415351		0	0.0034040674559896182
+CXCR2	HRA001986_chondrocyte	Ch.1(CHAD)	0.0		0	0.0
+CXCR4	GSE220243_broad	t_nk	1.7313849925994873	endothelial;immune_myeloid;t_nk	3	1.4548088038484281
+CXCR4	HRA001986_chondrocyte	Ch.5(cycling)	0.016902741504042116	Ch.5(cycling)	1	0.16676147975393263
+FGFR1	GSE220243_broad	outer_fibrous_like	0.8325798511505127	fibrochondrocyte_core;inflammatory_like;outer_fibrous_like	3	1.0557247288091234
+FGFR1	HRA001986_chondrocyte	Ch.5(cycling)	0.8249312247315501	Ch.2(FNDC1);Ch.4(CFD);Ch.5(cycling)	3	1.0515423012457517
+FGFR2	GSE220243_broad	fibrochondrocyte_core	0.07431943714618683	fibrochondrocyte_core;inflammatory_like;outer_fibrous_like	3	0.5216873793742954
+FGFR2	HRA001986_chondrocyte	Ch.1(CHAD)	0.02535112768580886	Ch.1(CHAD);Ch.2(FNDC1);Ch.3(PRG4)	3	0.4750351175247704
+FLT1	GSE220243_broad	endothelial	1.0575666427612305	endothelial;fibrochondrocyte_core;inflammatory_like	3	1.1715240432079548
+FLT1	HRA001986_chondrocyte	Ch.3(PRG4)	0.027805814164641247	Ch.1(CHAD);Ch.3(PRG4);Ch.5(cycling)	3	0.47742625246273684
+IL11RA	GSE220243_broad	outer_fibrous_like	0.22307328879833221	fibrochondrocyte_core;inflammatory_like;outer_fibrous_like	3	0.6513667803374872
+IL11RA	HRA001986_chondrocyte	Ch.4(CFD)	0.25373818914292096	Ch.2(FNDC1);Ch.4(CFD);Ch.5(cycling)	3	0.6761296398252457
+IL6R	GSE220243_broad	immune_myeloid	0.3610278069972992	fibrochondrocyte_core;immune_myeloid;inflammatory_like	3	0.7582401547591427
+IL6R	HRA001986_chondrocyte	PCL.1	0.08665306460526255	Ch.5(cycling);PCL.1;PCL.2	3	0.5331023893977443
+IL6ST	GSE220243_broad	endothelial	1.3510531187057495	endothelial;inflammatory_like;outer_fibrous_like	3	1.3048633633927578
+IL6ST	HRA001986_chondrocyte	Ch.4(CFD)	0.536145628249045	Ch.2(FNDC1);Ch.3(PRG4);Ch.4(CFD)	3	0.8792764402892629
+ITGAV	GSE220243_broad	outer_fibrous_like	0.5261648893356323	fibrochondrocyte_core;mural_smooth_muscle;outer_fibrous_like	3	0.872757980324818
+ITGAV	HRA001986_chondrocyte	Ch.3(PRG4)	0.523640796573678	Ch.2(FNDC1);Ch.3(PRG4);Ch.5(cycling)	3	0.8711027316970654
+ITGB1	GSE220243_broad	mural_smooth_muscle	1.7908167839050293	endothelial;mural_smooth_muscle;outer_fibrous_like	3	1.476334307076982
+ITGB1	HRA001986_chondrocyte	Ch.2(FNDC1)	1.7797682852066157	Ch.2(FNDC1);Ch.5(cycling);PCL.2	3	1.4723675735835853
+ITGB3	GSE220243_broad	endothelial	0.04684830084443092	endothelial;mural_smooth_muscle;outer_fibrous_like	3	0.49578403203507865
+ITGB3	HRA001986_chondrocyte	PCL.2	0.009567787279448813		0	0.009522305876861582
+KDR	GSE220243_broad	endothelial	0.5717250108718872	endothelial;inflammatory_like	2	0.7521737492342607
+KDR	HRA001986_chondrocyte	Ch.5(cycling)	0.017908678683516095	Ch.5(cycling)	1	0.16775020750672864
+LIFR	GSE220243_broad	endothelial	0.5539697408676147	endothelial;fibrochondrocyte_core;inflammatory_like	3	0.8908127799847165
+LIFR	HRA001986_chondrocyte	Ch.3(PRG4)	0.09959042734009778	Ch.1(CHAD);Ch.3(PRG4);Ch.4(CFD)	3	0.5449377716873
+TNFRSF12A	GSE220243_broad	fibrochondrocyte_core	0.41162732243537903	fibrochondrocyte_core;mural_smooth_muscle;outer_fibrous_like	3	0.7947431682815457
+TNFRSF12A	HRA001986_chondrocyte	Ch.5(cycling)	1.4371581398052717	Ch.2(FNDC1);Ch.3(PRG4);Ch.5(cycling)	3	1.3408326637175683

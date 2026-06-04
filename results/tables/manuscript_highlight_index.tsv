@@ -1,0 +1,6 @@
+highlight_id	highlight_text	linked_claim	guardrail
+H01	MSP is framed as a program-level fibrochondrocyte state, not a hub-gene signature.	C01	Program-level candidate evidence only.
+H02	HRA001986 projection supports meniscus context without implying spatial or causal evidence.	C03	Projection is not spatial localization.
+H03	Bulk cohorts reveal tissue- and comparator-dependent MSP/remodeling heterogeneity.	C05	No universal OA-up MSP claim.
+H04	MIF_CD74, ANGPTL4_integrin, and VEGF are leading candidate paracrine axes.	C09	Candidate axes; not causal.
+H05	A validation roadmap separates consensus signaling, protein evidence, and perturbation assays.	C12	Roadmap is prospective, not completed validation.

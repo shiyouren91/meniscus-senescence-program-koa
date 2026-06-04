@@ -1,0 +1,66 @@
+reference_label	gene	present_in_hra_chondrocyte	matched_var_name	intended_use
+Ch.1_CHAD_matrix	CHAD	True	CHAD	map inner/chondrocyte-like fibrocartilage states
+Ch.1_CHAD_matrix	CILP	True	CILP	map inner/chondrocyte-like fibrocartilage states
+Ch.1_CHAD_matrix	COMP	True	COMP	map inner/chondrocyte-like fibrocartilage states
+Ch.1_CHAD_matrix	ACAN	True	ACAN	map inner/chondrocyte-like fibrocartilage states
+Ch.1_CHAD_matrix	COL2A1	True	COL2A1	map inner/chondrocyte-like fibrocartilage states
+Ch.1_CHAD_matrix	MATN3	True	MATN3	map inner/chondrocyte-like fibrocartilage states
+Ch.1_CHAD_matrix	SOX9	True	SOX9	map inner/chondrocyte-like fibrocartilage states
+Ch.2_FNDC1	FNDC1	True	FNDC1	map fibrous/outer-like fibrocartilage states
+Ch.2_FNDC1	COL14A1	True	COL14A1	map fibrous/outer-like fibrocartilage states
+Ch.2_FNDC1	COL1A1	True	COL1A1	map fibrous/outer-like fibrocartilage states
+Ch.2_FNDC1	COL1A2	True	COL1A2	map fibrous/outer-like fibrocartilage states
+Ch.2_FNDC1	COL3A1	True	COL3A1	map fibrous/outer-like fibrocartilage states
+Ch.2_FNDC1	LUM	True	LUM	map fibrous/outer-like fibrocartilage states
+Ch.2_FNDC1	DCN	True	DCN	map fibrous/outer-like fibrocartilage states
+Ch.3_PRG4	PRG4	True	PRG4	map PRG4/interface/progenitor-like states
+Ch.3_PRG4	ITGBL1	True	ITGBL1	map PRG4/interface/progenitor-like states
+Ch.3_PRG4	SPARCL1	True	SPARCL1	map PRG4/interface/progenitor-like states
+Ch.3_PRG4	CRTAC1	True	CRTAC1	map PRG4/interface/progenitor-like states
+Ch.3_PRG4	THY1	True	THY1	map PRG4/interface/progenitor-like states
+Ch.3_PRG4	GDF5	True	GDF5	map PRG4/interface/progenitor-like states
+Ch.4_CFD	CFD	True	CFD	map complement/inflammatory-like chondrocyte state
+Ch.4_CFD	C1R	True	C1R	map complement/inflammatory-like chondrocyte state
+Ch.4_CFD	C1S	True	C1S	map complement/inflammatory-like chondrocyte state
+Ch.4_CFD	SERPING1	True	SERPING1	map complement/inflammatory-like chondrocyte state
+Ch.4_CFD	GSN	True	GSN	map complement/inflammatory-like chondrocyte state
+Ch.4_CFD	SELENOP	True	SELENOP	map complement/inflammatory-like chondrocyte state
+PCL_progenitor_like	PRG4	True	PRG4	evaluate progenitor-like chondrocyte populations
+PCL_progenitor_like	GDF5	True	GDF5	evaluate progenitor-like chondrocyte populations
+PCL_progenitor_like	THY1	True	THY1	evaluate progenitor-like chondrocyte populations
+PCL_progenitor_like	ENG	True	ENG	evaluate progenitor-like chondrocyte populations
+PCL_progenitor_like	MCAM	True	MCAM	evaluate progenitor-like chondrocyte populations
+PCL_progenitor_like	NT5E	True	NT5E	evaluate progenitor-like chondrocyte populations
+PCL_progenitor_like	ITGA5	True	ITGA5	evaluate progenitor-like chondrocyte populations
+PCL_progenitor_like	ITGB1	True	ITGB1	evaluate progenitor-like chondrocyte populations
+cycling	MKI67	True	MKI67	identify cycling chondrocyte state
+cycling	TOP2A	True	TOP2A	identify cycling chondrocyte state
+cycling	UBE2C	True	UBE2C	identify cycling chondrocyte state
+cycling	CENPF	True	CENPF	identify cycling chondrocyte state
+cycling	TYMS	True	TYMS	identify cycling chondrocyte state
+cycling	HMGB2	True	HMGB2	identify cycling chondrocyte state
+senescence_arrest	CDKN1A	True	CDKN1A	project MSP/senescence features
+senescence_arrest	CDKN2A	True	CDKN2A	project MSP/senescence features
+senescence_arrest	CDKN2B	True	CDKN2B	project MSP/senescence features
+senescence_arrest	GADD45A	True	GADD45A	project MSP/senescence features
+senescence_arrest	GADD45B	True	GADD45B	project MSP/senescence features
+senescence_arrest	SERPINE1	True	SERPINE1	project MSP/senescence features
+senescence_arrest	GLB1	True	GLB1	project MSP/senescence features
+senescence_arrest	LMNB1	True	LMNB1	project MSP/senescence features
+sasp_ecm_remodeling	IL6	True	IL6	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	CXCL1	True	CXCL1	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	CXCL2	True	CXCL2	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	CXCL8	True	CXCL8	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	CCL2	True	CCL2	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	MMP1	True	MMP1	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	MMP3	True	MMP3	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	MMP9	True	MMP9	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	MMP13	True	MMP13	distinguish SASP/ECM remodeling from generic stress
+sasp_ecm_remodeling	TIMP1	True	TIMP1	distinguish SASP/ECM remodeling from generic stress
+communication_axes	MIF	True	MIF	evaluate cross-tissue signaling candidates
+communication_axes	SPP1	True	SPP1	evaluate cross-tissue signaling candidates
+communication_axes	CXCL12	True	CXCL12	evaluate cross-tissue signaling candidates
+communication_axes	VEGFA	True	VEGFA	evaluate cross-tissue signaling candidates
+communication_axes	CCN1	False		evaluate cross-tissue signaling candidates
+communication_axes	CCN2	False		evaluate cross-tissue signaling candidates
+communication_axes	ANGPTL4	True	ANGPTL4	evaluate cross-tissue signaling candidates

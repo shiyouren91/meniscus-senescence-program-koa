@@ -1,0 +1,9 @@
+check_id	release_gate	status	evidence	action_needed
+R01	scripts_staged	ready	script files: 62	Review scripts for local path assumptions before public release.
+R02	tests_staged	ready	test files: 55	Run tests after any repository-path cleanup.
+R03	derived_tables_staged	manual_check	derived tables: 156	Confirm derived tables contain no restricted identifiers and are acceptable for public release.
+R04	raw_data_excluded	ready	No data/raw, h5ad, fastq, bam, rds, or gz files included in manifest.	Keep raw data access instructions in README/Data Availability instead of redistributing raw data.
+R05	license_selected	deferred	LICENSE_TO_BE_SELECTED.txt generated.	Corresponding author should select a final license before public release.
+R06	repository_url_or_doi	deferred	URL or DOI to be inserted.	Create GitHub/Zenodo/institutional archive release and insert URL or DOI in manuscript.
+R07	author_provided_data_permission	manual_check	HRA001986 author-provided processed h5ad is not redistributed.	Confirm whether any author-provided processed object can be public or should remain access-by-request.
+R08	claim_language_guardrail	ready	README and availability draft retain candidate/not causal wording.	Preserve candidate/not-causal wording in final repository README and manuscript.

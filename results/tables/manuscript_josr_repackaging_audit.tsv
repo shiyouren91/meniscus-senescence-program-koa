@@ -1,0 +1,19 @@
+item	status	detail
+R1_title	updated	A program-level meniscus senescence analysis identifies fibrocartilage-matrix stratification signals and candidate paracrine axes in knee osteoarthritis: an integrative transcriptomic study
+R2_abstract	updated	Abstract
+R4_keywords	updated	Keywords
+R3_translational_potential	already_updated	removed JOT-specific abstract section
+R6_axis_display_consistency	updated	MIF_CD74:14; ANGPTL4_integrin:14
+R7_diagnostic_analysis_content	updated	Inserted Results, Methods, Discussion, Figure 6 legend, and ST29-ST34 diagnostic rows.
+R8_diagnostic_references	updated	Added ROC/AUC, bootstrap, cross-validation, STARD, and TRIPOD references 24-28.
+R9_author_voice_polish	updated	Applied 34 natural-language replacements.
+R11_ai_methods_note	updated	Added JOSR-compatible Methods note for AI-assisted language editing.
+R12_josr_main_structure	updated	Reordered main manuscript to Background, Methods, Results, Discussion, Conclusions, abbreviations, declarations, legends, references.
+R10_figure_legend_order	updated	Sorted figure legends and source index in numerical order.
+title_page_article_type	updated	Methodology
+R5_cover_letter_opening	updated	JOSR cover letter opening and policy statement
+supplementary_workbook	updated	34 ST sheets plus README/Manifest
+abstract_word_count	checked	249
+keyword_count	checked	10
+manual_repository_url_or_doi	manual_author_action	Repository URL/DOI placeholder intentionally retained.
+manual_author_declarations	manual_author_action	Corresponding author must confirm declaration wording before submission.

@@ -1,0 +1,13 @@
+program_id	axis	feature_column	loading	rank_within_program
+NMF1	ECM_matrix	feature_ECM_matrix	4.168279008165683	1
+NMF1	fibrotic_remodeling	feature_fibrotic_remodeling	4.13580774525156	2
+NMF1	MSP_paracrine	feature_MSP_paracrine	3.4169924485625622	3
+NMF1	MSP_inflammatory	feature_MSP_inflammatory	3.117678606635679	4
+NMF1	MSP_angiogenic	feature_MSP_angiogenic	2.92834306834882	5
+NMF1	generic_stress	feature_generic_stress	1.2715241493534277	6
+NMF2	MSP_inflammatory	feature_MSP_inflammatory	4.547265554492451	1
+NMF2	MSP_paracrine	feature_MSP_paracrine	4.463646315416676	2
+NMF2	MSP_angiogenic	feature_MSP_angiogenic	4.314057481295055	3
+NMF2	generic_stress	feature_generic_stress	4.0071419911029444	4
+NMF2	fibrotic_remodeling	feature_fibrotic_remodeling	1.5691762028234073	5
+NMF2	ECM_matrix	feature_ECM_matrix	1.4622432277375303	6

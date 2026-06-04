@@ -1,0 +1,6 @@
+metric	operator	value
+n_counts	>=	500
+n_counts	<=	75000
+n_genes_by_counts	>=	500
+n_genes_by_counts	<=	7500
+pct_counts_mt	<=	20

@@ -1,0 +1,3 @@
+subtype_id	subtype_label	n_samples	top_tissue	top_tissue_fraction	top_dataset	top_dataset_fraction	condition_summary	tissue_summary	dataset_summary	dominant_nmf_program_summary
+S1	ECM_fibrotic_high	48	synovium	0.4791666666666667	GSE89408	0.25	OA=44; aged=4	synovium=23; cartilage=14; meniscus=11	GSE89408=12; GSE114007=7; GSE55457=6; GSE169077=5; GSE55235=5	NMF2=35; NMF1=13
+S2	mixed_low	45	synovium	0.4222222222222222	GSE114007	0.28888888888888886	OA=45	synovium=19; cartilage=17; meniscus=9	GSE114007=13; GSE89408=10; GSE98918=8; GSE55235=5; GSE55457=4	NMF2=31; NMF1=14

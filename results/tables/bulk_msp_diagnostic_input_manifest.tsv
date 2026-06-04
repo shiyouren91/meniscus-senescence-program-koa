@@ -1,0 +1,10 @@
+analysis_set	dataset_id	tissue	role	positive_label	negative_label	n_positive	n_negative	n_samples	small_sample_flag	note
+main_oa_vs_normal	GSE114007	cartilage	primary	OA	normal	20	18	38	False	Primary OA-vs-normal analysis; GSE89408 is excluded because it is RA-rich.
+main_oa_vs_normal	GSE143514	cartilage	primary	OA	normal	5	3	8	True	Primary OA-vs-normal analysis; GSE89408 is excluded because it is RA-rich.
+main_oa_vs_normal	GSE169077	cartilage	primary	OA	normal	6	5	11	True	Primary OA-vs-normal analysis; GSE89408 is excluded because it is RA-rich.
+main_oa_vs_normal	GSE185064	meniscus	primary	OA	normal	4	4	8	True	Primary OA-vs-normal analysis; GSE89408 is excluded because it is RA-rich.
+main_oa_vs_normal	GSE55235	synovium	primary	OA	normal	10	10	20	False	Primary OA-vs-normal analysis; GSE89408 is excluded because it is RA-rich.
+main_oa_vs_normal	GSE55457	synovium	primary	OA	normal	10	10	20	False	Primary OA-vs-normal analysis; GSE89408 is excluded because it is RA-rich.
+sensitivity_gse89408_oa_vs_normal	GSE89408	synovium	sensitivity	OA	normal	22	28	50	False	OA-vs-normal subset from an RA-rich synovium cohort; not used as primary evidence.
+exploratory_gse98918_oa_vs_apm	GSE98918	meniscus	exploratory	OA	APM	12	12	24	False	Meniscus OA-vs-APM comparison, not a normal-control diagnostic contrast.
+exploratory_gse191157_aged_vs_young	GSE191157	meniscus	exploratory	aged	young	4	4	8	True	Meniscus aging contrast, not an OA diagnostic contrast.

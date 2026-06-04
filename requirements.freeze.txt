@@ -1,0 +1,1 @@
+# pip freeze unavailable: Command '['F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\env\\scverse\\Scripts\\python.exe', '-m', 'pip', 'freeze']' returned non-zero exit status 1.

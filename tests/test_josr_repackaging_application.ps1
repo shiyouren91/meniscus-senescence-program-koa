@@ -1,0 +1,254 @@
+$ErrorActionPreference = "Stop"
+
+$ProjectRoot = Split-Path -Parent $PSScriptRoot
+$PythonExe = Join-Path $ProjectRoot "env\scverse\Scripts\python.exe"
+$ScriptPath = Join-Path $ProjectRoot "scripts\analysis\58_josr_repackaging_application.py"
+
+$AuditOut = Join-Path $ProjectRoot "results\tables\manuscript_josr_repackaging_audit.tsv"
+$DocOut = Join-Path $ProjectRoot "docs\manuscript\41_josr_repackaging_application.md"
+$NotesOut = Join-Path $ProjectRoot "docs\workflow\46_josr_repackaging_application.md"
+
+foreach ($path in @($PythonExe, $ScriptPath)) {
+    if (-not (Test-Path -LiteralPath $path)) {
+        throw "Required input not found: $path"
+    }
+}
+
+foreach ($path in @($AuditOut, $DocOut, $NotesOut)) {
+    if (Test-Path -LiteralPath $path) {
+        Remove-Item -LiteralPath $path -Force
+    }
+}
+
+& $PythonExe $ScriptPath `
+    --project-root $ProjectRoot `
+    --audit-output $AuditOut `
+    --doc-output $DocOut `
+    --notes-output $NotesOut
+
+if ($LASTEXITCODE -ne 0) {
+    throw "JOSR repackaging script failed with exit code $LASTEXITCODE"
+}
+
+foreach ($path in @($AuditOut, $DocOut, $NotesOut)) {
+    if (-not (Test-Path -LiteralPath $path)) {
+        throw "Expected output not found: $path"
+    }
+}
+
+function Get-DocxText {
+    param([string]$Path)
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $zip = [System.IO.Compression.ZipFile]::OpenRead($Path)
+    try {
+        $entry = $zip.GetEntry("word/document.xml")
+        if ($null -eq $entry) {
+            throw "DOCX missing word/document.xml: $Path"
+        }
+        $stream = $entry.Open()
+        try {
+            $reader = New-Object System.IO.StreamReader($stream)
+            $xml = $reader.ReadToEnd()
+            return ([regex]::Replace($xml, "<[^>]+>", " ") -replace "\s+", " ").Trim()
+        }
+        finally {
+            $stream.Dispose()
+        }
+    }
+    finally {
+        $zip.Dispose()
+    }
+}
+
+$Manuscript = Join-Path $ProjectRoot "docs\manuscript\37_josr_repackaged_manuscript_draft.md"
+$Cover = Join-Path $ProjectRoot "docs\manuscript\38_josr_cover_letter_draft.md"
+$TitlePage = Join-Path $ProjectRoot "docs\manuscript\39_josr_title_page_and_author_statements.md"
+$Declarations = Join-Path $ProjectRoot "docs\manuscript\40_josr_declarations.md"
+$SubmissionDir = Join-Path $ProjectRoot "submission\josr"
+$HandoffDir = Join-Path $SubmissionDir "upload_handoff"
+$ZipPath = Join-Path $SubmissionDir "JOSR_upload_handoff_package.zip"
+$HandoffManifest = Join-Path $HandoffDir "JOSR_UPLOAD_HANDOFF_MANIFEST.tsv"
+
+foreach ($path in @($Manuscript, $Cover, $TitlePage, $Declarations, $ZipPath, $HandoffManifest)) {
+    if (-not (Test-Path -LiteralPath $path)) {
+        throw "Expected JOSR output not found: $path"
+    }
+}
+
+$manuscriptText = Get-Content -LiteralPath $Manuscript -Raw
+$coverText = Get-Content -LiteralPath $Cover -Raw
+$titleText = Get-Content -LiteralPath $TitlePage -Raw
+$declarationText = Get-Content -LiteralPath $Declarations -Raw
+
+$newTitle = "A program-level meniscus senescence analysis identifies fibrocartilage-matrix stratification signals and candidate paracrine axes in knee osteoarthritis: an integrative transcriptomic study"
+$previousJosrTitle = "A program-level meniscus senescence framework prioritizes candidate paracrine target axes in knee osteoarthritis: an integrative single-cell and bulk transcriptomic analysis"
+$previousJosrTitleShort = "A program-level meniscus senescence framework prioritizes candidate paracrine target axes in knee osteoarthritis: an integrative transcriptomic analysis"
+$previousJosrTitleDiagnostic = "A program-level meniscus senescence framework identifies fibrocartilage-matrix stratification signals and candidate paracrine axes in knee osteoarthritis: an integrative transcriptomic analysis"
+$oldTitle = "A meniscus-specific senescence program links fibrochondrocyte state disruption to candidate synovium-cartilage inflammatory remodeling in knee osteoarthritis"
+
+foreach ($needle in @(
+    $newTitle,
+    "**Background:**",
+    "**Methods:**",
+    "**Results:**",
+    "**Conclusions:**",
+    "MIF-CD74, ANGPTL4-integrin, and VEGF",
+    "MIF-CD74 (axis ID MIF_CD74)",
+    "ANGPTL4-integrin (axis ID ANGPTL4_integrin)",
+    "pooled standardized mean difference 0.80",
+    "I2 = 30%",
+    "false discovery rate 3.2e-4",
+    "candidate OA-vs-normal stratification value",
+    "pooled directional area under the receiver operating characteristic curve 0.806",
+    "grouped cross-validation area under the curve 0.817",
+    "AUC was used as a threshold-independent discrimination metric [24]",
+    "stratified bootstrap 95% confidence intervals with 2000 resamples [25]",
+    "reduce optimistic error estimation from non-independent validation splits [26]",
+    "Grouped cross-validation AUC is reported as the mean across folds with the sample standard deviation across folds.",
+    "diagnostic-accuracy and prediction-model reporting guidance [27,28]",
+    "Fourth, the diagnostic discrimination analysis is based on public bulk cohorts, several of them small",
+    "Finally, several validation layers remain outstanding",
+    "Hotspot co-expression validation, RNA velocity, and Mendelian randomization",
+    "Figure 6",
+    "The main result is a ranked set of biologically plausible hypotheses",
+    "The most defensible interpretation is that MIF-CD74, ANGPTL4-integrin, and VEGF are leading hypotheses",
+    "I2 approximately 82-85%",
+    "Paracrine signaling",
+    "Diagnostic biomarker",
+    "Therapeutic target prioritization"
+)) {
+    if ($manuscriptText -notmatch [regex]::Escape($needle)) {
+        throw "JOSR manuscript missing expected text: $needle"
+    }
+}
+
+foreach ($needle in @(
+    "24. Hanley JA, McNeil BJ. The meaning and use of the area under a receiver operating characteristic",
+    "25. Efron B. Bootstrap methods: another look at the jackknife",
+    "26. Varma S, Simon R. Bias in error estimation when using cross-validation for model selection",
+    "27. Bossuyt PM, Reitsma JB, Bruns DE",
+    "28. Collins GS, Reitsma JB, Altman DG, Moons KG"
+)) {
+    if ($manuscriptText -notmatch [regex]::Escape($needle)) {
+        throw "JOSR manuscript missing diagnostic method reference: $needle"
+    }
+}
+
+foreach ($needle in @(
+    $oldTitle,
+    $previousJosrTitle,
+    $previousJosrTitleShort,
+    $previousJosrTitleDiagnostic,
+    "The Translational Potential of this Article",
+    "Journal of Orthopaedic Translation",
+    "Original Article"
+)) {
+    if ($manuscriptText -cmatch [regex]::Escape($needle)) {
+        throw "JOSR manuscript still contains stale JOT text: $needle"
+    }
+}
+
+$manuscriptNoAxisIds = $manuscriptText `
+    -replace "\(axis ID MIF_CD74\)", "" `
+    -replace "\(axis ID ANGPTL4_integrin\)", ""
+foreach ($staleAxis in @("MIF_CD74", "ANGPTL4_integrin")) {
+    if ($manuscriptNoAxisIds -cmatch [regex]::Escape($staleAxis)) {
+        throw "JOSR manuscript contains inconsistent underscore axis display outside first axis-ID definition: $staleAxis"
+    }
+}
+
+$abstractMatch = [regex]::Match($manuscriptText, "(?s)## Abstract\s*(.*?)\s*## Keywords")
+if (-not $abstractMatch.Success) {
+    throw "JOSR manuscript missing abstract block"
+}
+$abstract = $abstractMatch.Groups[1].Value
+if ($abstract -match "\[\d") {
+    throw "JOSR abstract contains reference markers"
+}
+$wordCount = ([regex]::Matches(($abstract -replace "\*\*|:|\(|\)|,|;", " "), "[A-Za-z0-9][A-Za-z0-9\-]*")).Count
+if ($wordCount -gt 350) {
+    throw "JOSR abstract exceeds 350 words: $wordCount"
+}
+
+$keywordMatch = [regex]::Match($manuscriptText, "\*\*Keywords:\*\*\s*(.+)")
+if (-not $keywordMatch.Success) {
+    throw "JOSR keywords missing"
+}
+$keywordCount = @($keywordMatch.Groups[1].Value -split ";" | Where-Object { $_.Trim().Length -gt 0 }).Count
+if ($keywordCount -lt 3 -or $keywordCount -gt 10) {
+    throw "JOSR keyword count outside 3-10: $keywordCount"
+}
+
+foreach ($needle in @(
+    "Dear Editors of the Journal of Orthopaedic Surgery and Research",
+    "for consideration as a Methodology article",
+    "The authors declare that they have no competing interests",
+    "the paracrine axes are hypotheses for validation, not established mechanisms or clinical targets"
+)) {
+    if ($coverText -notmatch [regex]::Escape($needle)) {
+        throw "JOSR cover letter missing expected text: $needle"
+    }
+}
+if ($coverText -cmatch "Journal of Orthopaedic Translation|Translational Potential") {
+    throw "JOSR cover letter still contains JOT-specific language"
+}
+
+foreach ($needle in @($newTitle, "## Article Type", "Methodology")) {
+    if ($titleText -notmatch [regex]::Escape($needle)) {
+        throw "JOSR title page missing expected text: $needle"
+    }
+}
+
+foreach ($needle in @("Availability of data and materials", "Competing interests", "Funding", "Authors' contributions")) {
+    if ($declarationText -notmatch [regex]::Escape($needle)) {
+        throw "JOSR declarations missing expected section: $needle"
+    }
+}
+foreach ($textBlock in @($titleText, $declarationText)) {
+    foreach ($staleNote in @("[Author confirmation required before submission.]", "[Revise according to final journal policy and actual tool use before submission.]", "[to be added if required by the submission system]")) {
+        if ($textBlock -cmatch [regex]::Escape($staleNote)) {
+            throw "JOSR author-facing file still contains internal note: $staleNote"
+        }
+    }
+}
+
+foreach ($file in @(
+    "JOSR_Title_Page_and_Author_Statements.docx",
+    "JOSR_Anonymized_Manuscript.docx",
+    "JOSR_Cover_Letter.docx",
+    "JOSR_Declarations.docx",
+    "JOSR_Supplementary_Tables_ST01_ST34.xlsx",
+    "FINAL_SUBMITTER_CHECKLIST.md"
+)) {
+    if (-not (Test-Path -LiteralPath (Join-Path $SubmissionDir $file))) {
+        throw "JOSR submission file missing: $file"
+    }
+}
+
+$manuscriptDocxText = Get-DocxText -Path (Join-Path $SubmissionDir "JOSR_Anonymized_Manuscript.docx")
+$coverDocxText = Get-DocxText -Path (Join-Path $SubmissionDir "JOSR_Cover_Letter.docx")
+if ($manuscriptDocxText -notmatch [regex]::Escape($newTitle)) {
+    throw "JOSR manuscript DOCX missing new title"
+}
+if ($coverDocxText -notmatch "Journal of Orthopaedic Surgery and Research") {
+    throw "JOSR cover letter DOCX missing journal name"
+}
+
+$manifestRows = @(Import-Csv -LiteralPath $HandoffManifest -Delimiter "`t")
+if ($manifestRows.Count -lt 12) {
+    throw "Expected at least 12 JOSR handoff manifest rows, found $($manifestRows.Count)"
+}
+
+$auditRows = @(Import-Csv -LiteralPath $AuditOut -Delimiter "`t")
+if ($auditRows.Count -lt 8) {
+    throw "Expected at least 8 JOSR audit rows, found $($auditRows.Count)"
+}
+$badRows = @($auditRows | Where-Object { $_.status -eq "not_found" })
+if ($badRows.Count -gt 0) {
+    throw "JOSR audit contains not_found rows: $($badRows.Count)"
+}
+
+Write-Output "JOSR_ABSTRACT_WORDS $wordCount"
+Write-Output "JOSR_KEYWORDS $keywordCount"
+Write-Output "JOSR_HANDOFF_ROWS $($manifestRows.Count)"
+Write-Output "JOSR_AUDIT_ROWS $($auditRows.Count)"

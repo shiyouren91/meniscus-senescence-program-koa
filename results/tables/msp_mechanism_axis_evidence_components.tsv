@@ -1,0 +1,81 @@
+axis_id	component	value	source_table	interpretation
+MIF_CD74	phase_score	phase_1_frontline	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+MIF_CD74	lr_context_score	1.1306906089520332	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+MIF_CD74	target_concordance_score	60.23634285937667	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+MIF_CD74	liana_ready_edges	2	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+MIF_CD74	wetlab_priority	high	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+ANGPTL4_integrin	phase_score	phase_1_frontline	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+ANGPTL4_integrin	lr_context_score	0.7779525436986666	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+ANGPTL4_integrin	target_concordance_score	60.23634285937667	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+ANGPTL4_integrin	liana_ready_edges	4	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+ANGPTL4_integrin	wetlab_priority	high	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+VEGF	phase_score	phase_1_frontline	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+VEGF	lr_context_score	0.6486714689300044	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+VEGF	target_concordance_score	60.23634285937667	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+VEGF	liana_ready_edges	4	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+VEGF	wetlab_priority	high	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+MIF_chemokine_receptors	phase_score	phase_2_mechanistic	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+MIF_chemokine_receptors	lr_context_score	0.7995011701375385	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+MIF_chemokine_receptors	target_concordance_score	60.23634285937667	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+MIF_chemokine_receptors	liana_ready_edges	1	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+MIF_chemokine_receptors	wetlab_priority	medium_high	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+FGF_FGFR	phase_score	phase_2_mechanistic	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+FGF_FGFR	lr_context_score	0.422921674135868	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+FGF_FGFR	target_concordance_score	56.15796111034567	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+FGF_FGFR	liana_ready_edges	2	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+FGF_FGFR	wetlab_priority	medium_high	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+BMP2_BMPR	phase_score	phase_2_mechanistic	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+BMP2_BMPR	lr_context_score	0.2159297688036064	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+BMP2_BMPR	target_concordance_score	56.15796111034567	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+BMP2_BMPR	liana_ready_edges	3	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+BMP2_BMPR	wetlab_priority	medium_high	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+INHBA_activin	phase_score	phase_2_mechanistic	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+INHBA_activin	lr_context_score	0.0767728525459863	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+INHBA_activin	target_concordance_score	56.15796111034567	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+INHBA_activin	liana_ready_edges	0	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+INHBA_activin	wetlab_priority	medium_high	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+SPP1_matrix_immune	phase_score	phase_3_secondary	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+SPP1_matrix_immune	lr_context_score	0.2203465403942976	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+SPP1_matrix_immune	target_concordance_score	2.5582314343952848	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+SPP1_matrix_immune	liana_ready_edges	3	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+SPP1_matrix_immune	wetlab_priority	medium	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+IL6_gp130	phase_score	phase_3_secondary	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+IL6_gp130	lr_context_score	0.1935856865749483	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+IL6_gp130	target_concordance_score	2.5582314343952848	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+IL6_gp130	liana_ready_edges	3	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+IL6_gp130	wetlab_priority	medium	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+IL11_gp130	phase_score	phase_3_secondary	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+IL11_gp130	lr_context_score	0.1191520178104184	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+IL11_gp130	target_concordance_score	2.5582314343952848	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+IL11_gp130	liana_ready_edges	2	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+IL11_gp130	wetlab_priority	medium	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+matrix_integrin	phase_score	reserve_exploratory	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+matrix_integrin	lr_context_score	0.5195916370555981	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+matrix_integrin	target_concordance_score	62.65760275425007	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+matrix_integrin	liana_ready_edges	5	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+matrix_integrin	wetlab_priority	low_exploratory	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+TWEAK_FN14	phase_score	reserve_exploratory	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+TWEAK_FN14	lr_context_score	0.3420785906450231	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+TWEAK_FN14	target_concordance_score	62.65760275425007	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+TWEAK_FN14	liana_ready_edges	2	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+TWEAK_FN14	wetlab_priority	low_exploratory	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+LIF_gp130	phase_score	phase_3_secondary	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+LIF_gp130	lr_context_score	0.0807567458677127	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+LIF_gp130	target_concordance_score	2.5582314343952848	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+LIF_gp130	liana_ready_edges	0	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+LIF_gp130	wetlab_priority	medium	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+CXCL12_CXCR4_ACKR3	phase_score	reserve_exploratory	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+CXCL12_CXCR4_ACKR3	lr_context_score	0.6423847627559435	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+CXCL12_CXCR4_ACKR3	target_concordance_score	-0.0	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+CXCL12_CXCR4_ACKR3	liana_ready_edges	3	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+CXCL12_CXCR4_ACKR3	wetlab_priority	low_exploratory	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+CCL2_chemokine	phase_score	reserve_exploratory	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+CCL2_chemokine	lr_context_score	0.0474902081357752	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+CCL2_chemokine	target_concordance_score	-0.0	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+CCL2_chemokine	liana_ready_edges	0	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+CCL2_chemokine	wetlab_priority	low_exploratory	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.
+CXCL8_chemokine	phase_score	reserve_exploratory	msp_lr_validation_axis_plan.tsv	Axis validation phase.
+CXCL8_chemokine	lr_context_score	0.0124205882383682	msp_comm_tool_pair_edges.tsv	Best single-cell LR expression-context score.
+CXCL8_chemokine	target_concordance_score	-0.0	msp_axis_target_concordance_for_nichenet.tsv	Best pre-NicheNet target-overlap score.
+CXCL8_chemokine	liana_ready_edges	0	msp_comm_tool_pair_edges.tsv	Number of LIANA-ready candidate edges.
+CXCL8_chemokine	wetlab_priority	low_exploratory	msp_lr_validation_axis_plan.tsv	Experiment prioritization tier.

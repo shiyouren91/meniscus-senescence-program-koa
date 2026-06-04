@@ -1,0 +1,12 @@
+set_name	category	primary_use	source_url	notes
+SenMayo	generic_senescence	benchmark_against_MSP	https://www.nature.com/articles/s43587-022-00193-4	Use as a generic senescence comparator; MSP should capture additional meniscus ECM/fibrocartilage signal.
+Fridman_senescence	generic_senescence	benchmark_against_MSP	https://pubmed.ncbi.nlm.nih.gov/19793874/	Classic senescence signature; use only as comparator, not as MSP definition.
+CellAge	generic_senescence	benchmark_against_MSP	https://genomics.senescence.info/cells/	Cellular senescence gene database.
+CSGene	generic_senescence	benchmark_against_MSP	http://csgene.bioinfo-minzhao.org/	Cellular senescence gene database; verify availability at download time.
+SASP_Atlas	SASP	benchmark_and_annotation	https://www.saspatlas.com/	SASP comparator; avoid assuming fibroblast SASP equals fibrochondrocyte SASP.
+GO_CELLULAR_SENESCENCE	senescence_enrichment	module_annotation	https://www.gsea-msigdb.org/gsea/msigdb/	Use MSigDB gene sets through msigdbr.
+GO_EXTRACELLULAR_MATRIX_ORGANIZATION	ECM_enrichment	module_annotation	https://www.gsea-msigdb.org/gsea/msigdb/	Core ECM remodeling axis.
+HALLMARK_INFLAMMATORY_RESPONSE	inflammation_enrichment	module_annotation	https://www.gsea-msigdb.org/gsea/msigdb/	Inflammatory response control score.
+HALLMARK_ANGIOGENESIS	angiogenesis_enrichment	module_annotation	https://www.gsea-msigdb.org/gsea/msigdb/	Outer-zone and degenerative vascular remodeling control score.
+Fibrocartilage_fate_markers	meniscus_specific	module_annotation	literature_curated	Seed markers include COL1A1, COL1A2, COL2A1, COL3A1, ACAN, SOX9, PRG4, COMP, POSTN, THY1, GDF5; finalize after marker review.
+

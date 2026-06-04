@@ -1,0 +1,379 @@
+sample_id	sample_title	source_name	series_title	platform_id	raw_characteristics	age	sex	bmi	disease_state	dataset_id	tissue	condition	contrast_group
+Normal_Cart_10_8	Normal_Cart_10_8		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+Normal_Cart_2_2	Normal_Cart_2_2		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+Normal_Cart_3_3	Normal_Cart_3_3		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+Normal_Cart_4_4	Normal_Cart_4_4		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+Normal_Cart_5_5	Normal_Cart_5_5		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+Normal_Cart_6_6	Normal_Cart_6_6		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+Normal_Cart_7_3	Normal_Cart_7_3		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+Normal_Cart_9_7	Normal_Cart_9_7		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_01	normal_01		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_02	normal_02		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_03	normal_03		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_04	normal_04		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_05	normal_05		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_06	normal_06		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_07	normal_07		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_08	normal_08		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_09	normal_09		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+normal_10	normal_10		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: normal				normal	GSE114007	cartilage	normal	normal
+OA_Cart_1_7	OA_Cart_1_7		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_10_9	OA_Cart_10_9		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_2_8	OA_Cart_2_8		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_3_9	OA_Cart_3_9		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_4_10	OA_Cart_4_10		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_5_5	OA_Cart_5_5		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_6_1	OA_Cart_6_1		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_7_2	OA_Cart_7_2		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_8_5	OA_Cart_8_5		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_Cart_9_6	OA_Cart_9_6		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_01	OA_01		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_02	OA_02		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_03	OA_03		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_04	OA_04		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_05	OA_05		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_06	OA_06		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_07	OA_07		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_08	OA_08		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_09	OA_09		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+OA_10	OA_10		GSE114007 normalized cartilage counts	supplement_normalized_counts	condition: OA				OA	GSE114007	cartilage	OA	OA
+Normal_1B_count	Normal_1B_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: normal				normal	GSE143514	cartilage	normal	normal
+Normal_3B_count	Normal_3B_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: normal				normal	GSE143514	cartilage	normal	normal
+Normal_4A_count	Normal_4A_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: normal				normal	GSE143514	cartilage	normal	normal
+Osteoarthritis_1B_count	Osteoarthritis_1B_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: OA				OA	GSE143514	cartilage	OA	OA
+Osteoarthritis_2B_count	Osteoarthritis_2B_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: OA				OA	GSE143514	cartilage	OA	OA
+Osteoarthritis_3B_count	Osteoarthritis_3B_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: OA				OA	GSE143514	cartilage	OA	OA
+Osteoarthritis_5B_count	Osteoarthritis_5B_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: OA				OA	GSE143514	cartilage	OA	OA
+Osteoarthritis_8A_count	Osteoarthritis_8A_count		GSE143514 mRNA raw count matrix	supplement_mrna_counts	condition: OA				OA	GSE143514	cartilage	OA	OA
+GSM5176138	N2	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: NORMAL CARTILAGE				NORMAL CARTILAGE	GSE169077	cartilage	normal	normal
+GSM5176139	N4	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: NORMAL CARTILAGE				NORMAL CARTILAGE	GSE169077	cartilage	normal	normal
+GSM5176140	N6	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: NORMAL CARTILAGE				NORMAL CARTILAGE	GSE169077	cartilage	normal	normal
+GSM5176141	N7	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: NORMAL CARTILAGE				NORMAL CARTILAGE	GSE169077	cartilage	normal	normal
+GSM5176142	N8	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: NORMAL CARTILAGE				NORMAL CARTILAGE	GSE169077	cartilage	normal	normal
+GSM5176143	OA2	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: LATE STAGE OA CARTILAGE				LATE STAGE OA CARTILAGE	GSE169077	cartilage	OA	OA
+GSM5176144	OA3	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: LATE STAGE OA CARTILAGE				LATE STAGE OA CARTILAGE	GSE169077	cartilage	OA	OA
+GSM5176145	OA8	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: LATE STAGE OA CARTILAGE				LATE STAGE OA CARTILAGE	GSE169077	cartilage	OA	OA
+GSM5176146	OA9	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: LATE STAGE OA CARTILAGE				LATE STAGE OA CARTILAGE	GSE169077	cartilage	OA	OA
+GSM5176147	OA10	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: LATE STAGE OA CARTILAGE				LATE STAGE OA CARTILAGE	GSE169077	cartilage	OA	OA
+GSM5176148	OA11	KNEE CARTILAGE	Dysregulated gene expression in human osteoarthritis cartilage	GPL96	disease state: LATE STAGE OA CARTILAGE				LATE STAGE OA CARTILAGE	GSE169077	cartilage	OA	OA
+NA1	NA1		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: normal				normal	GSE185064	meniscus	normal	normal
+NA2	NA2		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: normal				normal	GSE185064	meniscus	normal	normal
+NA3	NA3		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: normal				normal	GSE185064	meniscus	normal	normal
+NA4	NA4		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: normal				normal	GSE185064	meniscus	normal	normal
+OA1	OA1		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: OA				OA	GSE185064	meniscus	OA	OA
+OA2	OA2		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: OA				OA	GSE185064	meniscus	OA	OA
+OA3	OA3		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: OA				OA	GSE185064	meniscus	OA	OA
+OA4	OA4		GSE185064 meniscus FPKM matrix	supplement_fpkm	condition: OA				OA	GSE185064	meniscus	OA	OA
+GSM5740181	Aging-1	Meniscus_aged	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: aged	aged				GSE191157	meniscus	aged	aged
+GSM5740182	Aging-3	Meniscus_aged	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: aged	aged				GSE191157	meniscus	aged	aged
+GSM5740183	Aging-4	Meniscus_aged	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: aged	aged				GSE191157	meniscus	aged	aged
+GSM5740184	Aging-5	Meniscus_aged	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: aged	aged				GSE191157	meniscus	aged	aged
+GSM5740185	Young-1	Meniscus_young	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: young	young				GSE191157	meniscus	young	young
+GSM5740186	Young-3	Meniscus_young	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: young	young				GSE191157	meniscus	young	young
+GSM5740187	Young-4	Meniscus_young	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: young	young				GSE191157	meniscus	young	young
+GSM5740188	Young-5	Meniscus_young	Integrated Analysis of lncRNA and mRNA Expression Profiles Indicates Age-related Changes in Meniscus	GPL26963	tissue: Meniscus tissue; age: young	young				GSE191157	meniscus	young	young
+GSM1332201	Synovial tisssue from healthy joint 1  (ND_1)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332202	Synovial tisssue from healthy joint 2  (ND_2)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332203	Synovial tisssue from healthy joint 3  (ND_3)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332204	Synovial tisssue from healthy joint 4  (ND_4)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332205	Synovial tisssue from healthy joint 5  (ND_5)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332206	Synovial tisssue from healthy joint 6  (ND_6)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332207	Synovial tisssue from healthy joint 7  (ND_7)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332208	Synovial tisssue from healthy joint 8  (ND_8)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332209	Synovial tisssue from healthy joint 9  (ND_9)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332210	Synovial tisssue from healthy joint 10  (ND_10)	synovial tissue from healthy joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: healthy control; tissue: synovial tissue isolated from joint				healthy control	GSE55235	synovium	normal	normal
+GSM1332211	Synovial tissue from osteoarthritic joint 1  (OA_1)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: osteoarthritis; tissue: synovial tissue isolated from joint				osteoarthritis	GSE55235	synovium	OA	OA
+GSM1332212	Synovial tissue from osteoarthritic joint 2  (OA_2)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332213	Synovial tissue from osteoarthritic joint 3  (OA_3)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332214	Synovial tissue from osteoarthritic joint 4  (OA_4)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332215	Synovial tissue from osteoarthritic joint 5  (OA_5)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332216	Synovial tissue from osteoarthritic joint 6  (OA_6)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332217	Synovial tissue from osteoarthritic joint 7  (OA_7)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332218	Synovial tissue from osteoarthritic joint 8  (OA_8)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332219	Synovial tissue from osteoarthritic joint 9  (OA_9)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332220	Synovial tissue from osteoarthritic joint 10  (OA_10)	synovial tissue from osteoarthritic joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: synovial tissue isolated from osteoarthritic joint; tissue: synovial tissue isolated from joint				synovial tissue isolated from osteoarthritic joint	GSE55235	synovium	OA	OA
+GSM1332221	Synovial tissue from rheumatoid arthritis joint 1  (RA_1)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332222	Synovial tissue from rheumatoid arthritis joint 2  (RA_2)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332223	Synovial tissue from rheumatoid arthritis joint 3  (RA_3)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332224	Synovial tissue from rheumatoid arthritis joint 4  (RA_4)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332225	Synovial tissue from rheumatoid arthritis joint 5  (RA_5)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332226	Synovial tissue from rheumatoid arthritis joint 6  (RA_6)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332227	Synovial tissue from rheumatoid arthritis joint 7  (RA_7)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332228	Synovial tissue from rheumatoid arthritis joint 8  (RA_8)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332229	Synovial tissue from rheumatoid arthritis joint 9  (RA_9)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1332230	Synovial tissue from rheumatoid arthritis joint 10  (RA_10)	synovial tissue from rheumatoid arthritis joint	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation	GPL96	disease state: rheumatoid arthritis; tissue: synovial tissue isolated from joint				rheumatoid arthritis	GSE55235	synovium	RA	RA
+GSM1337304	Normal, synovial membrane patient EB_125 (U133A)	synovial membrane patient EB_125 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 61; clinical status: normal control	61	male		normal control	GSE55457	synovium	normal	normal
+GSM1337305	Normal, synovial membrane patient EB_184 (U133A)	synovial membrane patient EB_184 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 64; clinical status: normal control	64	male		normal control	GSE55457	synovium	normal	normal
+GSM1337306	Normal, synovial membrane patient EB_188 (U133A)	synovial membrane patient EB_188 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 78; clinical status: normal control	78	female		normal control	GSE55457	synovium	normal	normal
+GSM1337307	Normal, synovial membrane patient EB_228 (U133A)	synovial membrane patient EB_228 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 65; clinical status: normal control	65	male		normal control	GSE55457	synovium	normal	normal
+GSM1337308	Normal, synovial membrane patient J_19 (U133A)	synovial membrane patient J_19 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 53; clinical status: normal control	53	male		normal control	GSE55457	synovium	normal	normal
+GSM1337309	Normal, synovial membrane patient NST_1 (U133A)	synovial membrane patient NST_1 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 68; clinical status: normal control	68	male		normal control	GSE55457	synovium	normal	normal
+GSM1337310	Normal, synovial membrane patient J_2 (U133A)	synovial membrane patient J_2 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 29; clinical status: normal control	29	female		normal control	GSE55457	synovium	normal	normal
+GSM1337311	Normal, synovial membrane patient J_6 (U133A)	synovial membrane patient J_6 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 17; clinical status: normal control	17	male		normal control	GSE55457	synovium	normal	normal
+GSM1337312	Normal, synovial membrane patient J_7 (U133A)	synovial membrane patient J_7 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 39; clinical status: normal control	39	male		normal control	GSE55457	synovium	normal	normal
+GSM1337313	Normal, synovial membrane patient J_12 (U133A)	synovial membrane patient J_12 (normal controls)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 36; clinical status: normal control	36	male		normal control	GSE55457	synovium	normal	normal
+GSM1337314	Rheumatoid arthritis, synovial membrane patient EB_20 (U133A)	synovial membrane patient EB_20 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 75; clinical status: rheumatoid arthritis	75	male		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337315	Rheumatoid arthritis, synovial membrane patient EB_27 (U133A)	synovial membrane patient EB_27 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 79; clinical status: rheumatoid arthritis	79	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337316	Rheumatoid arthritis, synovial membrane patient EB_30 (U133A)	synovial membrane patient EB_30 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 63; clinical status: rheumatoid arthritis	63	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337317	Rheumatoid arthritis, synovial membrane patient EB_35 (U133A)	synovial membrane patient EB_35 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 66; clinical status: rheumatoid arthritis	66	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337318	Rheumatoid arthritis, synovial membrane patient EB_40 (U133A)	synovial membrane patient EB_40 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 64; clinical status: rheumatoid arthritis	64	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337319	Rheumatoid arthritis, synovial membrane patient EB_41 (U133A)	synovial membrane patient EB_41 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 63; clinical status: rheumatoid arthritis	63	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337320	Rheumatoid arthritis, synovial membrane patient EB_56 (U133A)	synovial membrane patient EB_56 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 46; clinical status: rheumatoid arthritis	46	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337321	Rheumatoid arthritis, synovial membrane patient EB_74 (U133A)	synovial membrane patient EB_74 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 71; clinical status: rheumatoid arthritis	71	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337322	Rheumatoid arthritis, synovial membrane patient EB_108 (U133A)	synovial membrane patient EB_108 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 72; clinical status: rheumatoid arthritis	72	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337323	Rheumatoid arthritis, synovial membrane patient EB_109 (U133A)	synovial membrane patient EB_109 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 2; clinical status: rheumatoid arthritis	2	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337324	Rheumatoid arthritis, synovial membrane patient EB_110 (U133A)	synovial membrane patient EB_110 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 47; clinical status: rheumatoid arthritis	47	male		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337325	Rheumatoid arthritis, synovial membrane patient EB_124 (U133A)	synovial membrane patient EB_124 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 59; clinical status: rheumatoid arthritis	59	male		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337326	Rheumatoid arthritis, synovial membrane patient EB_141 (U133A)	synovial membrane patient EB_141 (rheumatoid arthritis)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 73; clinical status: rheumatoid arthritis	73	female		rheumatoid arthritis	GSE55457	synovium	RA	RA
+GSM1337327	Osteoarthritis, synovial membrane patient EB_21 (U133A)	synovial membrane patient EB_21 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 77; clinical status: osteoarthritis	77	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337328	Osteoarthritis, synovial membrane patient EB_24 (U133A)	synovial membrane patient EB_24 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 71; clinical status: osteoarthritis	71	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337329	Osteoarthritis, synovial membrane patient EB_54 (U133A)	synovial membrane patient EB_54 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 76; clinical status: osteoarthritis	76	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337330	Osteoarthritis, synovial membrane patient EB_90 (U133A)	synovial membrane patient EB_90 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 61; clinical status: osteoarthritis	61	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337331	Osteoarthritis, synovial membrane patient EB_94 (U133A)	synovial membrane patient EB_94 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 75; clinical status: osteoarthritis	75	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337332	Osteoarthritis, synovial membrane patient EB_97 (U133A)	synovial membrane patient EB_97 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 78; clinical status: osteoarthritis	78	male		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337333	Osteoarthritis, synovial membrane patient EB_99 (U133A)	synovial membrane patient EB_99 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: male; age: 69; clinical status: osteoarthritis	69	male		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337334	Osteoarthritis, synovial membrane patient EB_100 (U133A)	synovial membrane patient EB_100 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 71; clinical status: osteoarthritis	71	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337335	Osteoarthritis, synovial membrane patient EB_104 (U133A)	synovial membrane patient EB_104 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 80; clinical status: osteoarthritis	80	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM1337336	Osteoarthritis, synovial membrane patient EB_140 (U133A)	synovial membrane patient EB_140 (osteoarthrisits)	Identification of rheumatoid arthritis and osteoarthritis patients by transcriptome-based rule set generation [Jena]	GPL96	gender: female; age: 66; clinical status: osteoarthritis	66	female		osteoarthritis	GSE55457	synovium	OA	OA
+GSM2627518	001 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 37; Sex: Female; bmi (kg/m2): 21.92	37	Female	21.92		GSE98918	meniscus	APM	APM
+GSM2627519	002 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 45; Sex: Male; bmi (kg/m2): 28.84	45	Male	28.84		GSE98918	meniscus	APM	APM
+GSM2627520	003 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 62; Sex: Female; bmi (kg/m2): 27.76	62	Female	27.76		GSE98918	meniscus	APM	APM
+GSM2627521	004 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 58; Sex: Female; bmi (kg/m2): 20.52	58	Female	20.52		GSE98918	meniscus	APM	APM
+GSM2627522	005 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 31; Sex: Female; bmi (kg/m2): 24.27	31	Female	24.27		GSE98918	meniscus	APM	APM
+GSM2627523	007 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 53; Sex: Male; bmi (kg/m2): 26.62	53	Male	26.62		GSE98918	meniscus	APM	APM
+GSM2627524	008 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 50; Sex: Male; bmi (kg/m2): 28.48	50	Male	28.48		GSE98918	meniscus	APM	APM
+GSM2627525	009 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 65; Sex: Female; bmi (kg/m2): 27.07	65	Female	27.07		GSE98918	meniscus	APM	APM
+GSM2627526	010 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 53; Sex: Male; bmi (kg/m2): 31.99	53	Male	31.99		GSE98918	meniscus	APM	APM
+GSM2627527	011 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 43; Sex: Male; bmi (kg/m2): 34.43	43	Male	34.43		GSE98918	meniscus	APM	APM
+GSM2627528	012 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 40; Sex: Male; bmi (kg/m2): 24.54	40	Male	24.54		GSE98918	meniscus	APM	APM
+GSM2627529	013 arthroscopic partial meniscectomy	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 53; Sex: Male; bmi (kg/m2): 26.32	53	Male	26.32		GSE98918	meniscus	APM	APM
+GSM2627530	102 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 57; Sex: Male; bmi (kg/m2): 31.80	57	Male	31.80		GSE98918	meniscus	OA	OA
+GSM2627531	103 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 64; Sex: Female; bmi (kg/m2): 28.72	64	Female	28.72		GSE98918	meniscus	OA	OA
+GSM2627532	104 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 53; Sex: Female; bmi (kg/m2): 30.04	53	Female	30.04		GSE98918	meniscus	OA	OA
+GSM2627533	105 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 62; Sex: Female; bmi (kg/m2): 46.51	62	Female	46.51		GSE98918	meniscus	OA	OA
+GSM2627534	106 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 80; Sex: Male; bmi (kg/m2): 30.42	80	Male	30.42		GSE98918	meniscus	OA	OA
+GSM2627535	107 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 67; Sex: Female; bmi (kg/m2): 38.62	67	Female	38.62		GSE98918	meniscus	OA	OA
+GSM2627536	108 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 70; Sex: Female; bmi (kg/m2): 38.47	70	Female	38.47		GSE98918	meniscus	OA	OA
+GSM2627537	109 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 64; Sex: Female; bmi (kg/m2): 44.62	64	Female	44.62		GSE98918	meniscus	OA	OA
+GSM2627538	111 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 61; Sex: Male; bmi (kg/m2): 31.46	61	Male	31.46		GSE98918	meniscus	OA	OA
+GSM2627539	112 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 62; Sex: Female; bmi (kg/m2): 46.05	62	Female	46.05		GSE98918	meniscus	OA	OA
+GSM2627540	113 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 79; Sex: Female; bmi (kg/m2): 31.28	79	Female	31.28		GSE98918	meniscus	OA	OA
+GSM2627541	114 osteoarthritis	Knee meniscus	The Impact of Osteoarthritis on the Biology of the Meniscus:	GPL20844	age (years): 64; Sex: Female; bmi (kg/m2): 37.29	64	Female	37.29		GSE98918	meniscus	OA	OA
+normal_tissue_1	normal_tissue_1		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_2	normal_tissue_2		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_3	normal_tissue_3		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_4	normal_tissue_4		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_5	normal_tissue_5		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_6	normal_tissue_6		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_7	normal_tissue_7		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_8	normal_tissue_8		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_9	normal_tissue_9		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_10	normal_tissue_10		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_11	normal_tissue_11		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_12	normal_tissue_12		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_13	normal_tissue_13		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_14	normal_tissue_14		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_15	normal_tissue_15		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_16	normal_tissue_16		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_17	normal_tissue_17		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_18	normal_tissue_18		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_19	normal_tissue_19		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_20	normal_tissue_20		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_21	normal_tissue_21		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_22	normal_tissue_22		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_23	normal_tissue_23		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_24	normal_tissue_24		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_25	normal_tissue_25		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_26	normal_tissue_26		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_27	normal_tissue_27		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+normal_tissue_28	normal_tissue_28		GSE89408 count matrix	count_matrix					normal	GSE89408	synovium	normal	normal
+OA_tissue_1	OA_tissue_1		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_2	OA_tissue_2		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_3	OA_tissue_3		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_4	OA_tissue_4		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_5	OA_tissue_5		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_6	OA_tissue_6		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_7	OA_tissue_7		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_8	OA_tissue_8		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_9	OA_tissue_9		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_10	OA_tissue_10		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_11	OA_tissue_11		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_12	OA_tissue_12		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_13	OA_tissue_13		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_14	OA_tissue_14		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_15	OA_tissue_15		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_16	OA_tissue_16		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_17	OA_tissue_17		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_18	OA_tissue_18		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_19	OA_tissue_19		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_20	OA_tissue_20		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_21	OA_tissue_21		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+OA_tissue_22	OA_tissue_22		GSE89408 count matrix	count_matrix					OA	GSE89408	synovium	OA	OA
+AG_tissue_1	AG_tissue_1		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_2	AG_tissue_2		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_3	AG_tissue_3		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_4	AG_tissue_4		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_5	AG_tissue_5		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_6	AG_tissue_6		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_7	AG_tissue_7		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_8	AG_tissue_8		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_9	AG_tissue_9		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+AG_tissue_10	AG_tissue_10		GSE89408 count matrix	count_matrix					AG	GSE89408	synovium	AG	AG
+undiff_tissue_1	undiff_tissue_1		GSE89408 count matrix	count_matrix					undiff	GSE89408	synovium	undiff	undiff
+undiff_tissue_2	undiff_tissue_2		GSE89408 count matrix	count_matrix					undiff	GSE89408	synovium	undiff	undiff
+undiff_tissue_3	undiff_tissue_3		GSE89408 count matrix	count_matrix					undiff	GSE89408	synovium	undiff	undiff
+undiff_tissue_4	undiff_tissue_4		GSE89408 count matrix	count_matrix					undiff	GSE89408	synovium	undiff	undiff
+undiff_tissue_5	undiff_tissue_5		GSE89408 count matrix	count_matrix					undiff	GSE89408	synovium	undiff	undiff
+undiff_tissue_6	undiff_tissue_6		GSE89408 count matrix	count_matrix					undiff	GSE89408	synovium	undiff	undiff
+RA_tissue_1	RA_tissue_1		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_2	RA_tissue_2		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_3	RA_tissue_3		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_4	RA_tissue_4		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_5	RA_tissue_5		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_6	RA_tissue_6		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_7	RA_tissue_7		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_8	RA_tissue_8		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_9	RA_tissue_9		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_10	RA_tissue_10		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_11	RA_tissue_11		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_12	RA_tissue_12		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_13	RA_tissue_13		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_14	RA_tissue_14		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_15	RA_tissue_15		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_16	RA_tissue_16		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_17	RA_tissue_17		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_18	RA_tissue_18		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_19	RA_tissue_19		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_20	RA_tissue_20		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_21	RA_tissue_21		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_22	RA_tissue_22		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_23	RA_tissue_23		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_24	RA_tissue_24		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_25	RA_tissue_25		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_26	RA_tissue_26		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_27	RA_tissue_27		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_28	RA_tissue_28		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_29	RA_tissue_29		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_30	RA_tissue_30		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_31	RA_tissue_31		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_32	RA_tissue_32		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_33	RA_tissue_33		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_34	RA_tissue_34		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_35	RA_tissue_35		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_36	RA_tissue_36		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_37	RA_tissue_37		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_38	RA_tissue_38		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_39	RA_tissue_39		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_40	RA_tissue_40		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_41	RA_tissue_41		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_42	RA_tissue_42		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_43	RA_tissue_43		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_44	RA_tissue_44		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_45	RA_tissue_45		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_46	RA_tissue_46		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_47	RA_tissue_47		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_48	RA_tissue_48		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_49	RA_tissue_49		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_50	RA_tissue_50		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_51	RA_tissue_51		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_52	RA_tissue_52		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_53	RA_tissue_53		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_54	RA_tissue_54		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_55	RA_tissue_55		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_56	RA_tissue_56		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_57	RA_tissue_57		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_58	RA_tissue_58		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_59	RA_tissue_59		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_60	RA_tissue_60		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_61	RA_tissue_61		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_62	RA_tissue_62		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_63	RA_tissue_63		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_64	RA_tissue_64		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_65	RA_tissue_65		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_66	RA_tissue_66		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_67	RA_tissue_67		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_68	RA_tissue_68		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_69	RA_tissue_69		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_70	RA_tissue_70		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_71	RA_tissue_71		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_72	RA_tissue_72		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_73	RA_tissue_73		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_74	RA_tissue_74		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_75	RA_tissue_75		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_76	RA_tissue_76		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_77	RA_tissue_77		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_78	RA_tissue_78		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_79	RA_tissue_79		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_80	RA_tissue_80		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_81	RA_tissue_81		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_82	RA_tissue_82		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_83	RA_tissue_83		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_84	RA_tissue_84		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_85	RA_tissue_85		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_86	RA_tissue_86		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_87	RA_tissue_87		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_88	RA_tissue_88		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_89	RA_tissue_89		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_90	RA_tissue_90		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_91	RA_tissue_91		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_92	RA_tissue_92		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_93	RA_tissue_93		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_94	RA_tissue_94		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_95	RA_tissue_95		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_96	RA_tissue_96		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_97	RA_tissue_97		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_98	RA_tissue_98		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_99	RA_tissue_99		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_100	RA_tissue_100		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_101	RA_tissue_101		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_102	RA_tissue_102		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_103	RA_tissue_103		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_104	RA_tissue_104		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_105	RA_tissue_105		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_106	RA_tissue_106		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_107	RA_tissue_107		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_108	RA_tissue_108		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_109	RA_tissue_109		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_110	RA_tissue_110		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_111	RA_tissue_111		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_112	RA_tissue_112		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_113	RA_tissue_113		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_114	RA_tissue_114		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_115	RA_tissue_115		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_116	RA_tissue_116		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_117	RA_tissue_117		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_118	RA_tissue_118		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_119	RA_tissue_119		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_120	RA_tissue_120		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_121	RA_tissue_121		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_122	RA_tissue_122		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_123	RA_tissue_123		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_124	RA_tissue_124		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_125	RA_tissue_125		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_126	RA_tissue_126		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_127	RA_tissue_127		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_128	RA_tissue_128		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_129	RA_tissue_129		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_130	RA_tissue_130		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_131	RA_tissue_131		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_132	RA_tissue_132		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_133	RA_tissue_133		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_134	RA_tissue_134		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_135	RA_tissue_135		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_136	RA_tissue_136		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_137	RA_tissue_137		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_138	RA_tissue_138		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_139	RA_tissue_139		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_140	RA_tissue_140		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_141	RA_tissue_141		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_142	RA_tissue_142		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_143	RA_tissue_143		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_144	RA_tissue_144		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_145	RA_tissue_145		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_146	RA_tissue_146		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_147	RA_tissue_147		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_148	RA_tissue_148		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_149	RA_tissue_149		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_150	RA_tissue_150		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_151	RA_tissue_151		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA
+RA_tissue_152	RA_tissue_152		GSE89408 count matrix	count_matrix					RA	GSE89408	synovium	RA	RA

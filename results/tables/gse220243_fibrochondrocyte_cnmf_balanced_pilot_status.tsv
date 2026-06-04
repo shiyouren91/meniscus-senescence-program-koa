@@ -1,0 +1,3 @@
+k	status	message	n_programs	n_iter	density_threshold	silhouette	prediction_error
+5	ok		5	5	0.5	0.7709385697641116	13377779.468126994
+8	ok		8	5	0.5	0.8790173606629658	13112976.781897983

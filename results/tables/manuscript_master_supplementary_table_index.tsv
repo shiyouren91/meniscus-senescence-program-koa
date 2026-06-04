@@ -1,0 +1,29 @@
+table_id	theme	source_output	source_exists	suggested_use	manuscript_relevance
+ST01	single_cell_msp_discovery	results/tables/gse220243_cnmf_msp_candidate_shortlist.tsv	True	Main MSP candidate shortlist	primary discovery support
+ST02	single_cell_msp_discovery	results/tables/gse220243_cnmf_program_interpretation_priority.tsv	True	Program interpretation ranking	primary discovery support
+ST03	single_cell_msp_discovery	results/tables/gse220243_cnmf_program_signature_enrichment.tsv	True	Signature enrichment audit	mechanistic annotation support
+ST04	single_cell_msp_discovery	results/tables/gse220243_fibrochondrocyte_cnmf_balanced_discovery_usage_summary.tsv	True	Balanced cNMF usage summary	sample-aware robustness support
+ST05	single_cell_msp_discovery	results/tables/gse220243_fibrochondrocyte_cnmf_balanced_discovery_top_genes.tsv	True	Balanced cNMF top genes	program definition support
+ST06	hra_projection	results/tables/hra001986_msp_projection_group_tests.tsv	True	HRA projection group tests	external single-cell validation
+ST07	hra_projection	results/tables/hra001986_msp_projection_group_summary.tsv	True	HRA projection group summaries	external single-cell validation
+ST08	hra_projection	results/tables/hra001986_msp_projection_gene_coverage.tsv	True	HRA projection gene coverage	coverage audit
+ST09	bulk_validation	results/tables/bulk_msp_validation_group_tests.tsv	True	Bulk group tests	bulk validation support
+ST10	bulk_validation	results/tables/bulk_msp_meta_axis_summary.tsv	True	Bulk meta-analysis axis summary	bulk validation support
+ST11	bulk_validation	results/tables/bulk_msp_meta_evidence_grade.tsv	True	Bulk evidence grades	claim calibration support
+ST12	bulk_validation	results/tables/bulk_msp_covariate_adjusted_effects.tsv	True	Bulk covariate-adjusted effects	age/sex/BMI sensitivity support
+ST13	bulk_validation	results/tables/bulk_msp_robustness_flags.tsv	True	Bulk robustness flags	claim calibration support
+ST14	bulk_subtyping	results/tables/bulk_msp_subtyping_subtype_profiles.tsv	True	Subtype score profiles	bulk subtype support
+ST15	bulk_subtyping	results/tables/bulk_msp_subtype_axis_tests.tsv	True	Subtype axis tests	bulk subtype support
+ST16	bulk_proxy	results/tables/bulk_cell_state_proxy_subtype_summary.tsv	True	Cell-state proxy subtype summary	composition-proxy caution support
+ST17	bulk_proxy	results/tables/bulk_reference_deconv_subtype_summary.tsv	True	NNLS deconvolution subtype summary	composition-proxy caution support
+ST18	mechanism_axes	results/tables/msp_paracrine_lr_candidate_priority.tsv	True	Curated LR candidate priority	mechanism candidate support
+ST19	mechanism_axes	results/tables/msp_lr_single_cell_context_priority.tsv	True	Single-cell LR context priority	mechanism candidate support
+ST20	mechanism_axes	results/tables/msp_comm_tool_pair_edges.tsv	True	Communication-tool pair-edge inputs	formal tool input support
+ST21	receiver_targets	results/tables/bulk_receiver_targets_s1_high_for_nichenet.tsv	True	Bulk S1-high receiver targets	NicheNet target-seed support
+ST22	receiver_targets	results/tables/msp_axis_target_concordance_for_nichenet.tsv	True	Axis target concordance	pre-NicheNet prioritization support
+ST23	mechanism_axes	results/tables/msp_mechanism_axis_evidence_dossier.tsv	True	Mechanism evidence dossier	main mechanism ranking support
+ST24	validation_roadmap	results/tables/msp_lr_validation_axis_plan.tsv	True	Validation axis plan	experimental design support
+ST25	validation_roadmap	results/tables/msp_lr_validation_assay_matrix.tsv	True	Validation assay matrix	experimental design support
+ST26	manuscript_package	results/tables/manuscript_msp_mechanism_figure_panel_plan.tsv	True	Manuscript figure panel plan	figure planning support
+ST27	manuscript_package	results/tables/manuscript_figure_source_inventory.tsv	True	Manuscript figure source inventory	figure audit support
+ST28	manuscript_package	results/tables/manuscript_figure4_axis_summary.tsv	True	Figure 4 axis summary	main mechanism figure support

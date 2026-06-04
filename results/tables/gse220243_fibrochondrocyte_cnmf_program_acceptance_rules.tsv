@@ -1,0 +1,11 @@
+rule_id	criterion	threshold	required	rationale
+usage_n_samples_present	n_samples_present	>= 4 samples with non-trivial usage	True	Reject programs that are present in only one or two donors.
+usage_dominant_sample_fraction	dominant_sample_fraction	<= 0.60 preferred; > 0.75 exclude unless validated externally	True	Avoid donor-specific artifacts driving MSP definition.
+balanced_recurrence	recurrent_balanced	>=2 OA samples and >=2 normal samples for general programs	True	Programs used as baseline fibrocartilage states should recur across disease strata.
+disease_skew_caution	OA-only or normal-only usage	allowed only as caution candidate, not final MSP alone	True	Disease labels are confounded with donor/sample in this dataset.
+full_vs_balanced_sensitivity	program usage correlation between full and balanced inputs	same biological interpretation in balanced sensitivity run	True	Confirm program is not created by large samples dominating NMF.
+senescence_sasp_ecm_enrichment	senescence/SASP/ECM remodeling enrichment	must show coordinated enrichment, not a single marker	True	MSP is defined as a program, not hub genes.
+generic_senescence_specificity	generic_senescence comparison	must contain meniscus/fibrocartilage-specific residual signal beyond generic SenMayo/CellAge/SASP scores	True	Protect novelty against generic senescence relabeling.
+program_gene_coherence	top genes and usage coherence	top genes should be coherent and interpretable across cells/samples	True	Avoid technical/ribosomal/mitochondrial programs as MSP.
+exclude_contamination_programs	immune/endothelial/mural contamination markers	exclude if driven by PTPRC/PECAM1/RGS5/ACTA2-like contamination	True	MSP discovery is restricted to fibrochondrocyte compartment.
+external_validation	bulk/scRNA validation	validate in bulk meniscus and cross-tissue datasets after age/covariate checks when available	False	Move from discovery to translational claim.

@@ -1,0 +1,18 @@
+portal_step	upload_category	handoff_path	recommended_action	required_before_click_submit	notes
+1	title_page	01_manuscript_files/JOT_Title_Page_and_Author_Statements.docx	upload	author confirmation	Upload as title page / author statements after author confirmation.
+2	manuscript	01_manuscript_files/JOT_Anonymized_Manuscript.docx	upload	final metadata/property inspection	Upload as anonymized manuscript after final metadata inspection.
+3	cover_letter	01_manuscript_files/JOT_Cover_Letter.docx	upload	author confirmation	Upload as cover letter after corresponding-author approval.
+4	declarations	01_manuscript_files/JOT_Declarations.docx	upload	author confirmation	Upload or use to fill declaration fields after author confirmation.
+5	main_figure	02_figures/Figure_1_MSP_discovery_workflow.png	upload	visual readability and file-format check	Upload as figure after confirming portal file-format requirements and visual readability.
+5	main_figure	02_figures/Figure_2_HRA_projection.png	upload	visual readability and file-format check	Upload as figure after confirming portal file-format requirements and visual readability.
+5	main_figure	02_figures/Figure_3_bulk_validation_subtyping.png	upload	visual readability and file-format check	Upload as figure after confirming portal file-format requirements and visual readability.
+5	main_figure	02_figures/Figure_4_candidate_paracrine_axes.png	upload	visual readability and file-format check	Upload as figure after confirming portal file-format requirements and visual readability.
+5	main_figure	02_figures/Figure_5_validation_roadmap.png	upload	visual readability and file-format check	Upload as figure after confirming portal file-format requirements and visual readability.
+6	supplementary_figure	02_figures/Supplementary_Figure_S1_guardrails_sensitivity.png	upload	visual readability and file-format check	Upload as figure after confirming portal file-format requirements and visual readability.
+7	supplementary_table	03_supplementary_tables/JOT_Supplementary_Tables_ST01_ST28.xlsx	upload	sheet/readability review	Upload as supplementary table workbook after manual sheet review.
+8	data_code_availability	04_data_code_availability/Data_and_Code_Availability_URL_or_DOI.txt	fill_form_or_replace_placeholder	user supplies repository URL or DOI	Replace placeholder with final repository URL or DOI before upload/submission.
+99	internal_check	00_README_UPLOAD_HANDOFF.md	do_not_upload	internal only; do not upload	Read before uploading files; do not upload unless requested.
+99	internal_check	99_internal_checks/JOT_Author_Confirmation_Checklist.docx	do_not_upload	internal only; do not upload	Do not upload unless specifically requested; use for author/submitter checks.
+99	internal_check	99_internal_checks/manuscript_jot_author_confirmation_items.tsv	do_not_upload	internal only; do not upload	Do not upload unless specifically requested; use for author/submitter checks.
+99	internal_check	99_internal_checks/manuscript_jot_repository_release_checklist.tsv	do_not_upload	internal only; do not upload	Do not upload unless specifically requested; use for author/submitter checks.
+99	internal_check	JOT_UPLOAD_HANDOFF_MANIFEST.tsv	do_not_upload	internal only; do not upload	Use as checksum and upload planning manifest.

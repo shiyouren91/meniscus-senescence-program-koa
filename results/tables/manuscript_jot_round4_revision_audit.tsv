@@ -1,0 +1,37 @@
+item	status	detail
+22_jot_anonymized_manuscript_draft.md_F1_cross_context_dedupe	already_updated	sentence appears without consecutive duplication
+22_jot_anonymized_manuscript_draft.md_### sample-aware cNMF MSP discovery	already_updated	### Sample-aware cNMF MSP discovery
+22_jot_anonymized_manuscript_draft.md_### bulk validation and meta-analysis	already_updated	### Bulk validation and meta-analysis
+22_jot_anonymized_manuscript_draft.md_### bulk subtype analysis and robustness checks	already_updated	### Bulk subtype analysis and robustness checks
+22_jot_anonymized_manuscript_draft.md_limitations_opening	already_updated	Several limitations apply. First, the analysis relies on public datasets
+22_jot_anonymized_manuscript_draft.md_F2a_renumber_body_anchors	already_updated	round4 reference block detected; body anchors not remapped
+22_jot_anonymized_manuscript_draft.md_F2c_round4_anchor_style	already_updated	normalized 0 two-reference range anchor(s)
+22_jot_anonymized_manuscript_draft.md_extra_program_sentence_normalized	already_updated	program-level comparator already normalized
+22_jot_anonymized_manuscript_draft.md_F2b_reference_block	already_updated	reference block already in round4 order
+15_msp_integrated_manuscript_draft.md_F1_cross_context_dedupe	already_updated	sentence appears without consecutive duplication
+15_msp_integrated_manuscript_draft.md_### sample-aware cNMF MSP discovery	already_updated	### Sample-aware cNMF MSP discovery
+15_msp_integrated_manuscript_draft.md_### bulk validation and meta-analysis	already_updated	### Bulk validation and meta-analysis
+15_msp_integrated_manuscript_draft.md_### bulk subtype analysis and robustness checks	already_updated	### Bulk subtype analysis and robustness checks
+15_msp_integrated_manuscript_draft.md_limitations_opening	already_updated	Several limitations apply. First, the analysis relies on public datasets
+15_msp_integrated_manuscript_draft.md_F2a_renumber_body_anchors	already_updated	round4 reference block detected; body anchors not remapped
+15_msp_integrated_manuscript_draft.md_F2c_round4_anchor_style	already_updated	normalized 0 two-reference range anchor(s)
+15_msp_integrated_manuscript_draft.md_extra_program_sentence_normalized	already_updated	program-level comparator already normalized
+15_msp_integrated_manuscript_draft.md_F2b_reference_block	already_updated	reference block already in round4 order
+09_msp_full_methods_draft.md_F1_cross_context_dedupe	not_applicable	Consistent with the tissue-stratified Results, only the fibrocartilage-matrix remodeling axis showed strong, consistent disease-associated bulk signal (I2 = 30%
+09_msp_full_methods_draft.md_### sample-aware cNMF MSP discovery	not_applicable	### sample-aware cNMF MSP discovery
+09_msp_full_methods_draft.md_### bulk validation and meta-analysis	not_applicable	### bulk validation and meta-analysis
+09_msp_full_methods_draft.md_### bulk subtype analysis and robustness checks	not_applicable	### bulk subtype analysis and robustness checks
+09_msp_full_methods_draft.md_limitations_opening	not_applicable	Several limitations should be explicit. First, the analysis relies on public datasets
+09_msp_full_methods_draft.md_F2a_renumber_body_anchors	already_updated	no round3 citation-anchor context detected
+09_msp_full_methods_draft.md_F2c_round4_anchor_style	already_updated	normalized 0 two-reference range anchor(s)
+09_msp_full_methods_draft.md_extra_program_sentence_normalized	not_applicable	This program-level view complements single-cell OA studies that resolve chondrocyte lineage plasticity and signaling dysregulation (for example HIF1A-ANGPTL4 trajectories) during disease progression
+11_msp_discussion_draft.md_F1_cross_context_dedupe	already_updated	sentence appears without consecutive duplication
+11_msp_discussion_draft.md_### sample-aware cNMF MSP discovery	not_applicable	### sample-aware cNMF MSP discovery
+11_msp_discussion_draft.md_### bulk validation and meta-analysis	not_applicable	### bulk validation and meta-analysis
+11_msp_discussion_draft.md_### bulk subtype analysis and robustness checks	not_applicable	### bulk subtype analysis and robustness checks
+11_msp_discussion_draft.md_limitations_opening	already_updated	Several limitations apply. First, the analysis relies on public datasets
+11_msp_discussion_draft.md_F2a_renumber_body_anchors	already_updated	no round3 citation-anchor context detected
+11_msp_discussion_draft.md_F2c_round4_anchor_style	already_updated	normalized 0 two-reference range anchor(s)
+11_msp_discussion_draft.md_extra_program_sentence_normalized	already_updated	program-level comparator already normalized
+manual_repository_url_or_doi	manual_author_action	Repository URL/DOI placeholder intentionally retained.
+manual_declaration_brackets	manual_author_action	Title-page/declaration bracketed confirmations intentionally retained.

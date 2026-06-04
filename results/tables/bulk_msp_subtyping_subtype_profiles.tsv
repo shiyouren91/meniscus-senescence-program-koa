@@ -1,0 +1,13 @@
+subtype_id	subtype_label	axis	feature_column	n_samples	mean_feature_z	median_feature_z	sd_feature_z	rank_within_subtype
+S1	ECM_fibrotic_high	MSP_paracrine	feature_MSP_paracrine	48	0.07428575442155468	-0.04439695572915068	0.555353256079267	3
+S1	ECM_fibrotic_high	MSP_angiogenic	feature_MSP_angiogenic	48	0.06363071489661544	-0.021070614220367177	0.5138159373418294	4
+S1	ECM_fibrotic_high	MSP_inflammatory	feature_MSP_inflammatory	48	-0.18305251979470624	-0.30873035028441265	0.6444581058214214	6
+S1	ECM_fibrotic_high	ECM_matrix	feature_ECM_matrix	48	0.6157084145294668	0.6537535543128439	0.7154127419560221	1
+S1	ECM_fibrotic_high	fibrotic_remodeling	feature_fibrotic_remodeling	48	0.36532096409641984	0.2504951106228508	0.8711690062740175	2
+S1	ECM_fibrotic_high	generic_stress	feature_generic_stress	48	-0.1646413526360143	-0.23337360351617936	0.6208852504344734	5
+S2	mixed_low	MSP_paracrine	feature_MSP_paracrine	45	-0.9239467329949652	-0.8630770525036207	0.6039579811325263	5
+S2	mixed_low	MSP_angiogenic	feature_MSP_angiogenic	45	-0.9274271676729019	-0.8249865887789484	0.6217815776453256	6
+S2	mixed_low	MSP_inflammatory	feature_MSP_inflammatory	45	-0.7056494627318817	-0.6921764020904578	0.9220626428770012	3
+S2	mixed_low	ECM_matrix	feature_ECM_matrix	45	-0.054184841752565216	-0.05857032695059131	0.8769151567611941	1
+S2	mixed_low	fibrotic_remodeling	feature_fibrotic_remodeling	45	-0.1986599579536053	-0.299055919657864	0.9229346992850967	2
+S2	mixed_low	generic_stress	feature_generic_stress	45	-0.7165671029239699	-0.5180312493783974	0.7876061071801554	4

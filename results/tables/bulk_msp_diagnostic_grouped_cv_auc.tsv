@@ -1,0 +1,13 @@
+analysis_set	validation_type	fold	score_name	score_column	train_datasets	test_datasets	n_train	n_test	n_test_positive	n_test_negative	test_auc	model_coef	model_intercept
+main_oa_vs_normal	grouped_cv	1	Fibrocartilage_matrix	score_Fibrocartilage_matrix	GSE143514,GSE169077,GSE185064,GSE55235,GSE55457	GSE114007	67	38	20	18	0.813888888888889	1.3571685275445535	0.12426848170921707
+main_oa_vs_normal	grouped_cv	2	Fibrocartilage_matrix	score_Fibrocartilage_matrix	GSE114007,GSE143514,GSE169077,GSE185064,GSE55235	GSE55457	85	20	10	10	0.81	1.385861238930444	0.06176589390857148
+main_oa_vs_normal	grouped_cv	3	Fibrocartilage_matrix	score_Fibrocartilage_matrix	GSE114007,GSE143514,GSE169077,GSE185064,GSE55457	GSE55235	85	20	10	10	0.9400000000000001	1.198488949928177	0.06774385382256289
+main_oa_vs_normal	grouped_cv	4	Fibrocartilage_matrix	score_Fibrocartilage_matrix	GSE114007,GSE143514,GSE185064,GSE55235,GSE55457	GSE169077	94	11	6	5	0.9	1.2937703264040639	0.055020533985541756
+main_oa_vs_normal	grouped_cv	5	Fibrocartilage_matrix	score_Fibrocartilage_matrix	GSE114007,GSE169077,GSE55235,GSE55457	GSE143514,GSE185064	89	16	9	7	0.6190476190476191	1.5841970370399872	-0.011472615764200344
+main_oa_vs_normal	grouped_cv_summary	0	Fibrocartilage_matrix	score_Fibrocartilage_matrix	multiple	grouped_cv	105	105	55	50	0.8165873015873016		0.12375477014762201
+main_oa_vs_normal	grouped_cv	1	MSP_interface_matrix_fibrotic	score_MSP_interface_matrix_fibrotic	GSE143514,GSE169077,GSE185064,GSE55235,GSE55457	GSE114007	67	38	20	18	0.9361111111111111	0.9745184516445043	0.09811515227883535
+main_oa_vs_normal	grouped_cv	2	MSP_interface_matrix_fibrotic	score_MSP_interface_matrix_fibrotic	GSE114007,GSE143514,GSE169077,GSE185064,GSE55235	GSE55457	85	20	10	10	0.56	1.8075104394231718	0.06209512176251378
+main_oa_vs_normal	grouped_cv	3	MSP_interface_matrix_fibrotic	score_MSP_interface_matrix_fibrotic	GSE114007,GSE143514,GSE169077,GSE185064,GSE55457	GSE55235	85	20	10	10	0.9400000000000001	1.2304232195834481	0.0803986384982119
+main_oa_vs_normal	grouped_cv	4	MSP_interface_matrix_fibrotic	score_MSP_interface_matrix_fibrotic	GSE114007,GSE143514,GSE185064,GSE55235,GSE55457	GSE169077	94	11	6	5	0.9666666666666668	1.3109249204390232	0.07055558389689172
+main_oa_vs_normal	grouped_cv	5	MSP_interface_matrix_fibrotic	score_MSP_interface_matrix_fibrotic	GSE114007,GSE169077,GSE55235,GSE55457	GSE143514,GSE185064	89	16	9	7	0.41269841269841273	1.7284220088303164	0.021261011848468448
+main_oa_vs_normal	grouped_cv_summary	0	MSP_interface_matrix_fibrotic	score_MSP_interface_matrix_fibrotic	multiple	grouped_cv	105	105	55	50	0.7630952380952382		0.25821344107916433

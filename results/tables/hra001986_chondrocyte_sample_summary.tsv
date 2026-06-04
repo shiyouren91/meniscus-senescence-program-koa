@@ -1,0 +1,13 @@
+sample_label	status	anatomy	n_cells	median_nCount_RNA	median_nFeature_RNA	median_percent_mito	median_percent_disso
+A1outer	abnormal	outer	2610	9322.5	2467.0	0.016327292	4.2015457
+A2inner	abnormal	inner	4141	9892.0	2564.0	0.008624407	3.275639
+B1inner	abnormal	inner	1549	3997.0	1203.0	0.00015137754	3.3103168
+B2outer	abnormal	outer	1477	2239.0	901.0	0.012523191	3.5897436
+C1inner	abnormal	inner	3276	7259.0	2073.5	0.017692655	3.5143633
+D2outer	abnormal	outer	1414	1797.5	774.0	0.008645534	6.3196874
+E1inner	normal	inner	2243	1915.0	695.0	0.0066755675	3.2967033
+E2outer	normal	outer	3076	867.0	388.0	0.0012787745	2.365531
+F9inner	normal	inner	4304	3787.0	1229.0	0.012822967	5.3607492
+F10outer	normal	outer	2154	4229.5	1316.0	0.018121978	3.9733787
+G11outer	normal	outer	2140	2139.0	861.0	0.02241029	4.651148
+H12inner	normal	inner	302	796.5	333.5	0.007350078	2.9506721

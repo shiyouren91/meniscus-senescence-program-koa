@@ -1,0 +1,8 @@
+axis	overall_evidence_grade	overall_smd	overall_fdr	overall_i2_percent	leave_one_grade_changes	max_abs_smd_shift	robustness_label	recommended_claim
+Fibrocartilage_matrix_K14P4	strong_consistent	0.803744987810416	0.0003169292544903	29.71894049972065	0	0.18285505846036076	stable	robust disease-associated bulk signal suitable as a positive-control axis
+Fibrotic_remodeling_K14P7	heterogeneous_or_inconsistent	0.2982436181026038	0.5178218997428854	85.85300424358525	1	0.650259650233015	heterogeneous_caution	report as detectable but heterogeneous; avoid universal OA-up or OA-down wording
+Generic_stress_K14P1	heterogeneous_or_inconsistent	-0.9664929987664356	0.0678971135154018	83.23979918754176	9	0.32124195097738206	heterogeneous_caution	report as detectable but heterogeneous; avoid universal OA-up or OA-down wording
+MSP_angiogenic_K14P9	heterogeneous_or_inconsistent	-0.5479933071498356	0.2469685054871622	82.48950137321697	2	0.3188500416487857	heterogeneous_caution	report as detectable but heterogeneous; avoid universal OA-up or OA-down wording
+MSP_inflammatory_K14P10	heterogeneous_or_inconsistent	-0.9694543319984212	0.0678971135154018	84.4894556212775	7	0.3750990471230864	heterogeneous_caution	report as detectable but heterogeneous; avoid universal OA-up or OA-down wording
+MSP_paracrine_K12P8	heterogeneous_or_inconsistent	-0.4808292016264703	0.2709906745500759	82.3694002702966	1	0.3145032778124787	heterogeneous_caution	report as detectable but heterogeneous; avoid universal OA-up or OA-down wording
+MSP_paracrine_consensus_K12P8_K14P9	heterogeneous_or_inconsistent	-0.6515900753285676	0.2287294687959148	84.2872854062709	2	0.34548579265216267	heterogeneous_caution	report as detectable but heterogeneous; avoid universal OA-up or OA-down wording

@@ -1,0 +1,7 @@
+figure	legend_title	linked_panels	source_outputs	claim_guardrail	manual_polish_priority
+Figure 1	Sample-aware discovery of MSP-like fibrochondrocyte programs	A-C	docs/workflow/02_gse220243_preprocessing_runbook.md;results/tables/gse220243_cnmf_program_interpretation_priority.tsv	Program-level candidate discovery; not causal and not a hub-gene definition.	high
+Figure 2	External HRA projection of MSP-like programs	A-B	results/tables/hra001986_msp_projection_group_summary.tsv	Projection supports context, not causality or direct spatial proof.	medium
+Figure 3	Bulk validation and subtype structure of MSP/remodeling axes	A-C	results/tables/bulk_msp_meta_axis_summary.tsv;results/tables/bulk_msp_subtyping_subtype_profiles.tsv	Do not claim a universal OA-up MSP signature.	medium
+Figure 4	Candidate MSP-linked paracrine mechanism axes	A-D	results/tables/msp_mechanism_axis_evidence_dossier.tsv;results/tables/msp_comm_tool_pair_edges.tsv;results/tables/msp_axis_target_concordance_for_nichenet.tsv	MIF_CD74, ANGPTL4_integrin, and VEGF are leading candidate axes; not causal or validated mechanisms.	high
+Figure 5	Validation roadmap for candidate MSP paracrine axes	A	results/tables/msp_lr_validation_assay_matrix.tsv	Roadmap is proposed validation, not completed wet-lab evidence.	medium
+Supplementary Figure S1	Guardrail and sensitivity evidence for MSP mechanism interpretation	S1	docs/manuscript/03_msp_mechanism_claim_guardrails.md	Use sensitivity and guardrail evidence to avoid over-interpreting expression-only evidence.	medium
