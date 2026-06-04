@@ -103,15 +103,20 @@ def markdown_to_paragraphs(markdown: str) -> list[tuple[str, str | None]]:
     return paragraphs
 
 
-def content_types_xml() -> str:
-    return """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+def content_types_xml(include_footer: bool = False) -> str:
+    footer_override = (
+        '  <Override PartName="/word/footer1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"/>\n'
+        if include_footer
+        else ""
+    )
+    return f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
   <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
   <Default Extension="xml" ContentType="application/xml"/>
   <Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>
   <Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/>
   <Override PartName="/word/settings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"/>
-  <Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>
+{footer_override}  <Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>
   <Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/>
 </Types>
 """
@@ -127,9 +132,15 @@ def package_rels_xml() -> str:
 """
 
 
-def document_rels_xml() -> str:
-    return """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"/>
+def document_rels_xml(include_footer: bool = False) -> str:
+    footer_rel = (
+        '  <Relationship Id="rIdFooter1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/footer" Target="footer1.xml"/>\n'
+        if include_footer
+        else ""
+    )
+    return f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+{footer_rel}</Relationships>
 """
 
 
@@ -175,35 +186,50 @@ def core_xml(title: str) -> str:
 """
 
 
-def styles_xml() -> str:
+def styles_xml(profile: str = "manuscript") -> str:
+    if profile == "cover_letter":
+        normal_after = "120"
+        normal_line = "240"
+        title_align = "left"
+        title_size = "28"
+        heading1_size = "26"
+        heading2_size = "24"
+    else:
+        # Springer Nature review files are conventionally double-spaced.
+        normal_after = "0"
+        normal_line = "480"
+        title_align = "center"
+        title_size = "34"
+        heading1_size = "28"
+        heading2_size = "25"
     return f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:styles xmlns:w="{W_NS}">
   <w:style w:type="paragraph" w:default="1" w:styleId="Normal">
     <w:name w:val="Normal"/>
     <w:qFormat/>
-    <w:pPr><w:spacing w:after="160" w:line="276" w:lineRule="auto"/></w:pPr>
+    <w:pPr><w:spacing w:after="{normal_after}" w:line="{normal_line}" w:lineRule="auto"/></w:pPr>
     <w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman"/><w:sz w:val="24"/></w:rPr>
   </w:style>
   <w:style w:type="paragraph" w:styleId="Title">
     <w:name w:val="Title"/>
     <w:basedOn w:val="Normal"/>
     <w:qFormat/>
-    <w:pPr><w:jc w:val="center"/><w:spacing w:after="240"/></w:pPr>
-    <w:rPr><w:b/><w:sz w:val="32"/></w:rPr>
+    <w:pPr><w:jc w:val="{title_align}"/><w:spacing w:after="240"/></w:pPr>
+    <w:rPr><w:b/><w:sz w:val="{title_size}"/></w:rPr>
   </w:style>
   <w:style w:type="paragraph" w:styleId="Heading1">
     <w:name w:val="heading 1"/>
     <w:basedOn w:val="Normal"/>
     <w:qFormat/>
     <w:pPr><w:spacing w:before="260" w:after="120"/></w:pPr>
-    <w:rPr><w:b/><w:sz w:val="28"/></w:rPr>
+    <w:rPr><w:b/><w:sz w:val="{heading1_size}"/></w:rPr>
   </w:style>
   <w:style w:type="paragraph" w:styleId="Heading2">
     <w:name w:val="heading 2"/>
     <w:basedOn w:val="Normal"/>
     <w:qFormat/>
     <w:pPr><w:spacing w:before="220" w:after="100"/></w:pPr>
-    <w:rPr><w:b/><w:i/><w:sz w:val="25"/></w:rPr>
+    <w:rPr><w:b/><w:i/><w:sz w:val="{heading2_size}"/></w:rPr>
   </w:style>
   <w:style w:type="paragraph" w:styleId="Heading3">
     <w:name w:val="heading 3"/>
@@ -227,35 +253,59 @@ def styles_xml() -> str:
 """
 
 
-def document_xml(paragraphs: Iterable[tuple[str, str | None]]) -> str:
+def footer_xml() -> str:
+    return f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:ftr xmlns:w="{W_NS}">
+  <w:p>
+    <w:pPr><w:jc w:val="center"/></w:pPr>
+    <w:r><w:t>Page </w:t></w:r>
+    <w:fldSimple w:instr="PAGE"><w:r><w:t>1</w:t></w:r></w:fldSimple>
+  </w:p>
+</w:ftr>
+"""
+
+
+def section_properties_xml(profile: str = "manuscript") -> str:
+    footer_reference = '<w:footerReference w:type="default" r:id="rIdFooter1"/>' if profile == "manuscript" else ""
+    line_numbering = '<w:lnNumType w:countBy="1" w:start="1" w:restart="continuous"/>' if profile == "manuscript" else ""
+    return f"""<w:sectPr>
+      {footer_reference}
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="708" w:footer="708" w:gutter="0"/>
+      {line_numbering}
+      <w:cols w:space="708"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>"""
+
+
+def document_xml(paragraphs: Iterable[tuple[str, str | None]], profile: str = "manuscript") -> str:
     body = "\n".join(paragraph_xml(text, style) for text, style in paragraphs if text)
+    section = section_properties_xml(profile)
     return f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <w:document xmlns:w="{W_NS}" xmlns:r="{R_NS}">
   <w:body>
     {body}
-    <w:sectPr>
-      <w:pgSz w:w="11906" w:h="16838"/>
-      <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="708" w:footer="708" w:gutter="0"/>
-      <w:cols w:space="708"/>
-      <w:docGrid w:linePitch="360"/>
-    </w:sectPr>
+    {section}
   </w:body>
 </w:document>
 """
 
 
-def write_docx(markdown: str, output: Path, title: str) -> None:
+def write_docx(markdown: str, output: Path, title: str, profile: str = "manuscript") -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     paragraphs = markdown_to_paragraphs(markdown)
+    include_footer = profile == "manuscript"
     with zipfile.ZipFile(output, "w", compression=zipfile.ZIP_DEFLATED) as zf:
-        zf.writestr("[Content_Types].xml", content_types_xml())
+        zf.writestr("[Content_Types].xml", content_types_xml(include_footer))
         zf.writestr("_rels/.rels", package_rels_xml())
         zf.writestr("docProps/core.xml", core_xml(title))
         zf.writestr("docProps/app.xml", app_xml())
-        zf.writestr("word/document.xml", document_xml(paragraphs))
-        zf.writestr("word/styles.xml", styles_xml())
+        zf.writestr("word/document.xml", document_xml(paragraphs, profile))
+        zf.writestr("word/styles.xml", styles_xml(profile))
         zf.writestr("word/settings.xml", settings_xml())
-        zf.writestr("word/_rels/document.xml.rels", document_rels_xml())
+        zf.writestr("word/_rels/document.xml.rels", document_rels_xml(include_footer))
+        if include_footer:
+            zf.writestr("word/footer1.xml", footer_xml())
 
 
 def extract_markdown_sections(markdown: str, headings: list[str]) -> str:

@@ -1,5 +1,6 @@
 item	status	detail
 R1_title	updated	A program-level meniscus senescence analysis identifies fibrocartilage-matrix stratification signals and candidate paracrine axes in knee osteoarthritis: an integrative transcriptomic study
+F1_manuscript_front_format	updated	Removed internal draft and Article Title labels from final manuscript source.
 R2_abstract	updated	Abstract
 R4_keywords	updated	Keywords
 R3_translational_potential	already_updated	removed JOT-specific abstract section
@@ -13,6 +14,8 @@ R13_remove_stale_submission_boilerplate	updated	Removed 6 obsolete duplicate sub
 R10_figure_legend_order	updated	Sorted figure legends and source index in numerical order.
 title_page_article_type	updated	Methodology
 R5_cover_letter_opening	updated	JOSR cover letter opening and policy statement
+F2_cover_letter_front_format	updated	Removed internal cover-letter draft heading from final DOCX source.
+F3_docx_format_profiles	updated	Manuscript DOCX uses double spacing, continuous line numbers, and page numbers; cover letter uses formal single-spaced letter style.
 supplementary_workbook	updated	34 ST sheets plus README/Manifest
 abstract_word_count	checked	249
 keyword_count	checked	10

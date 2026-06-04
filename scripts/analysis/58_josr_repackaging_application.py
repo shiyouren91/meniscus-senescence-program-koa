@@ -169,6 +169,21 @@ def repackage_manuscript(text: str, rows: list[dict[str, str]]) -> str:
         rows.append({"item": "R1_title", "status": "already_updated", "detail": NEW_TITLE})
     else:
         rows.append({"item": "R1_title", "status": "not_found", "detail": OLD_TITLE})
+    before_front = text
+    text = re.sub(
+        rf"^# JOSR Anonymized Manuscript Draft\s*\n+\s*## Article Title\s*\n+\s*{re.escape(NEW_TITLE)}\s*\n+",
+        f"# {NEW_TITLE}\n\n",
+        text,
+        count=1,
+        flags=re.S,
+    )
+    rows.append(
+        {
+            "item": "F1_manuscript_front_format",
+            "status": "updated" if before_front != text else "already_updated",
+            "detail": "Removed internal draft and Article Title labels from final manuscript source.",
+        }
+    )
     text = replace_section(text, "Abstract", ABSTRACT_SECTION, rows, "R2_abstract")
     text = replace_section(text, "Keywords", KEYWORDS_SECTION, rows, "R4_keywords")
     before = text
@@ -493,7 +508,8 @@ def repackage_cover_letter(text: str, rows: list[dict[str, str]]) -> str:
             1,
         )
     rows.append({"item": "R5_cover_letter_opening", "status": "updated", "detail": "JOSR cover letter opening and policy statement"})
-    return "# JOSR Cover Letter Draft\n\n" + COVER_OPENING.rstrip() + "\n\n" + closing
+    rows.append({"item": "F2_cover_letter_front_format", "status": "updated", "detail": "Removed internal cover-letter draft heading from final DOCX source."})
+    return COVER_OPENING.rstrip() + "\n\n" + closing
 
 
 def extract_abstract(markdown: str) -> str:
@@ -740,6 +756,7 @@ def write_handoff_readme(handoff_dir: Path, manifest_rows: list[dict[str, str]])
             "- Repository URL is already inserted: https://github.com/shiyouren91/meniscus-senescence-program-koa",
             "- Confirm author approvals, competing interests, ethics wording, and AI-use wording before final submission.",
             "- Confirm whether the portal labels the article type as Methodology or Research, and select Methodology if available.",
+            "- Main manuscript DOCX is formatted as an editable, double-spaced review file with continuous line numbering and page numbering; the cover letter is formatted as a single-spaced formal letter.",
         ]
     )
     write_text(handoff_dir / "00_README_UPLOAD_HANDOFF.md", "\n".join(lines) + "\n")
@@ -753,6 +770,7 @@ def write_submitter_checklist(submission_dir: Path) -> None:
 - Use the files in `submission/josr/upload_handoff`.
 - Repository URL is already inserted: https://github.com/shiyouren91/meniscus-senescence-program-koa
 - Select article type `Methodology` if the submission portal offers it.
+- Main manuscript DOCX is double-spaced with continuous line numbering and page numbering; cover letter DOCX starts directly with the editorial salutation.
 
 ## Upload order
 
@@ -776,6 +794,7 @@ def write_submitter_checklist(submission_dir: Path) -> None:
 | F04 | author_confirmation | manual_user_check | Corresponding author confirms COI, ethics, AI declaration, funding, and author contributions. |
 | F05 | repository_url_or_doi | ready | Repository URL is inserted in manuscript, declarations, and data/code availability file. |
 | F06 | claim_guardrail | ready | Keep candidate axes as hypotheses for validation, not causal mechanisms. |
+| F07 | docx_format | ready | Main manuscript has double spacing, continuous line numbers, and page numbering; cover letter uses formal single-spaced letter style. |
 """
     write_text(submission_dir / "FINAL_SUBMITTER_CHECKLIST.md", text)
 
@@ -857,10 +876,11 @@ def main() -> None:
         "declarations": submission_dir / "JOSR_Declarations.docx",
         "supplementary": submission_dir / "JOSR_Supplementary_Tables_ST01_ST34.xlsx",
     }
-    assembly.write_docx(title_page, paths["title_page"], "JOSR Title Page and Author Statements")
-    assembly.write_docx(manuscript, paths["manuscript"], "JOSR Anonymized Manuscript")
-    assembly.write_docx(cover, paths["cover_letter"], "JOSR Cover Letter")
-    assembly.write_docx(declarations, paths["declarations"], "JOSR Declarations")
+    assembly.write_docx(title_page, paths["title_page"], "JOSR Title Page and Author Statements", profile="title_page")
+    assembly.write_docx(manuscript, paths["manuscript"], "JOSR Anonymized Manuscript", profile="manuscript")
+    assembly.write_docx(cover, paths["cover_letter"], "JOSR Cover Letter", profile="cover_letter")
+    assembly.write_docx(declarations, paths["declarations"], "JOSR Declarations", profile="declarations")
+    rows.append({"item": "F3_docx_format_profiles", "status": "updated", "detail": "Manuscript DOCX uses double spacing, continuous line numbers, and page numbers; cover letter uses formal single-spaced letter style."})
 
     supp_manifest = pd.read_csv(root / "results/tables/manuscript_jot_supplementary_upload_manifest.tsv", sep="\t")
     supp_manifest = append_diagnostic_supplementary_rows(supp_manifest)

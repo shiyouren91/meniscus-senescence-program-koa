@@ -92,6 +92,29 @@ function Get-DocxText {
     }
 }
 
+function Get-DocxEntry {
+    param([string]$Path, [string]$EntryName)
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $zip = [System.IO.Compression.ZipFile]::OpenRead($Path)
+    try {
+        $entry = $zip.GetEntry($EntryName)
+        if ($null -eq $entry) {
+            return $null
+        }
+        $stream = $entry.Open()
+        try {
+            $reader = New-Object System.IO.StreamReader($stream)
+            return $reader.ReadToEnd()
+        }
+        finally {
+            $stream.Dispose()
+        }
+    }
+    finally {
+        $zip.Dispose()
+    }
+}
+
 $Manuscript = Join-Path $ProjectRoot "docs\manuscript\37_josr_repackaged_manuscript_draft.md"
 $Cover = Join-Path $ProjectRoot "docs\manuscript\38_josr_cover_letter_draft.md"
 $TitlePage = Join-Path $ProjectRoot "docs\manuscript\39_josr_title_page_and_author_statements.md"
@@ -159,6 +182,13 @@ foreach ($needle in @(
     if ($manuscriptText -notmatch [regex]::Escape($needle)) {
         throw "JOSR manuscript missing expected text: $needle"
     }
+}
+
+if (-not $manuscriptText.StartsWith("# $newTitle")) {
+    throw "JOSR manuscript source should start with the article title, not an internal draft label"
+}
+if ($manuscriptText -cmatch "JOSR Anonymized Manuscript Draft|## Article Title") {
+    throw "JOSR manuscript source still contains internal draft or Article Title label"
 }
 
 foreach ($needle in @(
@@ -269,13 +299,53 @@ foreach ($file in @(
     }
 }
 
-$manuscriptDocxText = Get-DocxText -Path (Join-Path $SubmissionDir "JOSR_Anonymized_Manuscript.docx")
-$coverDocxText = Get-DocxText -Path (Join-Path $SubmissionDir "JOSR_Cover_Letter.docx")
+$manuscriptDocxPath = Join-Path $SubmissionDir "JOSR_Anonymized_Manuscript.docx"
+$coverDocxPath = Join-Path $SubmissionDir "JOSR_Cover_Letter.docx"
+$manuscriptDocxText = Get-DocxText -Path $manuscriptDocxPath
+$coverDocxText = Get-DocxText -Path $coverDocxPath
 if ($manuscriptDocxText -notmatch [regex]::Escape($newTitle)) {
     throw "JOSR manuscript DOCX missing new title"
 }
+if (-not $manuscriptDocxText.StartsWith($newTitle)) {
+    throw "JOSR manuscript DOCX should start with the article title"
+}
+if ($manuscriptDocxText -cmatch "JOSR Anonymized Manuscript Draft|Article Title A program-level") {
+    throw "JOSR manuscript DOCX still contains internal draft or Article Title label"
+}
 if ($coverDocxText -notmatch "Journal of Orthopaedic Surgery and Research") {
     throw "JOSR cover letter DOCX missing journal name"
+}
+if (-not $coverDocxText.StartsWith("Dear Editors of the Journal of Orthopaedic Surgery and Research")) {
+    throw "JOSR cover letter DOCX should start as a formal letter"
+}
+if ($coverDocxText -cmatch "JOSR Cover Letter Draft") {
+    throw "JOSR cover letter DOCX still contains internal draft heading"
+}
+
+$manuscriptXml = Get-DocxEntry -Path $manuscriptDocxPath -EntryName "word/document.xml"
+$manuscriptStyles = Get-DocxEntry -Path $manuscriptDocxPath -EntryName "word/styles.xml"
+$manuscriptFooter = Get-DocxEntry -Path $manuscriptDocxPath -EntryName "word/footer1.xml"
+$coverXml = Get-DocxEntry -Path $coverDocxPath -EntryName "word/document.xml"
+$coverStyles = Get-DocxEntry -Path $coverDocxPath -EntryName "word/styles.xml"
+$coverFooter = Get-DocxEntry -Path $coverDocxPath -EntryName "word/footer1.xml"
+
+if ($manuscriptStyles -notlike "*w:line=`"480`"*") {
+    throw "JOSR manuscript DOCX is not double-spaced"
+}
+if ($manuscriptXml -notlike "*<w:lnNumType w:countBy=`"1`" w:start=`"1`" w:restart=`"continuous`"/>*") {
+    throw "JOSR manuscript DOCX missing continuous line numbering"
+}
+if ($manuscriptXml -notlike "*w:footerReference*") {
+    throw "JOSR manuscript DOCX missing footer reference for page numbers"
+}
+if ($null -eq $manuscriptFooter -or $manuscriptFooter -notlike "*w:instr=`"PAGE`"*") {
+    throw "JOSR manuscript DOCX missing PAGE footer field"
+}
+if ($coverStyles -notlike "*w:line=`"240`"*") {
+    throw "JOSR cover letter DOCX is not single-spaced"
+}
+if ($coverXml -like "*w:lnNumType*" -or $null -ne $coverFooter) {
+    throw "JOSR cover letter DOCX should not have manuscript line numbering or page footer"
 }
 
 $manifestRows = @(Import-Csv -LiteralPath $HandoffManifest -Delimiter "`t")
