@@ -4,4 +4,4 @@ The code, workflow notes, derived tables, final figures, and supplementary workb
 
 Public source data should be downloaded from the original repositories described in the manuscript and dataset manifests. Author-provided processed HRA001986 h5ad files are not included unless redistribution permission is explicitly granted.
 
-Final repository URL: to be updated after upload.
+Final repository URL: https://github.com/shiyouren91/meniscus-senescence-program-koa
