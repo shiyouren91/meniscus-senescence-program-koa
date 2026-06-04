@@ -191,6 +191,7 @@ def repackage_manuscript(text: str, rows: list[dict[str, str]]) -> str:
     text = polish_author_voice(text, rows)
     text = add_ai_methods_note(text, rows)
     text = apply_josr_main_structure(text, rows)
+    text = remove_stale_submission_boilerplate(text, rows)
     text = normalize_figure_legend_order(text, rows)
     return text
 
@@ -402,6 +403,30 @@ def apply_josr_main_structure(text: str, rows: list[dict[str, str]]) -> str:
     ]
     rows.append({"item": "R12_josr_main_structure", "status": "updated", "detail": "Reordered main manuscript to Background, Methods, Results, Discussion, Conclusions, abbreviations, declarations, legends, references."})
     return "\n\n".join(section for section in sections if section.strip()) + "\n"
+
+
+def remove_stale_submission_boilerplate(text: str, rows: list[dict[str, str]]) -> str:
+    headings = [
+        "Data and Code Availability",
+        "Author Contribution",
+        "Funding/Support Statement",
+        "Conflicts of Interest",
+        "Ethical Statement",
+        "Data and Materials Availability",
+    ]
+    changed = 0
+    for heading in headings:
+        pattern = re.compile(rf"\n## {re.escape(heading)}\n.*?(?=\n## |\Z)", re.S)
+        text, count = pattern.subn("\n", text)
+        changed += count
+    rows.append(
+        {
+            "item": "R13_remove_stale_submission_boilerplate",
+            "status": "updated" if changed else "already_updated",
+            "detail": f"Removed {changed} obsolete duplicate submission sections before References.",
+        }
+    )
+    return text
 
 
 def normalize_figure_legend_order(text: str, rows: list[dict[str, str]]) -> str:
@@ -682,8 +707,8 @@ def copy_to_handoff(paths: dict[str, Path], handoff_dir: Path) -> list[dict[str,
             "file_id": "data_code_availability",
             "upload_category": "data_code_availability",
             "handoff_path": "04_data_code_availability/Data_and_Code_Availability_URL_or_DOI.txt",
-            "status": "user_to_fill",
-            "manual_check": "Insert final repository URL or DOI before final submission.",
+            "status": "ready",
+            "manual_check": "Repository URL is included; paste into portal field if requested.",
         }
     )
     return rows
@@ -709,7 +734,7 @@ def write_handoff_readme(handoff_dir: Path, manifest_rows: list[dict[str, str]])
             "",
             "## Manual Items",
             "",
-            "- Insert the final repository URL or DOI.",
+            "- Repository URL is already inserted: https://github.com/shiyouren91/meniscus-senescence-program-koa",
             "- Confirm author approvals, competing interests, ethics wording, and AI-use wording before final submission.",
             "- Confirm whether the portal labels the article type as Methodology or Research, and select Methodology if available.",
         ]
@@ -723,7 +748,7 @@ def write_submitter_checklist(submission_dir: Path) -> None:
 ## Before opening the JOSR portal
 
 - Use the files in `submission/josr/upload_handoff`.
-- Have the Repository URL/DOI ready, or leave the placeholder until you have it.
+- Repository URL is already inserted: https://github.com/shiyouren91/meniscus-senescence-program-koa
 - Select article type `Methodology` if the submission portal offers it.
 
 ## Upload order
@@ -746,7 +771,7 @@ def write_submitter_checklist(submission_dir: Path) -> None:
 | F02 | article_type | manual_user_check | Select Methodology if available in the portal. |
 | F03 | metadata_clean_docx | manual_user_check | Open DOCX properties and confirm no hidden identifiers before final submission. |
 | F04 | author_confirmation | manual_user_check | Corresponding author confirms COI, ethics, AI declaration, funding, and author contributions. |
-| F05 | repository_url_or_doi | user_to_fill | Insert repository URL or DOI before final click Submit. |
+| F05 | repository_url_or_doi | ready | Repository URL is inserted in manuscript, declarations, and data/code availability file. |
 | F06 | claim_guardrail | ready | Keep candidate axes as hypotheses for validation, not causal mechanisms. |
 """
     write_text(submission_dir / "FINAL_SUBMITTER_CHECKLIST.md", text)
