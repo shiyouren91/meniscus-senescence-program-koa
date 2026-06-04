@@ -47,12 +47,12 @@ The study should be of interest to orthopaedic and sports-medicine readers for t
 We have kept the claims deliberately conservative: the paracrine axes are hypotheses for validation, not established mechanisms or clinical targets.
 """
 
-DATA_CODE_TEXT = """The public datasets re-analysed in this study are available from the repositories cited in the manuscript. Derived tables are included in the supplementary workbook. Final public repository URL or DOI for analysis code: URL or DOI to be inserted by the corresponding author before submission.
+DATA_CODE_TEXT = """The public datasets re-analysed in this study are available from the repositories cited in the manuscript. Derived tables are included in the supplementary workbook. Analysis code and derived non-raw outputs are available at https://github.com/shiyouren91/meniscus-senescence-program-koa.
 """
 
 DATA_CODE_PLACEHOLDER = """Availability of data and materials / code
 
-The public datasets re-analysed in this study are available from the repositories cited in the manuscript. Derived tables are included in the supplementary workbook. Final public repository URL or DOI for analysis code: URL or DOI to be inserted by the corresponding author before submission.
+The public datasets re-analysed in this study are available from the repositories cited in the manuscript. Derived tables are included in the supplementary workbook. Analysis code and derived non-raw outputs are available at https://github.com/shiyouren91/meniscus-senescence-program-koa.
 """
 
 ABBREVIATIONS_SECTION = """## List of abbreviations
