@@ -1,0 +1,9 @@
+sampling_scheme	target_id	target_role	n_runs	median_best_jaccard	q25_best_jaccard	q75_best_jaccard	median_overlap_n	fdr_lt_0_05_fraction	best_observed_jaccard
+capped_1000	angiogenic_hypoxia	exploratory angiogenic/hypoxia program	20	0.1643835616438356	0.1643835616438356	0.1684265601217656	12.0	1.0	0.21428571428571427
+capped_1000	collagen_fibrotic_remodeling	primary structural remodeling program	20	0.41993006993007	0.4090909090909091	0.4307692307692308	27.5	1.0	0.453125
+capped_1000	fibrocartilage_identity	supportive fibrocartilage program	20	0.3787878787878788	0.3382352941176471	0.4	25.0	1.0	0.4444444444444444
+capped_1000	senescence_stress	secondary senescence/stress-associated program	20	0.3139386189258312	0.2811871227364185	0.3235294117647059	21.5	1.0	0.34328358208955223
+strict_equal_300	angiogenic_hypoxia	exploratory angiogenic/hypoxia program	20	0.1643835616438356	0.1643835616438356	0.1643835616438356	12.0	1.0	0.18055555555555555
+strict_equal_300	collagen_fibrotic_remodeling	primary structural remodeling program	20	0.4090909090909091	0.4090909090909091	0.4307692307692308	27.0	1.0	0.453125
+strict_equal_300	fibrocartilage_identity	supportive fibrocartilage program	20	0.3382352941176471	0.31413043478260866	0.3591452205882353	23.0	1.0	0.421875
+strict_equal_300	senescence_stress	secondary senescence/stress-associated program	20	0.30434782608695654	0.30434782608695654	0.30914322250639387	21.0	1.0	0.34328358208955223

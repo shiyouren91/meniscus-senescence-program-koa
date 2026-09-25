@@ -1,0 +1,5 @@
+analysis_stage	datasets	role	used_for_feature_selection	used_for_bulk_evaluation
+single-cell discovery	GSE220243	de novo NMF from 3,000 batch-aware HVGs; lock top-30 genes	True	False
+independent single-cell reproduction	HRA001986	de novo NMF from author-defined HVGs; post hoc matching only	False	False
+primary bulk evaluation	GSE114007,GSE143514,GSE169077,GSE185064,GSE55235,GSE55457	evaluate locked GSE220243 programs in OA-vs-normal contrasts	False	True
+context/sensitivity	GSE89408,GSE98918,GSE191157	RA-rich OA-vs-normal, OA-vs-APM, and aged-vs-young contrasts	False	False

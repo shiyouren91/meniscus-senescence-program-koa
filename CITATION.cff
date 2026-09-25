@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this analysis package, please cite the associated manuscript."
-title: "Meniscus senescence program analysis in knee osteoarthritis"
+title: "Reproducible meniscal structural remodeling programs and context-dependent senescence-associated states in knee osteoarthritis"
 authors:
   - family-names: "Ren"
     given-names: "Shiyou"
@@ -13,7 +13,7 @@ authors:
   - family-names: "Yu"
     given-names: "Haiyang"
 type: software
-version: "pre-submission-release"
-date-released: "2026-06-04"
+version: "reviewer-reanalysis-2026-09"
+date-released: "2026-09-25"
 repository-code: "https://github.com/shiyouren91/meniscus-senescence-program-koa"
 license: "NOASSERTION"

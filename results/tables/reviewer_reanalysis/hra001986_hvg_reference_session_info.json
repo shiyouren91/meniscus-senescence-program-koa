@@ -1,0 +1,65 @@
+{
+  "script": "71_match_hvg_only_programs_in_hra001986.py",
+  "input_hra": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\data\\raw\\HRA001986\\meniscal_chondrocyte.h5ad",
+  "input_gse_programs": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\results\\tables\\reviewer_reanalysis\\gse220243_hvg_only_consensus_top_genes.tsv",
+  "target_specs": [
+    [
+      "collagen_fibrotic_remodeling",
+      14,
+      12,
+      "primary structural remodeling program"
+    ],
+    [
+      "fibrocartilage_identity",
+      14,
+      6,
+      "supportive fibrocartilage program"
+    ],
+    [
+      "senescence_stress",
+      14,
+      5,
+      "secondary senescence/stress-associated program"
+    ],
+    [
+      "angiogenic_hypoxia",
+      14,
+      7,
+      "exploratory angiogenic/hypoxia program"
+    ]
+  ],
+  "random_seed": 20260925,
+  "ranks": [
+    10,
+    12,
+    14,
+    16
+  ],
+  "nmf_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "python": "3.11.15 (main, May 10 2026, 19:31:25) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "anndata": "0.12.16",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "scipy": "1.17.1",
+  "scikit_learn": "1.8.0",
+  "outputs": [
+    "hra001986_hvg_reference_best_consensus_matches.tsv",
+    "hra001986_hvg_reference_best_matches_by_run.tsv",
+    "hra001986_hvg_reference_celltype_sample_scores.tsv",
+    "hra001986_hvg_reference_consensus_matches.tsv",
+    "hra001986_hvg_reference_consensus_stability.tsv",
+    "hra001986_hvg_reference_consensus_top_genes.tsv",
+    "hra001986_hvg_reference_match_summary.tsv",
+    "hra001986_hvg_reference_nmf_run_metrics.tsv",
+    "hra001986_hvg_reference_nmf_top_genes.tsv",
+    "hra001986_hvg_reference_sample_scores.tsv",
+    "hra001986_hvg_reference_sample_tests.tsv"
+  ]
+}

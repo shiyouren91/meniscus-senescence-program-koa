@@ -1,43 +1,44 @@
-# Meniscus Senescence Program Analysis in Knee Osteoarthritis
+# Meniscal Transcriptomic Program Analysis in Knee Osteoarthritis
 
-This repository supports the manuscript prepared for **Journal of Orthopaedic Surgery and Research**:
+This repository supports the manuscript:
 
-**A program-level meniscus senescence analysis identifies fibrocartilage-matrix stratification signals and candidate paracrine axes in knee osteoarthritis: an integrative transcriptomic study**
+**Reproducible meniscal structural remodeling programs and context-dependent senescence-associated states in knee osteoarthritis: an integrative transcriptomic study**
 
-## What Is Included
+The current analysis was rebuilt after peer review to separate unsupervised program discovery from post hoc biological annotation. Its primary finding is reproducible structural remodeling, while senescence-associated states are reported as context dependent rather than as a universal OA-upregulated program.
 
-- `scripts/`: analysis, download, metadata, and submission-repackaging scripts.
-- `tests/`: PowerShell regression tests used to check major analysis and manuscript-packaging steps.
-- `docs/workflow/`: stepwise workflow notes, including interpretation guardrails.
-- `metadata/` and `config/`: dataset manifests, gene-set source tables, and path configuration templates.
-- `results/tables/`: derived non-raw tables used for manuscript figures, supplementary tables, and diagnostic analyses.
-- `results/figures/`: generated figures and supporting plots.
-- `submission/josr/figures/`: final JOSR figure PNG files.
-- `submission/josr/JOSR_Supplementary_Tables_ST01_ST34.xlsx`: final supplementary table workbook.
+## Current Reviewer-Driven Analysis
 
-## What Is Not Included
+- `scripts/analysis/70_gse220243_hvg_only_program_discovery.py`: highly variable gene-only, sample-balanced program discovery in GSE220243.
+- `scripts/analysis/71_match_hvg_only_programs_in_hra001986.py`: independent HRA001986 decomposition followed by post hoc module matching.
+- `scripts/analysis/72_bulk_validate_hvg_only_programs.py`: locked-program scoring and tissue-stratified bulk evaluation.
+- `scripts/analysis/73_build_reviewer_reanalysis_package.py`: revised figures, evidence hierarchy, and supplementary workbook construction.
+- `scripts/manuscript/74_build_reframed_manuscript.py`: reproducible manuscript generation.
+- `scripts/manuscript/75_audit_reframed_manuscript.py`: callout, citation, placeholder, and source-value consistency checks.
+- `results/tables/reviewer_reanalysis/`: derived result tables and machine-readable session information.
+- `results/figures/reviewer_reanalysis/revised_main/`: revised main figures in PNG and TIFF formats.
+- `submission/reviewer_reanalysis_20260925/Revised_Supplementary_Tables.xlsx`: revised supporting tables.
 
-Raw sequencing files, large processed single-cell objects, author-provided h5ad files, GEO raw archives, local environments, logs, and temporary files are not redistributed here. These files should be obtained from the original public repositories or from the corresponding author where permitted.
+Earlier JOSR-oriented materials remain in the repository for provenance but do not represent the current scientific framing.
 
-## Main Public Datasets
+## Data Roles
 
-The analysis uses public or cited transcriptomic resources including GSE220243, HRA001986/PRJCA008120, GSE98918, GSE185064, GSE191157, GSE114007, GSE169077, GSE143514, GSE55235, GSE55457, and GSE89408.
+- GSE220243: discovery using 3,000 batch-aware highly variable genes.
+- HRA001986: independent program discovery and post hoc matching.
+- GSE114007, GSE143514, GSE169077, GSE185064, GSE55235, and GSE55457: designated OA-vs-normal bulk evaluation cohorts.
+- GSE89408, GSE98918, and GSE191157: sensitivity or contextual contrasts only.
 
-## Reproducibility Notes
+Raw sequencing files, large processed single-cell objects, author-provided h5ad files, local environments, logs, and temporary files are not redistributed. These materials should be obtained from the source repositories or source-study authors where permitted.
 
-The project was developed on Windows with Python/Scanpy-oriented tooling. Run scripts from the project root after downloading the required public source data. Some early single-cell steps require large local data files and are documented for reproducibility but are not runnable from this repository alone without downloading those source objects.
+## Main Interpretation
 
-Core final checks used before packaging:
+HVG-only discovery and independent HRA001986 decomposition support recurrent collagen/fibrotic-remodeling and fibrocartilage-identity programs in human meniscal cells. A senescence/stress state is reproducible at the gene-module level but is not consistently increased in OA. Bulk effects vary by tissue and cohort and are not presented as a universal cross-tissue diagnostic model.
+
+## Reproducibility
+
+Run scripts from the project root after obtaining the source data and recreating the required local paths. The reviewer-driven scripts preserve random seeds and write session-information files. The final consistency check is:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\tests\test_bulk_msp_diagnostic_analysis.ps1
-powershell -ExecutionPolicy Bypass -File .\tests\test_josr_repackaging_application.ps1
+python scripts/manuscript/75_audit_reframed_manuscript.py --project-root <project-root>
 ```
 
-## Interpretation Guardrail
-
-MIF-CD74, ANGPTL4-integrin, and VEGF are candidate paracrine axes for follow-up. They are not causal or experimentally validated mechanisms from this transcriptomic analysis alone.
-
-## Repository Name
-
-Suggested GitHub repository name: `meniscus-senescence-program-koa`
+Repository URL: https://github.com/shiyouren91/meniscus-senescence-program-koa

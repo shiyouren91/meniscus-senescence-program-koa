@@ -1,0 +1,43 @@
+{
+  "script": "72_bulk_validate_hvg_only_programs.py",
+  "programs": [
+    [
+      "collagen_fibrotic_remodeling",
+      14,
+      12,
+      "primary structural remodeling program"
+    ],
+    [
+      "fibrocartilage_identity",
+      14,
+      6,
+      "supportive fibrocartilage program"
+    ],
+    [
+      "senescence_stress",
+      14,
+      5,
+      "secondary senescence/stress-associated program"
+    ],
+    [
+      "angiogenic_hypoxia",
+      14,
+      7,
+      "exploratory angiogenic/hypoxia program"
+    ]
+  ],
+  "bootstrap_resamples": 5000,
+  "input_programs": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\results\\tables\\reviewer_reanalysis\\gse220243_hvg_only_consensus_top_genes.tsv",
+  "python": "3.11.15 (main, May 10 2026, 19:31:25) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "outputs": [
+    "bulk_hvg_program_cohort_effects.tsv",
+    "bulk_hvg_program_dataset_manifest.tsv",
+    "bulk_hvg_program_gene_coverage.tsv",
+    "bulk_hvg_program_group_tests.tsv",
+    "bulk_hvg_program_meta_summary.tsv",
+    "bulk_hvg_program_sample_metadata.tsv",
+    "bulk_hvg_program_sample_scores.tsv",
+    "hvg_program_dataset_role_audit.tsv"
+  ]
+}

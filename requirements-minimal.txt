@@ -3,6 +3,7 @@ matplotlib
 numpy
 openpyxl
 pandas
+python-docx
 scanpy
 scikit-learn
 scipy
