@@ -1,3 +1,5 @@
-License not yet selected.
+Superseded on 2026-10-14.
 
-Before public archival DOI release, the corresponding author should select an appropriate license for code and derived materials. Common choices are MIT for code and CC BY 4.0 for documentation/derived tables, but this should be confirmed by the authors and institution.
+The authors authorized the MIT licence for project-authored code. See LICENSE
+and NOTICE.md. This historical filename is retained to document the decision.
+No project licence overrides third-party data terms.

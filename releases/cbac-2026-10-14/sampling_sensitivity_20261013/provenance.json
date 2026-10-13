@@ -1,0 +1,58 @@
+{
+  "inputs": {
+    "GSE220243": {
+      "path": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\submission\\reviewer_rebuild_20260925\\data\\GSE220243_repaired_hvg.h5ad",
+      "sha256": "803dbac5d9b5fb15f1da9d51346b965e129dba10a02e0ec1cd07f43cd82abe4f"
+    },
+    "HRA001986": {
+      "path": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\submission\\reviewer_rebuild_20260925\\data\\HRA001986_mapped_hvg.h5ad",
+      "sha256": "e0aeb2bccbb42117b4ab8cefd751603cbf1b9f8c0717fd61cf5be0a59cb74c1e"
+    }
+  },
+  "rank": 10,
+  "cap": 300,
+  "sampling_seeds": [
+    20260925,
+    20261013,
+    20261014
+  ],
+  "nmf_seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "include_omissions": true,
+  "jobs": 2,
+  "python": "3.11.15",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "packages": {
+    "anndata": "0.12.16",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.8.0",
+    "threadpoolctl": "3.6.0"
+  },
+  "plan_sha256": "605ff83b66ef248db357792ad695097eecb87d260bb6021666e269bcda90748f",
+  "reference_hashes": {
+    "GSE220243": {
+      "consensus": "dd05e6501dd6f7ae6b669485e6b736f532afaedbd1624d0965f38bd9290aeeb4",
+      "donor_tests": "a2b9914e6dae01a7a6ed23f98c1f2a465730f1120ad0324855e18ab8a2e27023"
+    },
+    "HRA001986": {
+      "consensus": "be568aa33541559f7433d12565380f567b8206b1dbf82e5625428f5b2e91c3a5",
+      "donor_tests": "f5b700c6ce0ef65fca7c2a74c4a0876899c72ed19267efdb3c393057b7ad8789"
+    }
+  },
+  "omission": "Fixed full-arm cell selections with omitted donor removed; arm budgets may differ",
+  "code_sha256": {
+    "original_discovery.py": "baf1d7edda93c613aefad7fc812fa9ed90d0722fdb999a0a2df6df2c5bf0a995",
+    "rebuild_common.py": "ab11d90df75d99c08d2169081d313dacf01003bf9c3f8b8ce9279ac4d964c10b",
+    "sampling_sensitivity.py": "4b57ce49f22d522a49048e4f51d2920741f57ee69d4098736479db90870a3389",
+    "test_sampling_sensitivity.py": "6b588e9331eb6ec1126871736319cf36bdeedac50bfbd8f4e0e8584b86950694"
+  },
+  "runtime_fingerprint": "709c19556f015ab496dde4bace384c9e0d9c99891a0bdd645ef96d64ed8515e9",
+  "run_id": "d2d8799c4706499f999d50a929c32531"
+}

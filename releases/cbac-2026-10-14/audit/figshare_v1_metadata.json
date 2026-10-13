@@ -1,0 +1,142 @@
+{
+  "url_public_html": "https://figshare.com/articles/dataset/Cellular_features_of_localized_microenvironments_in_human_meniscal_degeneration_a_single-cell_transcriptomic_study/26240492/1",
+  "files": [
+    {
+      "id": 47559797,
+      "name": "meniscal_chondrocyte.h5ad",
+      "size": 234779038,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/47559797",
+      "supplied_md5": "e9319f4dcd333e53a1ace9b9b58046d8",
+      "computed_md5": "e9319f4dcd333e53a1ace9b9b58046d8",
+      "mimetype": "application/x-hdf"
+    },
+    {
+      "id": 47559791,
+      "name": "meniscal_endo.h5ad",
+      "size": 44393051,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/47559791",
+      "supplied_md5": "d6839d4f857625873032778ad57c7d87",
+      "computed_md5": "d6839d4f857625873032778ad57c7d87",
+      "mimetype": "application/x-hdf"
+    },
+    {
+      "id": 47559794,
+      "name": "meniscal_immune.h5ad",
+      "size": 33094415,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/47559794",
+      "supplied_md5": "eaa357795a7eca228e5aeb0d98632274",
+      "computed_md5": "eaa357795a7eca228e5aeb0d98632274",
+      "mimetype": "application/x-hdf"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 12510043,
+      "full_name": "Sijie Chen",
+      "first_name": "Sijie",
+      "last_name": "Chen",
+      "is_active": true,
+      "url_name": "Sijie_Chen",
+      "orcid_id": "0000-0003-4331-0773"
+    },
+    {
+      "id": 16035137,
+      "full_name": "Weili Fu",
+      "first_name": "Weili",
+      "last_name": "Fu",
+      "is_active": false,
+      "url_name": "_",
+      "orcid_id": "0000-0003-4438-2760"
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Cellular_features_of_localized_microenvironments_in_human_meniscal_degeneration_a_single-cell_transcriptomic_study/26240492",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">We built a cell atlas of 12 healthy or degenerated human meniscus samples from the inner and outer meniscal zones of 8 patients using scRNA-seq to investigate meniscal microenvironment homeostasis and its changes in the degeneration process and verified findings with immunofluorescent imaging.</p><p dir=\"ltr\">We identified and localized cell types in inner and outer meniscus and found new chondrocyte subtypes associated with degeneration. The observations suggested understandings on how cellular compositions, functions, and interactions participated in degeneration, and on the possible loop-like interactions among extracellular matrix disassembly, angiogenesis, and inflammation in driving the degeneration.</p><p><br></p><p dir=\"ltr\">Please consider citing our work:</p><p dir=\"ltr\">(2022) Cellular features of localized microenvironments in human meniscal degeneration: a single-cell transcriptomic study <i>eLife</i> <b>11</b>:e79585.https://doi.org/10.7554/eLife.79585    </p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 312266504,
+  "created_date": "2024-07-10T22:42:07Z",
+  "modified_date": "2024-07-10T22:42:07Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "single-cell RNASeq (scRNASeq)",
+    "meniscus injury",
+    "osteoarthritic conditions"
+  ],
+  "keywords": [
+    "single-cell RNASeq (scRNASeq)",
+    "meniscus injury",
+    "osteoarthritic conditions"
+  ],
+  "categories": [
+    {
+      "id": 24205,
+      "title": "Translational and applied bioinformatics",
+      "parent_id": 24181,
+      "path": "/24130/24181/24205",
+      "source_id": "310208",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 24193,
+      "title": "Genomics and transcriptomics",
+      "parent_id": 24181,
+      "path": "/24130/24181/24193",
+      "source_id": "310204",
+      "taxonomy_id": 100
+    },
+    {
+      "id": 24523,
+      "title": "Orthopaedics",
+      "parent_id": 24475,
+      "path": "/24457/24475/24523",
+      "source_id": "320216",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Chen, Sijie; Fu, Weili (2024). Cellular features of localized microenvironments in human meniscal degeneration: a single-cell transcriptomic study. figshare. Dataset. https://doi.org/10.6084/m9.figshare.26240492.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 26240492,
+  "title": "Cellular features of localized microenvironments in human meniscal degeneration: a single-cell transcriptomic study",
+  "doi": "10.6084/m9.figshare.26240492.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/26240492",
+  "published_date": "2024-07-10T22:42:07Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/26240492",
+  "url_public_api": "https://api.figshare.com/v2/articles/26240492",
+  "url_private_html": "https://figshare.com/account/articles/26240492",
+  "timeline": {
+    "posted": "2024-07-10T22:42:07",
+    "firstOnline": "2024-07-10"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

@@ -1,0 +1,20 @@
+{
+  "barcode": "str",
+  "dataset_id": "str",
+  "gsm_id": "str",
+  "sample_label": "str",
+  "tissue": "str",
+  "disease_status": "str",
+  "region": "str",
+  "replicate": "int64",
+  "source_h5ad": "str",
+  "n_counts": "int64",
+  "n_genes_by_counts": "int64",
+  "pct_counts_mt": "float64",
+  "qc_pass": "bool",
+  "initial_leiden": "str",
+  "draft_annotation": "str",
+  "draft_top_signature": "str",
+  "fibro_leiden": "str",
+  "cnmf_balanced_discovery_selected": "bool"
+}

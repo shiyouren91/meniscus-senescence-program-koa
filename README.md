@@ -1,44 +1,35 @@
-# Meniscal Transcriptomic Program Analysis in Knee Osteoarthritis
+# Meniscal matrix program reproducibility in knee osteoarthritis
 
-This repository supports the manuscript:
+Current study: **Meniscal matrix programs recur across datasets but their associations with knee osteoarthritis vary between cohorts**.
 
-**Reproducible meniscal structural remodeling programs and context-dependent senescence-associated states in knee osteoarthritis: an integrative transcriptomic study**
+The current package is [cbac-2026-10-14](releases/cbac-2026-10-14/README.md). It contains the 25 September technical reconstruction and the 13 October fixed-cell sampling-sensitivity extension. The release date identifies the public package, not a new analysis date.
 
-The current analysis was rebuilt after peer review to separate unsupervised program discovery from post hoc biological annotation. Its primary finding is reproducible structural remodeling, while senescence-associated states are reported as context dependent rather than as a universal OA-upregulated program.
+## Findings and interpretation
 
-## Current Reviewer-Driven Analysis
+Two meniscal single-cell datasets contributed 13 and eight donors. A collagen-rich discovery program shared 31 of its top 50 genes with an independently derived program, but the comparison-cohort disease association did not pass multiple-testing correction. Fixed-gene bulk associations varied between cohorts.
 
-- `scripts/analysis/70_gse220243_hvg_only_program_discovery.py`: highly variable gene-only, sample-balanced program discovery in GSE220243.
-- `scripts/analysis/71_match_hvg_only_programs_in_hra001986.py`: independent HRA001986 decomposition followed by post hoc module matching.
-- `scripts/analysis/72_bulk_validate_hvg_only_programs.py`: locked-program scoring and tissue-stratified bulk evaluation.
-- `scripts/analysis/73_build_reviewer_reanalysis_package.py`: revised figures, evidence hierarchy, and supplementary workbook construction.
-- `scripts/manuscript/74_build_reframed_manuscript.py`: reproducible manuscript generation.
-- `scripts/manuscript/75_audit_reframed_manuscript.py`: callout, citation, placeholder, and source-value consistency checks.
-- `results/tables/reviewer_reanalysis/`: derived result tables and machine-readable session information.
-- `results/figures/reviewer_reanalysis/revised_main/`: revised main figures in PNG and TIFF formats.
-- `submission/reviewer_reanalysis_20260925/Revised_Supplementary_Tables.xlsx`: revised supporting tables.
+The additional 270 NMF fits compare donor-balanced and pooled-cell sampling at matched full-cohort cell budgets and refit after removing each donor. Other selected cells remain fixed in omission refits; retained budgets may differ between arms. All 80 original fits and 270 added fits converged. Neither fits nor cells are independent patients.
 
-Earlier JOSR-oriented materials remain in the repository for provenance but do not represent the current scientific framing.
+These results do **not** establish a meniscus-specific senescence mechanism, causal inter-tissue communication, a validated diagnostic test, or a generally superior algorithm.
 
-## Data Roles
+## Current materials
 
-- GSE220243: discovery using 3,000 batch-aware highly variable genes.
-- HRA001986: independent program discovery and post hoc matching.
-- GSE114007, GSE143514, GSE169077, GSE185064, GSE55235, and GSE55457: designated OA-vs-normal bulk evaluation cohorts.
-- GSE89408, GSE98918, and GSE191157: sensitivity or contextual contrasts only.
+- [Release guide](releases/cbac-2026-10-14/README.md)
+- [Data sources and HRA checks](releases/cbac-2026-10-14/DATA_ACCESS.md)
+- [Reproduction instructions](releases/cbac-2026-10-14/REPRODUCE.md)
+- [Tables S1-S18](releases/cbac-2026-10-14/tables/)
+- [Figures](releases/cbac-2026-10-14/figures/)
+- [Frozen reconstruction](releases/cbac-2026-10-14/reconstruction_20260925/frozen_analysis/)
+- [Sampling-sensitivity code and results](releases/cbac-2026-10-14/sampling_sensitivity_20261013/)
 
-Raw sequencing files, large processed single-cell objects, author-provided h5ad files, local environments, logs, and temporary files are not redistributed. These materials should be obtained from the source repositories or source-study authors where permitted.
+HRA001986 processed data are publicly available at [Figshare version 1](https://doi.org/10.6084/m9.figshare.26240492.v1) under CC BY 4.0. Local source files match public file sizes and MD5 checksums. This repository links to those files rather than duplicating expression matrices. Private correspondence, submission letters, credentials and local environments are not included in the current release.
 
-## Main Interpretation
+## Earlier versions
 
-HVG-only discovery and independent HRA001986 decomposition support recurrent collagen/fibrotic-remodeling and fibrocartilage-identity programs in human meniscal cells. A senescence/stress state is reproducible at the gene-module level but is not consistently increased in OA. Bulk effects vary by tissue and cohort and are not presented as a universal cross-tissue diagnostic model.
+Root-level legacy scripts, prior result directories and earlier submission materials remain for provenance. They are **not** the current evidence package. Earlier ST01-ST34 numbering, diagnostic AUCs, senescence-specific labels and candidate communication-axis narratives must not be mixed with the current S1-S18 analysis. See [CHANGELOG.md](CHANGELOG.md). Version labels do not imply a published article.
 
-## Reproducibility
+## Licence and responsibility
 
-Run scripts from the project root after obtaining the source data and recreating the required local paths. The reviewer-driven scripts preserve random seeds and write session-information files. The final consistency check is:
+Project-authored code is under the [MIT licence](LICENSE), authorized by the authors on 14 October 2026. Original data and third-party components retain their own terms; see [NOTICE.md](NOTICE.md). Cite original studies and the analysis version used.
 
-```powershell
-python scripts/manuscript/75_audit_reframed_manuscript.py --project-root <project-root>
-```
-
-Repository URL: https://github.com/shiyouren91/meniscus-senescence-program-koa
+AI assistance included code development, debugging and checks, interpretation discussions, drafting and document preparation. The authors have confirmed completion of human verification and remain responsible for the work. Automated tests and AI-assisted review are not themselves independent human verification.

@@ -1,0 +1,24 @@
+{
+  "n_fits": 270,
+  "n_configurations": 54,
+  "run_id": "d2d8799c4706499f999d50a929c32531",
+  "all_converged": true,
+  "reference_reproduced": true,
+  "elapsed_seconds": 651.1615102291107,
+  "finished_local": "2026-10-13 23:43:37",
+  "output_sha256": {
+    "tables\\collagen_program_summary.tsv": "a14610b8440af275e0c4380e9e3e6d185be1163e7441076f5974d5abef80db57",
+    "tables\\configurations.tsv": "bb1e6e6dc361be755f230abe657fbcf4b94472f65fbdac6b01b416ef6ce3644b",
+    "tables\\consensus_stability.tsv": "66099533521907cd277872e141b636e04f66a4fc5f4f454669bc9d1b7d3de76a",
+    "tables\\donor_scores.tsv": "2419d5f1a2726cfb4a42890fc36a9ec94eed71cb1d37419976898873789d9991",
+    "tables\\donor_tests.tsv": "829a73efc1859d03d7aa8c43593048672dbd175cd11afeb108ceaf6f37533a3c",
+    "tables\\fit_metrics.tsv": "766a6aee5e63ed5fc2247c5ea9df4a79c66635c98495c83cf583b8c4dc1e2344",
+    "tables\\matches_and_tests.tsv": "895df63d1b9068255405ed4dc32e0f5f42f19fbe3df6ec9bb6e9bf53cb6b3b6f",
+    "tables\\program_genes.tsv": "fbf0652d2791771e8b158fac0367a8880bff62795e9667321d22fc9370bce8fe",
+    "tables\\program_matches.tsv": "f03ca2dbbe0d5e6bf16966703bc9441522cd73899985c2180224d4ca508666bf",
+    "tables\\reference_reproduction.tsv": "49f4da39d8594fc6e01ba9f5884fc23144ff31998242cacd2d399b03420952fd",
+    "tables\\sampling_representation.tsv": "9b139cedb32240a224f4bd4632887ffb5427f96cee44775f4376d3ec06451a78",
+    "figures\\Supplementary_Figure_S3.pdf": "b5ad8813fd27e642f9ce117ac3134003af71936b953f80445927f9990d01efc7",
+    "figures\\Supplementary_Figure_S3.png": "38db6ff47da94354ef6121e55ea0362d07b43be9a0297aa19f0a9db1c0c919e8"
+  }
+}

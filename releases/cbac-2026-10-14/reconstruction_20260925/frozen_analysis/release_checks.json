@@ -1,0 +1,63 @@
+{
+  "status": "TECHNICAL_CHECKS_PASSED_NOT_SUBMISSION_APPROVAL",
+  "checks": [
+    {
+      "check": "GSE220243_input_integrity",
+      "status": "PASS",
+      "detail": "54882 cells, 3000 unique Ensembl genes, donor mapping and H5AD hash checked"
+    },
+    {
+      "check": "GSE220243_inference",
+      "status": "PASS",
+      "detail": "Exhaustive donor P and full selected-rank BH family independently recalculated"
+    },
+    {
+      "check": "HRA001986_input_integrity",
+      "status": "PASS",
+      "detail": "28686 cells, 1989 unique Ensembl genes, donor mapping and H5AD hash checked"
+    },
+    {
+      "check": "HRA001986_inference",
+      "status": "PASS",
+      "detail": "Exhaustive donor P and full selected-rank BH family independently recalculated"
+    },
+    {
+      "check": "all_checkpoints",
+      "status": "PASS",
+      "detail": "80/80 converged fits; payload and weighted-input SHA256, shape, seed, rank verified"
+    },
+    {
+      "check": "independent_overlap",
+      "status": "PASS",
+      "detail": "100 module pairs; full top-50 Jaccard and conditional shared-input enrichment verified"
+    },
+    {
+      "check": "fixed_projection",
+      "status": "PASS",
+      "detail": "All ten locked GSE programs scored in full-gene HRA, with one BH family"
+    },
+    {
+      "check": "bulk_roles_and_families",
+      "status": "PASS",
+      "detail": "27 eligible primary cohort-program tests; RNA pools excluded; no RA in primary scoring"
+    },
+    {
+      "check": "bulk_scores",
+      "status": "PASS",
+      "detail": "Unique sample-score keys, finite values, >=21/30 coverage gate"
+    },
+    {
+      "check": "meta_units",
+      "status": "PASS",
+      "detail": "Per-module cohort/publication-family counts verified; no cartilage or cross-tissue pooling"
+    }
+  ],
+  "limitations": [
+    "No independent cell-compartment reannotation",
+    "Age/BMI and cell-mixture confounding remain",
+    "HRA projected and independently decomposed tests are not two independent cohorts",
+    "Previously explored data; no confirmatory registration",
+    "Input unit warnings and study-family dependence retained",
+    "Manuscript numbers and references must be reconciled before a new submission"
+  ]
+}

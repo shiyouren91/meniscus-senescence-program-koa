@@ -1,0 +1,43 @@
+{
+  "checked_date": "2026-10-14",
+  "metadata_api": "https://api.figshare.com/v2/articles/26240492/versions/1",
+  "doi": "10.6084/m9.figshare.26240492.v1",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "files": [
+    {
+      "filename": "meniscal_chondrocyte.h5ad",
+      "size_bytes": 234779038,
+      "local_md5": "e9319f4dcd333e53a1ace9b9b58046d8",
+      "public_md5": "e9319f4dcd333e53a1ace9b9b58046d8",
+      "local_sha256": "6038436dc3a1a019519581f826676ddcfcbcc32af0e2125762b3202e84cfc208",
+      "download_url": "https://ndownloader.figshare.com/files/47559797",
+      "file_id": 47559797,
+      "matched": true
+    },
+    {
+      "filename": "meniscal_endo.h5ad",
+      "size_bytes": 44393051,
+      "local_md5": "d6839d4f857625873032778ad57c7d87",
+      "public_md5": "d6839d4f857625873032778ad57c7d87",
+      "local_sha256": "522fa22223489f2af8014d15a919733f988498aef48b79f95dc38875bb522ae9",
+      "download_url": "https://ndownloader.figshare.com/files/47559791",
+      "file_id": 47559791,
+      "matched": true
+    },
+    {
+      "filename": "meniscal_immune.h5ad",
+      "size_bytes": 33094415,
+      "local_md5": "eaa357795a7eca228e5aeb0d98632274",
+      "public_md5": "eaa357795a7eca228e5aeb0d98632274",
+      "local_sha256": "158992798568cde642c4e1136fe018ccdf81ed10eb8caef90438ba1a0af7de3f",
+      "download_url": "https://ndownloader.figshare.com/files/47559794",
+      "file_id": 47559794,
+      "matched": true
+    }
+  ],
+  "interpretation": "Local original files match public version 1 by byte size and MD5; SHA256 values identify the local analysis sources. No expression files are republished in GitHub."
+}

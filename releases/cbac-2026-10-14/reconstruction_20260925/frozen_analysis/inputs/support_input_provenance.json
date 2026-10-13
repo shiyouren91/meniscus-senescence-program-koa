@@ -1,0 +1,34 @@
+[
+  {
+    "source": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\data\\processed\\single_cell\\GSE220243\\cnmf\\gse220243_fibrochondrocyte_cnmf_balanced_discovery_counts.h5ad",
+    "source_sha256": "047ab8ea0c6830b7e22e4257946916650f80ec1ea1dff1207d729df5f293a0d1",
+    "target": "legacy_selected_GSE_cell_metadata.tsv.gz",
+    "target_sha256": "e03764a6e5465dda7a99bde7c853175b2acd7cde4f1cc4f67f6c9fbdb79f288d",
+    "purpose": "Freeze only prior compartment/cell selection; the inherited normalized counts are not used"
+  },
+  {
+    "source": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\results\\tables\\reviewer_reanalysis\\gse220243_hvg_only_consensus_top_genes.tsv",
+    "source_sha256": "9c5710baa90887069d338696714e15dbb1031c90da1dce55541b2efb82f5e7f0",
+    "target": "legacy_GSE_top_genes.tsv",
+    "target_sha256": "9c5710baa90887069d338696714e15dbb1031c90da1dce55541b2efb82f5e7f0"
+  },
+  {
+    "source": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\metadata\\datasets\\gse220243_single_cell_manifest.tsv",
+    "source_sha256": "a4dbaccd619070ab12660804c6b83a9c60ea10622445b35d5757d9da628885fc",
+    "target": "gse220243_single_cell_manifest.tsv",
+    "target_sha256": "a4dbaccd619070ab12660804c6b83a9c60ea10622445b35d5757d9da628885fc"
+  },
+  {
+    "source": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\docs\\literature\\elife_79585\\elife-79585-supp1-donor_sample_information.xlsx",
+    "source_sha256": "6de2842861a2a7430e05242752a391df0de2e2a8b336b4f033f40b3d61412107",
+    "target": "HRA_public_donor_metadata.xlsx",
+    "target_sha256": "6de2842861a2a7430e05242752a391df0de2e2a8b336b4f033f40b3d61412107"
+  },
+  {
+    "source": "F:\\半月板特异性衰老程序连接纤维软骨细胞命运障碍与膝骨关节炎滑膜-软骨炎症重塑\\scripts\\analysis\\70_gse220243_hvg_only_program_discovery.py",
+    "source_sha256": "c9ed259ebdd871244f2d82f1f9fcf0560087ac65e3c11e6ea5785c6e0188f21e",
+    "target": "annotation_panels.json",
+    "target_sha256": "c240de956f927f45c150e061ea9c73d9b91390ebf745217c0cb587af28480ba6",
+    "purpose": "Legacy panels for descriptive annotation only, not discovery inputs"
+  }
+]
